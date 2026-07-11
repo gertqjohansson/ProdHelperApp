@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: #f3f2f1;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 8px;
+  color: #201f1e;
+  font-size: 24px;
+}
+
+.subtitle {
+  color: #605e5c;
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+
+.try-me-button {
+  background: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.try-me-button:hover:not(:disabled) {
+  background: #106ebe;
+}
+
+.try-me-button:disabled {
+  background: #c8c6c4;
+  cursor: not-allowed;
+}
+
+.result {
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: left;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-size: 13px;
+}
+
+.result-success {
+  background: #dff6dd;
+  color: #107c10;
+}
+
+.result-error {
+  background: #fde7e9;
+  color: #a80000;
+}
