@@ -1,0 +1,31 @@
+{
+  "app": {
+    "description": "Zavolajte controller lokálnej služby priamo z prehliadača cez Azure Relay Hybrid Connection."
+  },
+  "buttons": {
+    "try1": "Vyskúšať 1",
+    "try2": "Vyskúšať 2"
+  },
+  "status": {
+    "sending": "Odosielanie..."
+  },
+  "result": {
+    "calledHeading": "Zavolané {{controller}}/{{function}}",
+    "relayResponseHeading": "Odpoveď relay",
+    "errorHeading": "Chyba"
+  },
+  "errors": {
+    "configMissing": "Chýba konfigurácia relay. Nastavte VITE_RELAY_NAMESPACE, VITE_HC_NAME, VITE_SAS_KEY_NAME a VITE_SAS_KEY v súbore client/.env.",
+    "httpStatus": "Služba vrátila HTTP {{status}}. {{text}}"
+  },
+  "language": {
+    "selectorLabel": "Jazyk"
+  },
+  "nav": {
+    "menuLabel": "Ponuka",
+    "guestLabel": "Hosť"
+  },
+  "modal": {
+    "itemSelected": "{{item}} vybraté"
+  }
+}

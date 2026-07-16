@@ -1,0 +1,31 @@
+{
+  "app": {
+    "description": "Izsauciet kontrolieri lokālajā pakalpojumā tieši no pārlūkprogrammas, izmantojot Azure Relay Hybrid Connection."
+  },
+  "buttons": {
+    "try1": "Izmēģināt 1",
+    "try2": "Izmēģināt 2"
+  },
+  "status": {
+    "sending": "Sūta..."
+  },
+  "result": {
+    "calledHeading": "Izsaukts {{controller}}/{{function}}",
+    "relayResponseHeading": "Relay atbilde",
+    "errorHeading": "Kļūda"
+  },
+  "errors": {
+    "configMissing": "Trūkst relay konfigurācijas. Iestatiet VITE_RELAY_NAMESPACE, VITE_HC_NAME, VITE_SAS_KEY_NAME un VITE_SAS_KEY failā client/.env.",
+    "httpStatus": "Pakalpojums atgrieza HTTP {{status}}. {{text}}"
+  },
+  "language": {
+    "selectorLabel": "Valoda"
+  },
+  "nav": {
+    "menuLabel": "Izvēlne",
+    "guestLabel": "Viesis"
+  },
+  "modal": {
+    "itemSelected": "{{item}} izvēlēts"
+  }
+}

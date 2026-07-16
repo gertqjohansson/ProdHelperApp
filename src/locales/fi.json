@@ -1,0 +1,31 @@
+{
+  "app": {
+    "description": "Kutsu ohjainta paikallisessa palvelussa suoraan selaimesta Azure Relay Hybrid Connectionin kautta."
+  },
+  "buttons": {
+    "try1": "Kokeile 1",
+    "try2": "Kokeile 2"
+  },
+  "status": {
+    "sending": "Lähetetään..."
+  },
+  "result": {
+    "calledHeading": "Kutsuttiin {{controller}}/{{function}}",
+    "relayResponseHeading": "Relay-vastaus",
+    "errorHeading": "Virhe"
+  },
+  "errors": {
+    "configMissing": "Relay-määritykset puuttuvat. Aseta VITE_RELAY_NAMESPACE, VITE_HC_NAME, VITE_SAS_KEY_NAME ja VITE_SAS_KEY tiedostossa client/.env.",
+    "httpStatus": "Palvelu palautti HTTP {{status}}. {{text}}"
+  },
+  "language": {
+    "selectorLabel": "Kieli"
+  },
+  "nav": {
+    "menuLabel": "Valikko",
+    "guestLabel": "Vieras"
+  },
+  "modal": {
+    "itemSelected": "{{item}} valittu"
+  }
+}

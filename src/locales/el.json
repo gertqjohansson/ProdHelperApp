@@ -1,0 +1,31 @@
+{
+  "app": {
+    "description": "Καλέστε έναν controller στην τοπική υπηρεσία απευθείας από το πρόγραμμα περιήγησης μέσω μιας Azure Relay Hybrid Connection."
+  },
+  "buttons": {
+    "try1": "Δοκιμή 1",
+    "try2": "Δοκιμή 2"
+  },
+  "status": {
+    "sending": "Αποστολή..."
+  },
+  "result": {
+    "calledHeading": "Κλήθηκε {{controller}}/{{function}}",
+    "relayResponseHeading": "Απόκριση relay",
+    "errorHeading": "Σφάλμα"
+  },
+  "errors": {
+    "configMissing": "Λείπει η διαμόρφωση του relay. Ορίστε τα VITE_RELAY_NAMESPACE, VITE_HC_NAME, VITE_SAS_KEY_NAME και VITE_SAS_KEY στο client/.env.",
+    "httpStatus": "Η υπηρεσία επέστρεψε HTTP {{status}}. {{text}}"
+  },
+  "language": {
+    "selectorLabel": "Γλώσσα"
+  },
+  "nav": {
+    "menuLabel": "Μενού",
+    "guestLabel": "Επισκέπτης"
+  },
+  "modal": {
+    "itemSelected": "Επιλέχθηκε {{item}}"
+  }
+}

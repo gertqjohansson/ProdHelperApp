@@ -1,4 +1,7 @@
 <!doctype html>
+<!-- lang="en" is only the pre-JS-paint default; main.jsx awaits initI18n()
+     before rendering, and initI18n() overwrites document.documentElement.lang
+     with the resolved language before anything is drawn. -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />

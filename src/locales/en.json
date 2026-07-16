@@ -1,0 +1,31 @@
+{
+  "app": {
+    "description": "Call a controller on the on-prem service straight from the browser via an Azure Relay Hybrid Connection."
+  },
+  "buttons": {
+    "try1": "Try1",
+    "try2": "Try2"
+  },
+  "status": {
+    "sending": "Sending..."
+  },
+  "result": {
+    "calledHeading": "Called {{controller}}/{{function}}",
+    "relayResponseHeading": "Relay response",
+    "errorHeading": "Error"
+  },
+  "errors": {
+    "configMissing": "Relay configuration missing. Set VITE_RELAY_NAMESPACE, VITE_HC_NAME, VITE_SAS_KEY_NAME and VITE_SAS_KEY in client/.env.",
+    "httpStatus": "Service returned HTTP {{status}}. {{text}}"
+  },
+  "language": {
+    "selectorLabel": "Language"
+  },
+  "nav": {
+    "menuLabel": "Menu",
+    "guestLabel": "Guest"
+  },
+  "modal": {
+    "itemSelected": "{{item}} selected"
+  }
+}

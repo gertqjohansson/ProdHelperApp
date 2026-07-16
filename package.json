@@ -13,8 +13,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "flag-icons": "^7.5.0",
+    "i18next": "^24.2.0",
     "react": "^19.2.7",
-    "react-dom": "^19.2.7"
+    "react-dom": "^19.2.7",
+    "react-i18next": "^15.2.0"
   },
   "devDependencies": {
     "@types/react": "^19.2.17",

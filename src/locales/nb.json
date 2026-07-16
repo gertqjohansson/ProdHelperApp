@@ -1,0 +1,31 @@
+{
+  "app": {
+    "description": "Kall en controller på den lokale tjenesten direkte fra nettleseren via en Azure Relay Hybrid Connection."
+  },
+  "buttons": {
+    "try1": "Prøv 1",
+    "try2": "Prøv 2"
+  },
+  "status": {
+    "sending": "Sender..."
+  },
+  "result": {
+    "calledHeading": "Kalte {{controller}}/{{function}}",
+    "relayResponseHeading": "Relay-svar",
+    "errorHeading": "Feil"
+  },
+  "errors": {
+    "configMissing": "Relay-konfigurasjon mangler. Angi VITE_RELAY_NAMESPACE, VITE_HC_NAME, VITE_SAS_KEY_NAME og VITE_SAS_KEY i client/.env.",
+    "httpStatus": "Tjenesten returnerte HTTP {{status}}. {{text}}"
+  },
+  "language": {
+    "selectorLabel": "Språk"
+  },
+  "nav": {
+    "menuLabel": "Meny",
+    "guestLabel": "Gjest"
+  },
+  "modal": {
+    "itemSelected": "{{item}} valgt"
+  }
+}

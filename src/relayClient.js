@@ -42,6 +42,17 @@ const HYBRID_CONNECTION_NAME = import.meta.env.VITE_HC_NAME // e.g. my-hybrid-co
 const SAS_KEY_NAME = import.meta.env.VITE_SAS_KEY_NAME // e.g. RootManageSharedAccessKey
 const SAS_KEY = import.meta.env.VITE_SAS_KEY // the primary/secondary key value
 
+// Carries an i18next key + interpolation params instead of a fixed English
+// message, so callers (this module has no React/i18next dependency of its
+// own) can translate it at display time.
+export class RelayError extends Error {
+  constructor(i18nKey, i18nParams) {
+    super(i18nKey)
+    this.i18nKey = i18nKey
+    this.i18nParams = i18nParams
+  }
+}
+
 async function hmacSha256Base64(key, data) {
   const enc = new TextEncoder()
   const cryptoKey = await crypto.subtle.importKey(
@@ -71,9 +82,7 @@ async function createSasToken(resourceUri, keyName, key, expiryInSeconds = 300) 
 //   -> POST {hcRoot}/Oee/Calculate  body: {"Parameters":["id",1,"Start","2026-07-01","end","2026-07-12"]}
 export async function callController(controller, functionName, parameters = []) {
   if (!RELAY_NAMESPACE || !HYBRID_CONNECTION_NAME || !SAS_KEY_NAME || !SAS_KEY) {
-    throw new Error(
-      'Relay configuration missing. Set VITE_RELAY_NAMESPACE, VITE_HC_NAME, VITE_SAS_KEY_NAME and VITE_SAS_KEY in client/.env.'
-    )
+    throw new RelayError('errors.configMissing')
   }
 
   const hcRoot = `https://${RELAY_NAMESPACE}/${HYBRID_CONNECTION_NAME}`
@@ -91,7 +100,7 @@ export async function callController(controller, functionName, parameters = []) 
 
   if (!res.ok) {
     const text = await res.text().catch(() => '')
-    throw new Error(`Service returned HTTP ${res.status}. ${text}`)
+    throw new RelayError('errors.httpStatus', { status: res.status, text })
   }
 
   return await res.text()

@@ -1,0 +1,31 @@
+{
+  "app": {
+    "description": "Llama a un controlador del servicio local directamente desde el navegador mediante una conexión híbrida de Azure Relay."
+  },
+  "buttons": {
+    "try1": "Probar 1",
+    "try2": "Probar 2"
+  },
+  "status": {
+    "sending": "Enviando..."
+  },
+  "result": {
+    "calledHeading": "Se llamó a {{controller}}/{{function}}",
+    "relayResponseHeading": "Respuesta del relay",
+    "errorHeading": "Error"
+  },
+  "errors": {
+    "configMissing": "Falta la configuración del relay. Defina VITE_RELAY_NAMESPACE, VITE_HC_NAME, VITE_SAS_KEY_NAME y VITE_SAS_KEY en client/.env.",
+    "httpStatus": "El servicio devolvió HTTP {{status}}. {{text}}"
+  },
+  "language": {
+    "selectorLabel": "Idioma"
+  },
+  "nav": {
+    "menuLabel": "Menú",
+    "guestLabel": "Invitado"
+  },
+  "modal": {
+    "itemSelected": "{{item}} seleccionado"
+  }
+}

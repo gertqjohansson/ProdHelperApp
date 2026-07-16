@@ -1,0 +1,31 @@
+{
+  "app": {
+    "description": "Извикайте контролер на локалната услуга директно от браузъра чрез Azure Relay Hybrid Connection."
+  },
+  "buttons": {
+    "try1": "Опитай 1",
+    "try2": "Опитай 2"
+  },
+  "status": {
+    "sending": "Изпращане..."
+  },
+  "result": {
+    "calledHeading": "Извикан {{controller}}/{{function}}",
+    "relayResponseHeading": "Отговор от relay",
+    "errorHeading": "Грешка"
+  },
+  "errors": {
+    "configMissing": "Липсва конфигурация на relay. Задайте VITE_RELAY_NAMESPACE, VITE_HC_NAME, VITE_SAS_KEY_NAME и VITE_SAS_KEY в client/.env.",
+    "httpStatus": "Услугата върна HTTP {{status}}. {{text}}"
+  },
+  "language": {
+    "selectorLabel": "Език"
+  },
+  "nav": {
+    "menuLabel": "Меню",
+    "guestLabel": "Гост"
+  },
+  "modal": {
+    "itemSelected": "{{item}} избрано"
+  }
+}

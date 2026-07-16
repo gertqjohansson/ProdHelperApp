@@ -1,0 +1,31 @@
+{
+  "app": {
+    "description": "Kutsuge kohaliku teenuse kontrollerit otse brauserist Azure Relay Hybrid Connection'i kaudu."
+  },
+  "buttons": {
+    "try1": "Proovi 1",
+    "try2": "Proovi 2"
+  },
+  "status": {
+    "sending": "Saatmine..."
+  },
+  "result": {
+    "calledHeading": "Kutsuti {{controller}}/{{function}}",
+    "relayResponseHeading": "Relay vastus",
+    "errorHeading": "Viga"
+  },
+  "errors": {
+    "configMissing": "Relay seadistus puudub. Määrake VITE_RELAY_NAMESPACE, VITE_HC_NAME, VITE_SAS_KEY_NAME ja VITE_SAS_KEY failis client/.env.",
+    "httpStatus": "Teenus tagastas HTTP {{status}}. {{text}}"
+  },
+  "language": {
+    "selectorLabel": "Keel"
+  },
+  "nav": {
+    "menuLabel": "Menüü",
+    "guestLabel": "Külaline"
+  },
+  "modal": {
+    "itemSelected": "{{item}} valitud"
+  }
+}

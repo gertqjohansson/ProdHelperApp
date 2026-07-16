@@ -1,0 +1,31 @@
+{
+  "app": {
+    "description": "Pozovite kontroler lokalnog servisa direktno iz pregledača putem Azure Relay Hybrid Connection-a."
+  },
+  "buttons": {
+    "try1": "Pokušaj 1",
+    "try2": "Pokušaj 2"
+  },
+  "status": {
+    "sending": "Slanje..."
+  },
+  "result": {
+    "calledHeading": "Pozvano {{controller}}/{{function}}",
+    "relayResponseHeading": "Relay odgovor",
+    "errorHeading": "Greška"
+  },
+  "errors": {
+    "configMissing": "Nedostaje konfiguracija relay-a. Podesite VITE_RELAY_NAMESPACE, VITE_HC_NAME, VITE_SAS_KEY_NAME i VITE_SAS_KEY u client/.env.",
+    "httpStatus": "Servis je vratio HTTP {{status}}. {{text}}"
+  },
+  "language": {
+    "selectorLabel": "Jezik"
+  },
+  "nav": {
+    "menuLabel": "Meni",
+    "guestLabel": "Gost"
+  },
+  "modal": {
+    "itemSelected": "{{item}} odabrano"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "app": {
+    "description": "Anropa en controller på den lokala tjänsten direkt från webbläsaren via en Azure Relay Hybrid Connection."
+  },
+  "buttons": {
+    "try1": "Prova 1",
+    "try2": "Prova 2"
+  },
+  "status": {
+    "sending": "Skickar..."
+  },
+  "result": {
+    "calledHeading": "Anropade {{controller}}/{{function}}",
+    "relayResponseHeading": "Relay-svar",
+    "errorHeading": "Fel"
+  },
+  "errors": {
+    "configMissing": "Relay-konfiguration saknas. Ange VITE_RELAY_NAMESPACE, VITE_HC_NAME, VITE_SAS_KEY_NAME och VITE_SAS_KEY i client/.env.",
+    "httpStatus": "Tjänsten returnerade HTTP {{status}}. {{text}}"
+  },
+  "language": {
+    "selectorLabel": "Språk"
+  },
+  "nav": {
+    "menuLabel": "Meny",
+    "guestLabel": "Gäst"
+  },
+  "modal": {
+    "itemSelected": "{{item}} valt"
+  }
+}

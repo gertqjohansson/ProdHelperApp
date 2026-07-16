@@ -1,0 +1,31 @@
+{
+  "app": {
+    "description": "Hívjon meg egy controllert a helyi szolgáltatáson közvetlenül a böngészőből egy Azure Relay Hybrid Connection segítségével."
+  },
+  "buttons": {
+    "try1": "Kipróbálás 1",
+    "try2": "Kipróbálás 2"
+  },
+  "status": {
+    "sending": "Küldés..."
+  },
+  "result": {
+    "calledHeading": "Meghívva: {{controller}}/{{function}}",
+    "relayResponseHeading": "Relay válasz",
+    "errorHeading": "Hiba"
+  },
+  "errors": {
+    "configMissing": "Hiányzik a relay konfiguráció. Állítsa be a VITE_RELAY_NAMESPACE, VITE_HC_NAME, VITE_SAS_KEY_NAME és VITE_SAS_KEY értékeket a client/.env fájlban.",
+    "httpStatus": "A szolgáltatás HTTP {{status}} választ adott. {{text}}"
+  },
+  "language": {
+    "selectorLabel": "Nyelv"
+  },
+  "nav": {
+    "menuLabel": "Menü",
+    "guestLabel": "Vendég"
+  },
+  "modal": {
+    "itemSelected": "{{item}} kiválasztva"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "app": {
+    "description": "Iškvieskite valdiklį vietinėje paslaugoje tiesiai iš naršyklės per Azure Relay Hybrid Connection."
+  },
+  "buttons": {
+    "try1": "Bandyti 1",
+    "try2": "Bandyti 2"
+  },
+  "status": {
+    "sending": "Siunčiama..."
+  },
+  "result": {
+    "calledHeading": "Iškviesta {{controller}}/{{function}}",
+    "relayResponseHeading": "Relay atsakymas",
+    "errorHeading": "Klaida"
+  },
+  "errors": {
+    "configMissing": "Trūksta relay konfigūracijos. Nustatykite VITE_RELAY_NAMESPACE, VITE_HC_NAME, VITE_SAS_KEY_NAME ir VITE_SAS_KEY faile client/.env.",
+    "httpStatus": "Paslauga grąžino HTTP {{status}}. {{text}}"
+  },
+  "language": {
+    "selectorLabel": "Kalba"
+  },
+  "nav": {
+    "menuLabel": "Meniu",
+    "guestLabel": "Svečias"
+  },
+  "modal": {
+    "itemSelected": "Pasirinkta {{item}}"
+  }
+}

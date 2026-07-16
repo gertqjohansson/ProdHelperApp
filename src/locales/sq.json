@@ -1,0 +1,31 @@
+{
+  "app": {
+    "description": "Thirrni një kontrollues të shërbimit lokal direkt nga shfletuesi përmes një Azure Relay Hybrid Connection."
+  },
+  "buttons": {
+    "try1": "Provo 1",
+    "try2": "Provo 2"
+  },
+  "status": {
+    "sending": "Duke dërguar..."
+  },
+  "result": {
+    "calledHeading": "U thirr {{controller}}/{{function}}",
+    "relayResponseHeading": "Përgjigja e relay-t",
+    "errorHeading": "Gabim"
+  },
+  "errors": {
+    "configMissing": "Mungon konfigurimi i relay-t. Vendosni VITE_RELAY_NAMESPACE, VITE_HC_NAME, VITE_SAS_KEY_NAME dhe VITE_SAS_KEY në client/.env.",
+    "httpStatus": "Shërbimi ktheu HTTP {{status}}. {{text}}"
+  },
+  "language": {
+    "selectorLabel": "Gjuha"
+  },
+  "nav": {
+    "menuLabel": "Menyja",
+    "guestLabel": "Mysafir"
+  },
+  "modal": {
+    "itemSelected": "{{item}} u zgjodh"
+  }
+}

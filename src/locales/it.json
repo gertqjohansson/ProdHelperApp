@@ -1,0 +1,31 @@
+{
+  "app": {
+    "description": "Chiama un controller sul servizio on-prem direttamente dal browser tramite una connessione ibrida di Azure Relay."
+  },
+  "buttons": {
+    "try1": "Prova 1",
+    "try2": "Prova 2"
+  },
+  "status": {
+    "sending": "Invio in corso..."
+  },
+  "result": {
+    "calledHeading": "Chiamato {{controller}}/{{function}}",
+    "relayResponseHeading": "Risposta del relay",
+    "errorHeading": "Errore"
+  },
+  "errors": {
+    "configMissing": "Configurazione del relay mancante. Impostare VITE_RELAY_NAMESPACE, VITE_HC_NAME, VITE_SAS_KEY_NAME e VITE_SAS_KEY in client/.env.",
+    "httpStatus": "Il servizio ha restituito HTTP {{status}}. {{text}}"
+  },
+  "language": {
+    "selectorLabel": "Lingua"
+  },
+  "nav": {
+    "menuLabel": "Menu",
+    "guestLabel": "Ospite"
+  },
+  "modal": {
+    "itemSelected": "{{item}} selezionato"
+  }
+}

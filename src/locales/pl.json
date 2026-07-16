@@ -1,0 +1,31 @@
+{
+  "app": {
+    "description": "Wywołaj kontroler usługi lokalnej bezpośrednio z przeglądarki za pomocą Azure Relay Hybrid Connection."
+  },
+  "buttons": {
+    "try1": "Wypróbuj 1",
+    "try2": "Wypróbuj 2"
+  },
+  "status": {
+    "sending": "Wysyłanie..."
+  },
+  "result": {
+    "calledHeading": "Wywołano {{controller}}/{{function}}",
+    "relayResponseHeading": "Odpowiedź relay",
+    "errorHeading": "Błąd"
+  },
+  "errors": {
+    "configMissing": "Brak konfiguracji relay. Ustaw VITE_RELAY_NAMESPACE, VITE_HC_NAME, VITE_SAS_KEY_NAME i VITE_SAS_KEY w pliku client/.env.",
+    "httpStatus": "Usługa zwróciła HTTP {{status}}. {{text}}"
+  },
+  "language": {
+    "selectorLabel": "Język"
+  },
+  "nav": {
+    "menuLabel": "Menu",
+    "guestLabel": "Gość"
+  },
+  "modal": {
+    "itemSelected": "{{item}} wybrany"
+  }
+}
