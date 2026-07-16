@@ -1,0 +1,57 @@
+.app {
+  padding: 32px 20px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.buttons button {
+  font-size: 16px;
+  padding: 10px 24px;
+  border-radius: 6px;
+  color: var(--accent);
+  background: var(--accent-bg);
+  border: 2px solid var(--accent-border);
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.buttons button:hover:not(:disabled) {
+  border-color: var(--accent);
+}
+
+.buttons button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.status {
+  color: var(--text-h);
+}
+
+.panel {
+  text-align: left;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.panel.error {
+  border-color: #e05a5a;
+}
+
+.panel pre {
+  background: var(--code-bg);
+  padding: 12px;
+  border-radius: 4px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
