@@ -23,9 +23,51 @@
   },
   "nav": {
     "menuLabel": "Izbornik",
-    "guestLabel": "Gost"
+    "guestLabel": "Gost",
+    "adminLabel": "Administracija",
+    "equipmentsLabel": "Oprema",
+    "accountsPermissionsLabel": "Računi i dozvole"
   },
   "modal": {
     "itemSelected": "{{item}} odabrano"
+  },
+  "auth": {
+    "emailLabel": "E-pošta",
+    "passwordLabel": "Lozinka",
+    "confirmPasswordLabel": "Potvrdi lozinku",
+    "displayNameLabel": "Prikazano ime (neobavezno)",
+    "loginButton": "Prijava",
+    "registerButton": "Registracija",
+    "logoutButton": "Odjava",
+    "needAccount": "Trebate račun?",
+    "haveAccount": "Već imate račun?",
+    "loginTitle": "Prijava",
+    "registerTitle": "Izradi račun",
+    "emailInvalid": "Unesite valjanu adresu e-pošte.",
+    "passwordMismatch": "Lozinke se ne podudaraju.",
+    "registerSuccess": "Račun je izrađen. Sada se možete prijaviti.",
+    "close": "Zatvori",
+    "mfaTitle": "Dvofaktorska autentifikacija",
+    "mfaDescription": "Unesite 6-znamenkasti kod iz aplikacije za autentifikaciju.",
+    "mfaCodeLabel": "Kod za autentifikaciju",
+    "verifyButton": "Potvrdi",
+    "mfaSetupTitle": "Dvofaktorska autentifikacija",
+    "mfaSetupDescription": "Skenirajte ovaj QR kod pomoću Microsoft Authenticatora (ili druge aplikacije za autentifikaciju), a zatim unesite prikazani kod kako biste omogućili dvofaktorsku autentifikaciju.",
+    "mfaAlreadyEnabled": "Dvofaktorska autentifikacija je omogućena. Unesite lozinku da je onemogućite.",
+    "mfaEnableButton": "Omogući",
+    "mfaDisableButton": "Onemogući",
+    "mfaRecoveryCodesDescription": "Spremite ove kodove za oporavak na sigurno mjesto. Svaki se može upotrijebiti jednom za prijavu ako izgubite pristup aplikaciji za autentifikaciju.",
+    "forgotPasswordLink": "Zaboravili ste lozinku?",
+    "forgotPasswordTitle": "Poništi lozinku",
+    "forgotPasswordDescription": "Unesite svoju adresu e-pošte i poslat ćemo vam kod za poništavanje lozinke.",
+    "forgotPasswordButton": "Pošalji kod za poništavanje",
+    "forgotPasswordSuccess": "Ako je ova adresa e-pošte registrirana, poslan je kod za poništavanje. Provjerite svoj pretinac.",
+    "resetPasswordTitle": "Odaberite novu lozinku",
+    "resetPasswordDescription": "Unesite kod iz e-pošte zajedno s novom lozinkom.",
+    "resetCodeLabel": "Kod za poništavanje",
+    "newPasswordLabel": "Nova lozinka",
+    "confirmNewPasswordLabel": "Potvrdi novu lozinku",
+    "resetPasswordButton": "Poništi lozinku",
+    "resetPasswordSuccess": "Vaša lozinka je poništena. Sada se možete prijaviti."
   }
 }

@@ -75,12 +75,12 @@ async function createSasToken(resourceUri, keyName, key, expiryInSeconds = 300) 
   return `SharedAccessSignature sr=${encodedUri}&sig=${encodeURIComponent(signature)}&se=${expiry}&skn=${keyName}`
 }
 
-// Calls a controller/function on the on-prem service through the relay, as
-// if it were a REST endpoint, and returns the response body as text.
-//
-//   callController('Oee', 'Calculate', ['id', 1, 'Start', '2026-07-01', 'end', '2026-07-12'])
-//   -> POST {hcRoot}/Oee/Calculate  body: {"Parameters":["id",1,"Start","2026-07-01","end","2026-07-12"]}
-export async function callController(controller, functionName, parameters = []) {
+// Builds a fully-signed relay URL for any path under the Hybrid Connection
+// root (e.g. "Oee/Calculate" or "Auth/Login"), throwing RelayError if the
+// four VITE_RELAY_* env vars aren't configured. Shared by callController
+// below and by authClient.js, so every caller reaches the on-prem listener
+// through the same relay + SAS-token mechanism.
+export async function buildRelayRequestUrl(path) {
   if (!RELAY_NAMESPACE || !HYBRID_CONNECTION_NAME || !SAS_KEY_NAME || !SAS_KEY) {
     throw new RelayError('errors.configMissing')
   }
@@ -90,7 +90,16 @@ export async function callController(controller, functionName, parameters = []) 
 
   // Passing the token as a query string parameter avoids a CORS preflight
   // (no custom header is sent), which keeps the on-premises listener simple.
-  const url = `${hcRoot}/${encodeURIComponent(controller)}/${encodeURIComponent(functionName)}?sb-hc-token=${encodeURIComponent(token)}`
+  return `${hcRoot}/${path}?sb-hc-token=${encodeURIComponent(token)}`
+}
+
+// Calls a controller/function on the on-prem service through the relay, as
+// if it were a REST endpoint, and returns the response body as text.
+//
+//   callController('Oee', 'Calculate', ['id', 1, 'Start', '2026-07-01', 'end', '2026-07-12'])
+//   -> POST {hcRoot}/Oee/Calculate  body: {"Parameters":["id",1,"Start","2026-07-01","end","2026-07-12"]}
+export async function callController(controller, functionName, parameters = []) {
+  const url = await buildRelayRequestUrl(`${encodeURIComponent(controller)}/${encodeURIComponent(functionName)}`)
 
   const res = await fetch(url, {
     method: 'POST',

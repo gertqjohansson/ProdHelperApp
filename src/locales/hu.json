@@ -23,9 +23,51 @@
   },
   "nav": {
     "menuLabel": "Menü",
-    "guestLabel": "Vendég"
+    "guestLabel": "Vendég",
+    "adminLabel": "Adminisztráció",
+    "equipmentsLabel": "Eszközök",
+    "accountsPermissionsLabel": "Fiókok és jogosultságok"
   },
   "modal": {
     "itemSelected": "{{item}} kiválasztva"
+  },
+  "auth": {
+    "emailLabel": "E-mail",
+    "passwordLabel": "Jelszó",
+    "confirmPasswordLabel": "Jelszó megerősítése",
+    "displayNameLabel": "Megjelenített név (nem kötelező)",
+    "loginButton": "Bejelentkezés",
+    "registerButton": "Regisztráció",
+    "logoutButton": "Kijelentkezés",
+    "needAccount": "Nincs még fiókja?",
+    "haveAccount": "Már van fiókja?",
+    "loginTitle": "Bejelentkezés",
+    "registerTitle": "Fiók létrehozása",
+    "emailInvalid": "Adjon meg egy érvényes e-mail címet.",
+    "passwordMismatch": "A jelszavak nem egyeznek.",
+    "registerSuccess": "A fiók létrejött. Most már bejelentkezhet.",
+    "close": "Bezárás",
+    "mfaTitle": "Kétfaktoros hitelesítés",
+    "mfaDescription": "Adja meg a hitelesítő alkalmazásban megjelenő 6 jegyű kódot.",
+    "mfaCodeLabel": "Hitelesítési kód",
+    "verifyButton": "Ellenőrzés",
+    "mfaSetupTitle": "Kétfaktoros hitelesítés",
+    "mfaSetupDescription": "Olvassa be ezt a QR-kódot a Microsoft Authenticatorral (vagy másik hitelesítő alkalmazással), majd adja meg a megjelenő kódot a kétfaktoros hitelesítés bekapcsolásához.",
+    "mfaAlreadyEnabled": "A kétfaktoros hitelesítés be van kapcsolva. A kikapcsolásához adja meg a jelszavát.",
+    "mfaEnableButton": "Bekapcsolás",
+    "mfaDisableButton": "Kikapcsolás",
+    "mfaRecoveryCodesDescription": "Mentse el ezeket a helyreállítási kódokat biztonságos helyre. Mindegyik egyszer használható bejelentkezésre, ha elveszíti a hozzáférést a hitelesítő alkalmazásához.",
+    "forgotPasswordLink": "Elfelejtette a jelszavát?",
+    "forgotPasswordTitle": "Jelszó visszaállítása",
+    "forgotPasswordDescription": "Adja meg az e-mail-címét, és küldünk egy kódot a jelszava visszaállításához.",
+    "forgotPasswordButton": "Visszaállítási kód küldése",
+    "forgotPasswordSuccess": "Ha ez az e-mail-cím regisztrálva van, elküldtünk egy visszaállítási kódot. Ellenőrizze a postaládáját.",
+    "resetPasswordTitle": "Új jelszó megadása",
+    "resetPasswordDescription": "Adja meg az e-mailben kapott kódot az új jelszavával együtt.",
+    "resetCodeLabel": "Visszaállítási kód",
+    "newPasswordLabel": "Új jelszó",
+    "confirmNewPasswordLabel": "Új jelszó megerősítése",
+    "resetPasswordButton": "Jelszó visszaállítása",
+    "resetPasswordSuccess": "A jelszava vissza lett állítva. Most már bejelentkezhet."
   }
 }

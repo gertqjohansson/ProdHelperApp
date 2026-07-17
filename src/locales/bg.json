@@ -23,9 +23,51 @@
   },
   "nav": {
     "menuLabel": "Меню",
-    "guestLabel": "Гост"
+    "guestLabel": "Гост",
+    "adminLabel": "Администриране",
+    "equipmentsLabel": "Оборудване",
+    "accountsPermissionsLabel": "Акаунти и права"
   },
   "modal": {
     "itemSelected": "{{item}} избрано"
+  },
+  "auth": {
+    "emailLabel": "Имейл",
+    "passwordLabel": "Парола",
+    "confirmPasswordLabel": "Потвърдете паролата",
+    "displayNameLabel": "Показвано име (незадължително)",
+    "loginButton": "Вход",
+    "registerButton": "Регистрация",
+    "logoutButton": "Изход",
+    "needAccount": "Нямате акаунт?",
+    "haveAccount": "Вече имате акаунт?",
+    "loginTitle": "Вход",
+    "registerTitle": "Създаване на акаунт",
+    "emailInvalid": "Въведете валиден имейл адрес.",
+    "passwordMismatch": "Паролите не съвпадат.",
+    "registerSuccess": "Акаунтът е създаден. Вече можете да влезете.",
+    "close": "Затвори",
+    "mfaTitle": "Двуфакторно удостоверяване",
+    "mfaDescription": "Въведете 6-цифрения код от приложението си за удостоверяване.",
+    "mfaCodeLabel": "Код за удостоверяване",
+    "verifyButton": "Потвърди",
+    "mfaSetupTitle": "Двуфакторно удостоверяване",
+    "mfaSetupDescription": "Сканирайте този QR код с Microsoft Authenticator (или друго приложение за удостоверяване), след което въведете показания код, за да активирате двуфакторното удостоверяване.",
+    "mfaAlreadyEnabled": "Двуфакторното удостоверяване е активирано. Въведете паролата си, за да го деактивирате.",
+    "mfaEnableButton": "Активиране",
+    "mfaDisableButton": "Деактивиране",
+    "mfaRecoveryCodesDescription": "Запазете тези кодове за възстановяване на сигурно място. Всеки от тях може да се използва веднъж за вход, ако загубите достъп до приложението си за удостоверяване.",
+    "forgotPasswordLink": "Забравена парола?",
+    "forgotPasswordTitle": "Нулиране на паролата",
+    "forgotPasswordDescription": "Въведете имейл адреса си и ще ви изпратим код за нулиране на паролата.",
+    "forgotPasswordButton": "Изпрати код за нулиране",
+    "forgotPasswordSuccess": "Ако този имейл е регистриран, е изпратен код за нулиране. Проверете входящата си поща.",
+    "resetPasswordTitle": "Изберете нова парола",
+    "resetPasswordDescription": "Въведете кода от имейла заедно с новата си парола.",
+    "resetCodeLabel": "Код за нулиране",
+    "newPasswordLabel": "Нова парола",
+    "confirmNewPasswordLabel": "Потвърдете новата парола",
+    "resetPasswordButton": "Нулиране на паролата",
+    "resetPasswordSuccess": "Паролата ви е нулирана. Вече можете да влезете."
   }
 }

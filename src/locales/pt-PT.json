@@ -23,9 +23,51 @@
   },
   "nav": {
     "menuLabel": "Menu",
-    "guestLabel": "Convidado"
+    "guestLabel": "Convidado",
+    "adminLabel": "Administração",
+    "equipmentsLabel": "Equipamentos",
+    "accountsPermissionsLabel": "Contas e permissões"
   },
   "modal": {
     "itemSelected": "{{item}} selecionado"
+  },
+  "auth": {
+    "emailLabel": "E-mail",
+    "passwordLabel": "Palavra-passe",
+    "confirmPasswordLabel": "Confirmar palavra-passe",
+    "displayNameLabel": "Nome a apresentar (opcional)",
+    "loginButton": "Iniciar sessão",
+    "registerButton": "Registar",
+    "logoutButton": "Terminar sessão",
+    "needAccount": "Precisa de uma conta?",
+    "haveAccount": "Já tem uma conta?",
+    "loginTitle": "Iniciar sessão",
+    "registerTitle": "Criar conta",
+    "emailInvalid": "Introduza um endereço de e-mail válido.",
+    "passwordMismatch": "As palavras-passe não coincidem.",
+    "registerSuccess": "Conta criada. Já pode iniciar sessão.",
+    "close": "Fechar",
+    "mfaTitle": "Autenticação de dois fatores",
+    "mfaDescription": "Introduza o código de 6 dígitos da sua aplicação de autenticação.",
+    "mfaCodeLabel": "Código de autenticação",
+    "verifyButton": "Verificar",
+    "mfaSetupTitle": "Autenticação de dois fatores",
+    "mfaSetupDescription": "Digitalize este código QR com o Microsoft Authenticator (ou outra aplicação de autenticação) e introduza o código apresentado para ativar a autenticação de dois fatores.",
+    "mfaAlreadyEnabled": "A autenticação de dois fatores está ativada. Introduza a sua palavra-passe para a desativar.",
+    "mfaEnableButton": "Ativar",
+    "mfaDisableButton": "Desativar",
+    "mfaRecoveryCodesDescription": "Guarde estes códigos de recuperação num local seguro. Cada um pode ser usado uma vez para iniciar sessão se perder o acesso à sua aplicação de autenticação.",
+    "forgotPasswordLink": "Esqueceu-se da palavra-passe?",
+    "forgotPasswordTitle": "Repor a palavra-passe",
+    "forgotPasswordDescription": "Introduza o seu endereço de e-mail e enviaremos um código para repor a sua palavra-passe.",
+    "forgotPasswordButton": "Enviar código de reposição",
+    "forgotPasswordSuccess": "Se este e-mail estiver registado, foi enviado um código de reposição. Verifique a sua caixa de entrada.",
+    "resetPasswordTitle": "Escolha uma nova palavra-passe",
+    "resetPasswordDescription": "Introduza o código do e-mail juntamente com a sua nova palavra-passe.",
+    "resetCodeLabel": "Código de reposição",
+    "newPasswordLabel": "Nova palavra-passe",
+    "confirmNewPasswordLabel": "Confirmar nova palavra-passe",
+    "resetPasswordButton": "Repor palavra-passe",
+    "resetPasswordSuccess": "A sua palavra-passe foi reposta. Já pode iniciar sessão."
   }
 }

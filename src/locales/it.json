@@ -23,9 +23,51 @@
   },
   "nav": {
     "menuLabel": "Menu",
-    "guestLabel": "Ospite"
+    "guestLabel": "Ospite",
+    "adminLabel": "Amministrazione",
+    "equipmentsLabel": "Attrezzature",
+    "accountsPermissionsLabel": "Account e autorizzazioni"
   },
   "modal": {
     "itemSelected": "{{item}} selezionato"
+  },
+  "auth": {
+    "emailLabel": "E-mail",
+    "passwordLabel": "Password",
+    "confirmPasswordLabel": "Conferma password",
+    "displayNameLabel": "Nome visualizzato (facoltativo)",
+    "loginButton": "Accedi",
+    "registerButton": "Registrati",
+    "logoutButton": "Esci",
+    "needAccount": "Non hai un account?",
+    "haveAccount": "Hai già un account?",
+    "loginTitle": "Accedi",
+    "registerTitle": "Crea account",
+    "emailInvalid": "Inserisci un indirizzo e-mail valido.",
+    "passwordMismatch": "Le password non corrispondono.",
+    "registerSuccess": "Account creato. Ora puoi accedere.",
+    "close": "Chiudi",
+    "mfaTitle": "Autenticazione a due fattori",
+    "mfaDescription": "Inserisci il codice a 6 cifre dalla tua app di autenticazione.",
+    "mfaCodeLabel": "Codice di autenticazione",
+    "verifyButton": "Verifica",
+    "mfaSetupTitle": "Autenticazione a due fattori",
+    "mfaSetupDescription": "Scansiona questo codice QR con Microsoft Authenticator (o un'altra app di autenticazione), quindi inserisci il codice mostrato per attivare l'autenticazione a due fattori.",
+    "mfaAlreadyEnabled": "L'autenticazione a due fattori è attiva. Inserisci la tua password per disattivarla.",
+    "mfaEnableButton": "Attiva",
+    "mfaDisableButton": "Disattiva",
+    "mfaRecoveryCodesDescription": "Conserva questi codici di recupero in un luogo sicuro. Ognuno può essere usato una volta per accedere se perdi l'accesso alla tua app di autenticazione.",
+    "forgotPasswordLink": "Password dimenticata?",
+    "forgotPasswordTitle": "Reimposta la password",
+    "forgotPasswordDescription": "Inserisci il tuo indirizzo e-mail e ti invieremo un codice per reimpostare la password.",
+    "forgotPasswordButton": "Invia codice di reimpostazione",
+    "forgotPasswordSuccess": "Se questo indirizzo e-mail è registrato, è stato inviato un codice di reimpostazione. Controlla la tua casella di posta.",
+    "resetPasswordTitle": "Scegli una nuova password",
+    "resetPasswordDescription": "Inserisci il codice ricevuto via e-mail insieme alla nuova password.",
+    "resetCodeLabel": "Codice di reimpostazione",
+    "newPasswordLabel": "Nuova password",
+    "confirmNewPasswordLabel": "Conferma nuova password",
+    "resetPasswordButton": "Reimposta password",
+    "resetPasswordSuccess": "La password è stata reimpostata. Ora puoi accedere."
   }
 }

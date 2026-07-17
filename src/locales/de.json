@@ -23,9 +23,51 @@
   },
   "nav": {
     "menuLabel": "Menü",
-    "guestLabel": "Gast"
+    "guestLabel": "Gast",
+    "adminLabel": "Verwaltung",
+    "equipmentsLabel": "Ausrüstung",
+    "accountsPermissionsLabel": "Konten & Berechtigungen"
   },
   "modal": {
     "itemSelected": "{{item}} ausgewählt"
+  },
+  "auth": {
+    "emailLabel": "E-Mail",
+    "passwordLabel": "Passwort",
+    "confirmPasswordLabel": "Passwort bestätigen",
+    "displayNameLabel": "Anzeigename (optional)",
+    "loginButton": "Anmelden",
+    "registerButton": "Registrieren",
+    "logoutButton": "Abmelden",
+    "needAccount": "Noch kein Konto?",
+    "haveAccount": "Bereits ein Konto?",
+    "loginTitle": "Anmelden",
+    "registerTitle": "Konto erstellen",
+    "emailInvalid": "Geben Sie eine gültige E-Mail-Adresse ein.",
+    "passwordMismatch": "Die Passwörter stimmen nicht überein.",
+    "registerSuccess": "Konto erstellt. Sie können sich jetzt anmelden.",
+    "close": "Schließen",
+    "mfaTitle": "Zwei-Faktor-Authentifizierung",
+    "mfaDescription": "Geben Sie den 6-stelligen Code aus Ihrer Authenticator-App ein.",
+    "mfaCodeLabel": "Authentifizierungscode",
+    "verifyButton": "Bestätigen",
+    "mfaSetupTitle": "Zwei-Faktor-Authentifizierung",
+    "mfaSetupDescription": "Scannen Sie diesen QR-Code mit Microsoft Authenticator (oder einer anderen Authenticator-App) und geben Sie dann den angezeigten Code ein, um die Zwei-Faktor-Authentifizierung zu aktivieren.",
+    "mfaAlreadyEnabled": "Die Zwei-Faktor-Authentifizierung ist aktiviert. Geben Sie Ihr Passwort ein, um sie zu deaktivieren.",
+    "mfaEnableButton": "Aktivieren",
+    "mfaDisableButton": "Deaktivieren",
+    "mfaRecoveryCodesDescription": "Bewahren Sie diese Wiederherstellungscodes an einem sicheren Ort auf. Jeder kann einmal verwendet werden, um sich anzumelden, falls Sie den Zugriff auf Ihre Authenticator-App verlieren.",
+    "forgotPasswordLink": "Passwort vergessen?",
+    "forgotPasswordTitle": "Passwort zurücksetzen",
+    "forgotPasswordDescription": "Geben Sie Ihre E-Mail-Adresse ein, und wir senden Ihnen einen Code zum Zurücksetzen Ihres Passworts.",
+    "forgotPasswordButton": "Code zum Zurücksetzen senden",
+    "forgotPasswordSuccess": "Falls diese E-Mail-Adresse registriert ist, wurde ein Code zum Zurücksetzen gesendet. Überprüfen Sie Ihren Posteingang.",
+    "resetPasswordTitle": "Neues Passwort wählen",
+    "resetPasswordDescription": "Geben Sie den Code aus der E-Mail zusammen mit Ihrem neuen Passwort ein.",
+    "resetCodeLabel": "Code zum Zurücksetzen",
+    "newPasswordLabel": "Neues Passwort",
+    "confirmNewPasswordLabel": "Neues Passwort bestätigen",
+    "resetPasswordButton": "Passwort zurücksetzen",
+    "resetPasswordSuccess": "Ihr Passwort wurde zurückgesetzt. Sie können sich jetzt anmelden."
   }
 }

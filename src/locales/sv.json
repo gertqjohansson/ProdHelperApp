@@ -23,9 +23,51 @@
   },
   "nav": {
     "menuLabel": "Meny",
-    "guestLabel": "Gäst"
+    "guestLabel": "Gäst",
+    "adminLabel": "Administration",
+    "equipmentsLabel": "Utrustning",
+    "accountsPermissionsLabel": "Konton och behörigheter"
   },
   "modal": {
     "itemSelected": "{{item}} valt"
+  },
+  "auth": {
+    "emailLabel": "E-post",
+    "passwordLabel": "Lösenord",
+    "confirmPasswordLabel": "Bekräfta lösenord",
+    "displayNameLabel": "Visningsnamn (valfritt)",
+    "loginButton": "Logga in",
+    "registerButton": "Registrera",
+    "logoutButton": "Logga ut",
+    "needAccount": "Behöver du ett konto?",
+    "haveAccount": "Har du redan ett konto?",
+    "loginTitle": "Logga in",
+    "registerTitle": "Skapa konto",
+    "emailInvalid": "Ange en giltig e-postadress.",
+    "passwordMismatch": "Lösenorden matchar inte.",
+    "registerSuccess": "Kontot har skapats. Du kan nu logga in.",
+    "close": "Stäng",
+    "mfaTitle": "Tvåfaktorsautentisering",
+    "mfaDescription": "Ange den 6-siffriga koden från din autentiseringsapp.",
+    "mfaCodeLabel": "Autentiseringskod",
+    "verifyButton": "Verifiera",
+    "mfaSetupTitle": "Tvåfaktorsautentisering",
+    "mfaSetupDescription": "Skanna den här QR-koden med Microsoft Authenticator (eller en annan autentiseringsapp), ange sedan koden som visas för att aktivera tvåfaktorsautentisering.",
+    "mfaAlreadyEnabled": "Tvåfaktorsautentisering är aktiverad. Ange ditt lösenord för att inaktivera den.",
+    "mfaEnableButton": "Aktivera",
+    "mfaDisableButton": "Inaktivera",
+    "mfaRecoveryCodesDescription": "Spara dessa återställningskoder på ett säkert ställe. Var och en kan användas en gång för att logga in om du förlorar åtkomst till din autentiseringsapp.",
+    "forgotPasswordLink": "Glömt lösenordet?",
+    "forgotPasswordTitle": "Återställ ditt lösenord",
+    "forgotPasswordDescription": "Ange din e-postadress så skickar vi en kod för att återställa ditt lösenord.",
+    "forgotPasswordButton": "Skicka återställningskod",
+    "forgotPasswordSuccess": "Om e-postadressen är registrerad har en återställningskod skickats. Kontrollera din inkorg.",
+    "resetPasswordTitle": "Välj ett nytt lösenord",
+    "resetPasswordDescription": "Ange koden från e-postmeddelandet tillsammans med ditt nya lösenord.",
+    "resetCodeLabel": "Återställningskod",
+    "newPasswordLabel": "Nytt lösenord",
+    "confirmNewPasswordLabel": "Bekräfta nytt lösenord",
+    "resetPasswordButton": "Återställ lösenord",
+    "resetPasswordSuccess": "Ditt lösenord har återställts. Du kan nu logga in."
   }
 }

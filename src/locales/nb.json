@@ -23,9 +23,51 @@
   },
   "nav": {
     "menuLabel": "Meny",
-    "guestLabel": "Gjest"
+    "guestLabel": "Gjest",
+    "adminLabel": "Administrasjon",
+    "equipmentsLabel": "Utstyr",
+    "accountsPermissionsLabel": "Kontoer og rettigheter"
   },
   "modal": {
     "itemSelected": "{{item}} valgt"
+  },
+  "auth": {
+    "emailLabel": "E-post",
+    "passwordLabel": "Passord",
+    "confirmPasswordLabel": "Bekreft passord",
+    "displayNameLabel": "Visningsnavn (valgfritt)",
+    "loginButton": "Logg inn",
+    "registerButton": "Registrer",
+    "logoutButton": "Logg ut",
+    "needAccount": "Trenger du en konto?",
+    "haveAccount": "Har du allerede en konto?",
+    "loginTitle": "Logg inn",
+    "registerTitle": "Opprett konto",
+    "emailInvalid": "Angi en gyldig e-postadresse.",
+    "passwordMismatch": "Passordene stemmer ikke overens.",
+    "registerSuccess": "Kontoen er opprettet. Du kan nå logge inn.",
+    "close": "Lukk",
+    "mfaTitle": "Tofaktorautentisering",
+    "mfaDescription": "Angi den 6-sifrede koden fra autentiseringsappen din.",
+    "mfaCodeLabel": "Bekreftelseskode",
+    "verifyButton": "Bekreft",
+    "mfaSetupTitle": "Tofaktorautentisering",
+    "mfaSetupDescription": "Skann denne QR-koden med Microsoft Authenticator (eller en annen autentiseringsapp), og angi deretter koden som vises, for å aktivere tofaktorautentisering.",
+    "mfaAlreadyEnabled": "Tofaktorautentisering er aktivert. Angi passordet ditt for å deaktivere den.",
+    "mfaEnableButton": "Aktiver",
+    "mfaDisableButton": "Deaktiver",
+    "mfaRecoveryCodesDescription": "Lagre disse gjenopprettingskodene på et trygt sted. Hver kan brukes én gang for å logge inn hvis du mister tilgangen til autentiseringsappen din.",
+    "forgotPasswordLink": "Glemt passordet?",
+    "forgotPasswordTitle": "Tilbakestill passordet ditt",
+    "forgotPasswordDescription": "Angi e-postadressen din, så sender vi deg en kode for å tilbakestille passordet.",
+    "forgotPasswordButton": "Send tilbakestillingskode",
+    "forgotPasswordSuccess": "Hvis denne e-posten er registrert, er det sendt en tilbakestillingskode. Sjekk innboksen din.",
+    "resetPasswordTitle": "Velg et nytt passord",
+    "resetPasswordDescription": "Angi koden fra e-posten sammen med det nye passordet.",
+    "resetCodeLabel": "Tilbakestillingskode",
+    "newPasswordLabel": "Nytt passord",
+    "confirmNewPasswordLabel": "Bekreft nytt passord",
+    "resetPasswordButton": "Tilbakestill passord",
+    "resetPasswordSuccess": "Passordet er tilbakestilt. Du kan nå logge inn."
   }
 }

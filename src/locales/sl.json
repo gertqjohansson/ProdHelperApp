@@ -23,9 +23,51 @@
   },
   "nav": {
     "menuLabel": "Meni",
-    "guestLabel": "Gost"
+    "guestLabel": "Gost",
+    "adminLabel": "Skrbništvo",
+    "equipmentsLabel": "Oprema",
+    "accountsPermissionsLabel": "Računi in dovoljenja"
   },
   "modal": {
     "itemSelected": "{{item}} izbrano"
+  },
+  "auth": {
+    "emailLabel": "E-pošta",
+    "passwordLabel": "Geslo",
+    "confirmPasswordLabel": "Potrdi geslo",
+    "displayNameLabel": "Prikazano ime (neobvezno)",
+    "loginButton": "Prijava",
+    "registerButton": "Registracija",
+    "logoutButton": "Odjava",
+    "needAccount": "Potrebujete račun?",
+    "haveAccount": "Že imate račun?",
+    "loginTitle": "Prijava",
+    "registerTitle": "Ustvari račun",
+    "emailInvalid": "Vnesite veljaven e-poštni naslov.",
+    "passwordMismatch": "Gesli se ne ujemata.",
+    "registerSuccess": "Račun je ustvarjen. Zdaj se lahko prijavite.",
+    "close": "Zapri",
+    "mfaTitle": "Dvofaktorska avtentikacija",
+    "mfaDescription": "Vnesite 6-mestno kodo iz svoje aplikacije za avtentikacijo.",
+    "mfaCodeLabel": "Koda za avtentikacijo",
+    "verifyButton": "Preveri",
+    "mfaSetupTitle": "Dvofaktorska avtentikacija",
+    "mfaSetupDescription": "Skenirajte to kodo QR z aplikacijo Microsoft Authenticator (ali drugo aplikacijo za avtentikacijo) in nato vnesite prikazano kodo, da omogočite dvofaktorsko avtentikacijo.",
+    "mfaAlreadyEnabled": "Dvofaktorska avtentikacija je omogočena. Za onemogočitev vnesite geslo.",
+    "mfaEnableButton": "Omogoči",
+    "mfaDisableButton": "Onemogoči",
+    "mfaRecoveryCodesDescription": "Te obnovitvene kode shranite na varno mesto. Vsako je mogoče uporabiti enkrat za prijavo, če izgubite dostop do aplikacije za avtentikacijo.",
+    "forgotPasswordLink": "Ste pozabili geslo?",
+    "forgotPasswordTitle": "Ponastavi geslo",
+    "forgotPasswordDescription": "Vnesite svoj e-poštni naslov in poslali vam bomo kodo za ponastavitev gesla.",
+    "forgotPasswordButton": "Pošlji kodo za ponastavitev",
+    "forgotPasswordSuccess": "Če je ta e-poštni naslov registriran, je bila poslana koda za ponastavitev. Preverite svoj nabiralnik.",
+    "resetPasswordTitle": "Izberite novo geslo",
+    "resetPasswordDescription": "Vnesite kodo iz e-pošte skupaj z novim geslom.",
+    "resetCodeLabel": "Koda za ponastavitev",
+    "newPasswordLabel": "Novo geslo",
+    "confirmNewPasswordLabel": "Potrdi novo geslo",
+    "resetPasswordButton": "Ponastavi geslo",
+    "resetPasswordSuccess": "Vaše geslo je bilo ponastavljeno. Zdaj se lahko prijavite."
   }
 }

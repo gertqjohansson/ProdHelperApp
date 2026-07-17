@@ -23,9 +23,51 @@
   },
   "nav": {
     "menuLabel": "Menu",
-    "guestLabel": "Invité"
+    "guestLabel": "Invité",
+    "adminLabel": "Administration",
+    "equipmentsLabel": "Équipements",
+    "accountsPermissionsLabel": "Comptes et autorisations"
   },
   "modal": {
     "itemSelected": "{{item}} sélectionné"
+  },
+  "auth": {
+    "emailLabel": "E-mail",
+    "passwordLabel": "Mot de passe",
+    "confirmPasswordLabel": "Confirmer le mot de passe",
+    "displayNameLabel": "Nom affiché (facultatif)",
+    "loginButton": "Se connecter",
+    "registerButton": "S'inscrire",
+    "logoutButton": "Se déconnecter",
+    "needAccount": "Besoin d'un compte ?",
+    "haveAccount": "Vous avez déjà un compte ?",
+    "loginTitle": "Se connecter",
+    "registerTitle": "Créer un compte",
+    "emailInvalid": "Saisissez une adresse e-mail valide.",
+    "passwordMismatch": "Les mots de passe ne correspondent pas.",
+    "registerSuccess": "Compte créé. Vous pouvez maintenant vous connecter.",
+    "close": "Fermer",
+    "mfaTitle": "Authentification à deux facteurs",
+    "mfaDescription": "Saisissez le code à 6 chiffres de votre application d'authentification.",
+    "mfaCodeLabel": "Code d'authentification",
+    "verifyButton": "Vérifier",
+    "mfaSetupTitle": "Authentification à deux facteurs",
+    "mfaSetupDescription": "Scannez ce code QR avec Microsoft Authenticator (ou une autre application d'authentification), puis saisissez le code affiché pour activer l'authentification à deux facteurs.",
+    "mfaAlreadyEnabled": "L'authentification à deux facteurs est activée. Saisissez votre mot de passe pour la désactiver.",
+    "mfaEnableButton": "Activer",
+    "mfaDisableButton": "Désactiver",
+    "mfaRecoveryCodesDescription": "Conservez ces codes de récupération en lieu sûr. Chacun peut être utilisé une fois pour vous connecter si vous perdez l'accès à votre application d'authentification.",
+    "forgotPasswordLink": "Mot de passe oublié ?",
+    "forgotPasswordTitle": "Réinitialiser votre mot de passe",
+    "forgotPasswordDescription": "Saisissez votre adresse e-mail et nous vous enverrons un code pour réinitialiser votre mot de passe.",
+    "forgotPasswordButton": "Envoyer le code de réinitialisation",
+    "forgotPasswordSuccess": "Si cette adresse e-mail est enregistrée, un code de réinitialisation a été envoyé. Vérifiez votre boîte de réception.",
+    "resetPasswordTitle": "Choisissez un nouveau mot de passe",
+    "resetPasswordDescription": "Saisissez le code reçu par e-mail ainsi que votre nouveau mot de passe.",
+    "resetCodeLabel": "Code de réinitialisation",
+    "newPasswordLabel": "Nouveau mot de passe",
+    "confirmNewPasswordLabel": "Confirmer le nouveau mot de passe",
+    "resetPasswordButton": "Réinitialiser le mot de passe",
+    "resetPasswordSuccess": "Votre mot de passe a été réinitialisé. Vous pouvez maintenant vous connecter."
   }
 }

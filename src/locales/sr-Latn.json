@@ -23,9 +23,51 @@
   },
   "nav": {
     "menuLabel": "Meni",
-    "guestLabel": "Gost"
+    "guestLabel": "Gost",
+    "adminLabel": "Administracija",
+    "equipmentsLabel": "Oprema",
+    "accountsPermissionsLabel": "Nalozi i dozvole"
   },
   "modal": {
     "itemSelected": "{{item}} odabrano"
+  },
+  "auth": {
+    "emailLabel": "Imejl",
+    "passwordLabel": "Lozinka",
+    "confirmPasswordLabel": "Potvrdi lozinku",
+    "displayNameLabel": "Prikazano ime (opciono)",
+    "loginButton": "Prijava",
+    "registerButton": "Registracija",
+    "logoutButton": "Odjava",
+    "needAccount": "Treba vam nalog?",
+    "haveAccount": "Već imate nalog?",
+    "loginTitle": "Prijava",
+    "registerTitle": "Kreiraj nalog",
+    "emailInvalid": "Unesite validnu imejl adresu.",
+    "passwordMismatch": "Lozinke se ne podudaraju.",
+    "registerSuccess": "Nalog je kreiran. Sada se možete prijaviti.",
+    "close": "Zatvori",
+    "mfaTitle": "Dvofaktorska autentifikacija",
+    "mfaDescription": "Unesite 6-cifreni kod iz aplikacije za autentifikaciju.",
+    "mfaCodeLabel": "Kod za autentifikaciju",
+    "verifyButton": "Potvrdi",
+    "mfaSetupTitle": "Dvofaktorska autentifikacija",
+    "mfaSetupDescription": "Skenirajte ovaj QR kod pomoću Microsoft Authenticator-a (ili druge aplikacije za autentifikaciju), a zatim unesite prikazani kod da biste omogućili dvofaktorsku autentifikaciju.",
+    "mfaAlreadyEnabled": "Dvofaktorska autentifikacija je omogućena. Unesite lozinku da biste je onemogućili.",
+    "mfaEnableButton": "Omogući",
+    "mfaDisableButton": "Onemogući",
+    "mfaRecoveryCodesDescription": "Sačuvajte ove kodove za oporavak na bezbedno mesto. Svaki se može iskoristiti jednom za prijavu ako izgubite pristup aplikaciji za autentifikaciju.",
+    "forgotPasswordLink": "Zaboravili ste lozinku?",
+    "forgotPasswordTitle": "Resetuj lozinku",
+    "forgotPasswordDescription": "Unesite svoju imejl adresu i poslaćemo vam kod za resetovanje lozinke.",
+    "forgotPasswordButton": "Pošalji kod za resetovanje",
+    "forgotPasswordSuccess": "Ako je ova imejl adresa registrovana, poslat je kod za resetovanje. Proverite svoje sanduče.",
+    "resetPasswordTitle": "Izaberite novu lozinku",
+    "resetPasswordDescription": "Unesite kod iz imejla zajedno sa novom lozinkom.",
+    "resetCodeLabel": "Kod za resetovanje",
+    "newPasswordLabel": "Nova lozinka",
+    "confirmNewPasswordLabel": "Potvrdi novu lozinku",
+    "resetPasswordButton": "Resetuj lozinku",
+    "resetPasswordSuccess": "Vaša lozinka je resetovana. Sada se možete prijaviti."
   }
 }

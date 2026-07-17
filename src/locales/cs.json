@@ -23,9 +23,51 @@
   },
   "nav": {
     "menuLabel": "Nabídka",
-    "guestLabel": "Host"
+    "guestLabel": "Host",
+    "adminLabel": "Správa",
+    "equipmentsLabel": "Vybavení",
+    "accountsPermissionsLabel": "Účty a oprávnění"
   },
   "modal": {
     "itemSelected": "{{item}} vybráno"
+  },
+  "auth": {
+    "emailLabel": "E-mail",
+    "passwordLabel": "Heslo",
+    "confirmPasswordLabel": "Potvrďte heslo",
+    "displayNameLabel": "Zobrazované jméno (volitelné)",
+    "loginButton": "Přihlásit se",
+    "registerButton": "Registrovat",
+    "logoutButton": "Odhlásit se",
+    "needAccount": "Potřebujete účet?",
+    "haveAccount": "Již máte účet?",
+    "loginTitle": "Přihlásit se",
+    "registerTitle": "Vytvořit účet",
+    "emailInvalid": "Zadejte platnou e-mailovou adresu.",
+    "passwordMismatch": "Hesla se neshodují.",
+    "registerSuccess": "Účet byl vytvořen. Nyní se můžete přihlásit.",
+    "close": "Zavřít",
+    "mfaTitle": "Dvoufaktorové ověřování",
+    "mfaDescription": "Zadejte 6místný kód z vaší ověřovací aplikace.",
+    "mfaCodeLabel": "Ověřovací kód",
+    "verifyButton": "Ověřit",
+    "mfaSetupTitle": "Dvoufaktorové ověřování",
+    "mfaSetupDescription": "Naskenujte tento QR kód pomocí aplikace Microsoft Authenticator (nebo jiné ověřovací aplikace) a poté zadejte zobrazený kód pro aktivaci dvoufaktorového ověřování.",
+    "mfaAlreadyEnabled": "Dvoufaktorové ověřování je aktivní. Zadejte heslo pro jeho deaktivaci.",
+    "mfaEnableButton": "Aktivovat",
+    "mfaDisableButton": "Deaktivovat",
+    "mfaRecoveryCodesDescription": "Uložte si tyto obnovovací kódy na bezpečné místo. Každý lze jednou použít k přihlášení, pokud ztratíte přístup k ověřovací aplikaci.",
+    "forgotPasswordLink": "Zapomněli jste heslo?",
+    "forgotPasswordTitle": "Obnovit heslo",
+    "forgotPasswordDescription": "Zadejte svou e-mailovou adresu a my vám zašleme kód pro obnovení hesla.",
+    "forgotPasswordButton": "Odeslat obnovovací kód",
+    "forgotPasswordSuccess": "Pokud je tento e-mail registrován, byl odeslán obnovovací kód. Zkontrolujte svou schránku.",
+    "resetPasswordTitle": "Zvolte nové heslo",
+    "resetPasswordDescription": "Zadejte kód z e-mailu spolu s novým heslem.",
+    "resetCodeLabel": "Obnovovací kód",
+    "newPasswordLabel": "Nové heslo",
+    "confirmNewPasswordLabel": "Potvrďte nové heslo",
+    "resetPasswordButton": "Obnovit heslo",
+    "resetPasswordSuccess": "Vaše heslo bylo obnoveno. Nyní se můžete přihlásit."
   }
 }

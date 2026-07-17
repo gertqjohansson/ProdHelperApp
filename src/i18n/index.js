@@ -37,7 +37,14 @@ export async function initI18n() {
   return lng
 }
 
-export function changeLanguage(code) {
+export async function changeLanguage(code) {
+  if (!i18next.hasResourceBundle(code, 'translation')) {
+    const loadLocale = localeLoaders[`../locales/${code}.json`] ?? localeLoaders[`../locales/${FALLBACK}.json`]
+    const resources = (await loadLocale()).default
+    i18next.addResourceBundle(code, 'translation', resources)
+  }
+
+  await i18next.changeLanguage(code)
+  document.documentElement.lang = code
   localStorage.setItem(STORAGE_KEY, code)
-  window.location.reload()
 }

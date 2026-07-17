@@ -23,9 +23,51 @@
   },
   "nav": {
     "menuLabel": "Menú",
-    "guestLabel": "Invitado"
+    "guestLabel": "Invitado",
+    "adminLabel": "Administración",
+    "equipmentsLabel": "Equipos",
+    "accountsPermissionsLabel": "Cuentas y permisos"
   },
   "modal": {
     "itemSelected": "{{item}} seleccionado"
+  },
+  "auth": {
+    "emailLabel": "Correo electrónico",
+    "passwordLabel": "Contraseña",
+    "confirmPasswordLabel": "Confirmar contraseña",
+    "displayNameLabel": "Nombre para mostrar (opcional)",
+    "loginButton": "Iniciar sesión",
+    "registerButton": "Registrarse",
+    "logoutButton": "Cerrar sesión",
+    "needAccount": "¿Necesitas una cuenta?",
+    "haveAccount": "¿Ya tienes una cuenta?",
+    "loginTitle": "Iniciar sesión",
+    "registerTitle": "Crear cuenta",
+    "emailInvalid": "Introduce una dirección de correo válida.",
+    "passwordMismatch": "Las contraseñas no coinciden.",
+    "registerSuccess": "Cuenta creada. Ya puedes iniciar sesión.",
+    "close": "Cerrar",
+    "mfaTitle": "Autenticación de dos factores",
+    "mfaDescription": "Introduce el código de 6 dígitos de tu aplicación de autenticación.",
+    "mfaCodeLabel": "Código de autenticación",
+    "verifyButton": "Verificar",
+    "mfaSetupTitle": "Autenticación de dos factores",
+    "mfaSetupDescription": "Escanea este código QR con Microsoft Authenticator (u otra aplicación de autenticación) y luego introduce el código mostrado para activar la autenticación de dos factores.",
+    "mfaAlreadyEnabled": "La autenticación de dos factores está activada. Introduce tu contraseña para desactivarla.",
+    "mfaEnableButton": "Activar",
+    "mfaDisableButton": "Desactivar",
+    "mfaRecoveryCodesDescription": "Guarda estos códigos de recuperación en un lugar seguro. Cada uno se puede usar una vez para iniciar sesión si pierdes el acceso a tu aplicación de autenticación.",
+    "forgotPasswordLink": "¿Olvidaste tu contraseña?",
+    "forgotPasswordTitle": "Restablece tu contraseña",
+    "forgotPasswordDescription": "Introduce tu dirección de correo electrónico y te enviaremos un código para restablecer tu contraseña.",
+    "forgotPasswordButton": "Enviar código de restablecimiento",
+    "forgotPasswordSuccess": "Si ese correo está registrado, se ha enviado un código de restablecimiento. Revisa tu bandeja de entrada.",
+    "resetPasswordTitle": "Elige una nueva contraseña",
+    "resetPasswordDescription": "Introduce el código del correo electrónico junto con tu nueva contraseña.",
+    "resetCodeLabel": "Código de restablecimiento",
+    "newPasswordLabel": "Nueva contraseña",
+    "confirmNewPasswordLabel": "Confirmar nueva contraseña",
+    "resetPasswordButton": "Restablecer contraseña",
+    "resetPasswordSuccess": "Tu contraseña se ha restablecido. Ya puedes iniciar sesión."
   }
 }

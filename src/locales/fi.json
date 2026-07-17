@@ -23,9 +23,51 @@
   },
   "nav": {
     "menuLabel": "Valikko",
-    "guestLabel": "Vieras"
+    "guestLabel": "Vieras",
+    "adminLabel": "Hallinta",
+    "equipmentsLabel": "Laitteet",
+    "accountsPermissionsLabel": "Tilit ja käyttöoikeudet"
   },
   "modal": {
     "itemSelected": "{{item}} valittu"
+  },
+  "auth": {
+    "emailLabel": "Sähköposti",
+    "passwordLabel": "Salasana",
+    "confirmPasswordLabel": "Vahvista salasana",
+    "displayNameLabel": "Näyttönimi (valinnainen)",
+    "loginButton": "Kirjaudu sisään",
+    "registerButton": "Rekisteröidy",
+    "logoutButton": "Kirjaudu ulos",
+    "needAccount": "Tarvitsetko tilin?",
+    "haveAccount": "Onko sinulla jo tili?",
+    "loginTitle": "Kirjaudu sisään",
+    "registerTitle": "Luo tili",
+    "emailInvalid": "Anna kelvollinen sähköpostiosoite.",
+    "passwordMismatch": "Salasanat eivät täsmää.",
+    "registerSuccess": "Tili luotu. Voit nyt kirjautua sisään.",
+    "close": "Sulje",
+    "mfaTitle": "Kaksivaiheinen tunnistautuminen",
+    "mfaDescription": "Anna todennussovelluksesi 6-numeroinen koodi.",
+    "mfaCodeLabel": "Vahvistuskoodi",
+    "verifyButton": "Vahvista",
+    "mfaSetupTitle": "Kaksivaiheinen tunnistautuminen",
+    "mfaSetupDescription": "Skannaa tämä QR-koodi Microsoft Authenticatorilla (tai muulla todennussovelluksella) ja anna sitten näytetty koodi ottaaksesi kaksivaiheisen tunnistautumisen käyttöön.",
+    "mfaAlreadyEnabled": "Kaksivaiheinen tunnistautuminen on käytössä. Anna salasanasi poistaaksesi sen käytöstä.",
+    "mfaEnableButton": "Ota käyttöön",
+    "mfaDisableButton": "Poista käytöstä",
+    "mfaRecoveryCodesDescription": "Tallenna nämä palautuskoodit turvalliseen paikkaan. Kutakin voi käyttää kerran kirjautumiseen, jos menetät pääsyn todennussovellukseesi.",
+    "forgotPasswordLink": "Unohditko salasanan?",
+    "forgotPasswordTitle": "Nollaa salasanasi",
+    "forgotPasswordDescription": "Anna sähköpostiosoitteesi, niin lähetämme sinulle koodin salasanan nollaamista varten.",
+    "forgotPasswordButton": "Lähetä nollauskoodi",
+    "forgotPasswordSuccess": "Jos sähköposti on rekisteröity, nollauskoodi on lähetetty. Tarkista saapuneet-kansiosi.",
+    "resetPasswordTitle": "Valitse uusi salasana",
+    "resetPasswordDescription": "Anna sähköpostissa oleva koodi sekä uusi salasanasi.",
+    "resetCodeLabel": "Nollauskoodi",
+    "newPasswordLabel": "Uusi salasana",
+    "confirmNewPasswordLabel": "Vahvista uusi salasana",
+    "resetPasswordButton": "Nollaa salasana",
+    "resetPasswordSuccess": "Salasanasi on nollattu. Voit nyt kirjautua sisään."
   }
 }

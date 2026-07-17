@@ -23,9 +23,51 @@
   },
   "nav": {
     "menuLabel": "Menu",
-    "guestLabel": "Gość"
+    "guestLabel": "Gość",
+    "adminLabel": "Administracja",
+    "equipmentsLabel": "Sprzęt",
+    "accountsPermissionsLabel": "Konta i uprawnienia"
   },
   "modal": {
     "itemSelected": "{{item}} wybrany"
+  },
+  "auth": {
+    "emailLabel": "E-mail",
+    "passwordLabel": "Hasło",
+    "confirmPasswordLabel": "Potwierdź hasło",
+    "displayNameLabel": "Nazwa wyświetlana (opcjonalnie)",
+    "loginButton": "Zaloguj się",
+    "registerButton": "Zarejestruj się",
+    "logoutButton": "Wyloguj się",
+    "needAccount": "Potrzebujesz konta?",
+    "haveAccount": "Masz już konto?",
+    "loginTitle": "Zaloguj się",
+    "registerTitle": "Utwórz konto",
+    "emailInvalid": "Podaj prawidłowy adres e-mail.",
+    "passwordMismatch": "Hasła nie są zgodne.",
+    "registerSuccess": "Konto utworzone. Możesz się teraz zalogować.",
+    "close": "Zamknij",
+    "mfaTitle": "Uwierzytelnianie dwuskładnikowe",
+    "mfaDescription": "Podaj 6-cyfrowy kod z aplikacji uwierzytelniającej.",
+    "mfaCodeLabel": "Kod uwierzytelniający",
+    "verifyButton": "Zweryfikuj",
+    "mfaSetupTitle": "Uwierzytelnianie dwuskładnikowe",
+    "mfaSetupDescription": "Zeskanuj ten kod QR aplikacją Microsoft Authenticator (lub inną aplikacją uwierzytelniającą), a następnie podaj wyświetlony kod, aby włączyć uwierzytelnianie dwuskładnikowe.",
+    "mfaAlreadyEnabled": "Uwierzytelnianie dwuskładnikowe jest włączone. Podaj hasło, aby je wyłączyć.",
+    "mfaEnableButton": "Włącz",
+    "mfaDisableButton": "Wyłącz",
+    "mfaRecoveryCodesDescription": "Zapisz te kody odzyskiwania w bezpiecznym miejscu. Każdego można użyć jednorazowo do zalogowania się, jeśli utracisz dostęp do aplikacji uwierzytelniającej.",
+    "forgotPasswordLink": "Nie pamiętasz hasła?",
+    "forgotPasswordTitle": "Zresetuj hasło",
+    "forgotPasswordDescription": "Podaj swój adres e-mail, a wyślemy Ci kod do zresetowania hasła.",
+    "forgotPasswordButton": "Wyślij kod resetowania",
+    "forgotPasswordSuccess": "Jeśli ten adres e-mail jest zarejestrowany, wysłano kod resetowania. Sprawdź swoją skrzynkę odbiorczą.",
+    "resetPasswordTitle": "Wybierz nowe hasło",
+    "resetPasswordDescription": "Podaj kod z wiadomości e-mail wraz z nowym hasłem.",
+    "resetCodeLabel": "Kod resetowania",
+    "newPasswordLabel": "Nowe hasło",
+    "confirmNewPasswordLabel": "Potwierdź nowe hasło",
+    "resetPasswordButton": "Zresetuj hasło",
+    "resetPasswordSuccess": "Twoje hasło zostało zresetowane. Możesz się teraz zalogować."
   }
 }

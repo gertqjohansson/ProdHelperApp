@@ -23,9 +23,51 @@
   },
   "nav": {
     "menuLabel": "Ponuka",
-    "guestLabel": "Hosť"
+    "guestLabel": "Hosť",
+    "adminLabel": "Správa",
+    "equipmentsLabel": "Vybavenie",
+    "accountsPermissionsLabel": "Účty a oprávnenia"
   },
   "modal": {
     "itemSelected": "{{item}} vybraté"
+  },
+  "auth": {
+    "emailLabel": "E-mail",
+    "passwordLabel": "Heslo",
+    "confirmPasswordLabel": "Potvrďte heslo",
+    "displayNameLabel": "Zobrazované meno (voliteľné)",
+    "loginButton": "Prihlásiť sa",
+    "registerButton": "Registrovať",
+    "logoutButton": "Odhlásiť sa",
+    "needAccount": "Potrebujete účet?",
+    "haveAccount": "Už máte účet?",
+    "loginTitle": "Prihlásiť sa",
+    "registerTitle": "Vytvoriť účet",
+    "emailInvalid": "Zadajte platnú e-mailovú adresu.",
+    "passwordMismatch": "Heslá sa nezhodujú.",
+    "registerSuccess": "Účet bol vytvorený. Teraz sa môžete prihlásiť.",
+    "close": "Zavrieť",
+    "mfaTitle": "Dvojfaktorové overenie",
+    "mfaDescription": "Zadajte 6-miestny kód z vašej overovacej aplikácie.",
+    "mfaCodeLabel": "Overovací kód",
+    "verifyButton": "Overiť",
+    "mfaSetupTitle": "Dvojfaktorové overenie",
+    "mfaSetupDescription": "Naskenujte tento QR kód pomocou Microsoft Authenticator (alebo inej overovacej aplikácie) a potom zadajte zobrazený kód na aktiváciu dvojfaktorového overenia.",
+    "mfaAlreadyEnabled": "Dvojfaktorové overenie je aktivované. Na jeho deaktiváciu zadajte heslo.",
+    "mfaEnableButton": "Aktivovať",
+    "mfaDisableButton": "Deaktivovať",
+    "mfaRecoveryCodesDescription": "Uložte si tieto obnovovacie kódy na bezpečné miesto. Každý z nich možno použiť raz na prihlásenie, ak stratíte prístup k overovacej aplikácii.",
+    "forgotPasswordLink": "Zabudli ste heslo?",
+    "forgotPasswordTitle": "Obnoviť heslo",
+    "forgotPasswordDescription": "Zadajte svoju e-mailovú adresu a my vám zašleme kód na obnovenie hesla.",
+    "forgotPasswordButton": "Odoslať obnovovací kód",
+    "forgotPasswordSuccess": "Ak je tento e-mail zaregistrovaný, bol odoslaný obnovovací kód. Skontrolujte si doručenú poštu.",
+    "resetPasswordTitle": "Zvoľte nové heslo",
+    "resetPasswordDescription": "Zadajte kód z e-mailu spolu s novým heslom.",
+    "resetCodeLabel": "Obnovovací kód",
+    "newPasswordLabel": "Nové heslo",
+    "confirmNewPasswordLabel": "Potvrďte nové heslo",
+    "resetPasswordButton": "Obnoviť heslo",
+    "resetPasswordSuccess": "Vaše heslo bolo obnovené. Teraz sa môžete prihlásiť."
   }
 }

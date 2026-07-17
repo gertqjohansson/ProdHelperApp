@@ -23,9 +23,51 @@
   },
   "nav": {
     "menuLabel": "Menu",
-    "guestLabel": "Guest"
+    "guestLabel": "Guest",
+    "adminLabel": "Admin",
+    "equipmentsLabel": "Equipments",
+    "accountsPermissionsLabel": "Accounts & Permissions"
   },
   "modal": {
     "itemSelected": "{{item}} selected"
+  },
+  "auth": {
+    "emailLabel": "Email",
+    "passwordLabel": "Password",
+    "confirmPasswordLabel": "Confirm password",
+    "displayNameLabel": "Display name (optional)",
+    "loginButton": "Log in",
+    "registerButton": "Register",
+    "logoutButton": "Log out",
+    "needAccount": "Need an account?",
+    "haveAccount": "Already have an account?",
+    "loginTitle": "Log in",
+    "registerTitle": "Create account",
+    "emailInvalid": "Enter a valid email address.",
+    "passwordMismatch": "Passwords do not match.",
+    "registerSuccess": "Account created. You can now log in.",
+    "close": "Close",
+    "mfaTitle": "Two-factor authentication",
+    "mfaDescription": "Enter the 6-digit code from your authenticator app.",
+    "mfaCodeLabel": "Authentication code",
+    "verifyButton": "Verify",
+    "mfaSetupTitle": "Two-factor authentication",
+    "mfaSetupDescription": "Scan this QR code with Microsoft Authenticator (or another authenticator app), then enter the code it shows to enable two-factor authentication.",
+    "mfaAlreadyEnabled": "Two-factor authentication is enabled. Enter your password to disable it.",
+    "mfaEnableButton": "Enable",
+    "mfaDisableButton": "Disable",
+    "mfaRecoveryCodesDescription": "Save these recovery codes somewhere safe. Each can be used once to sign in if you lose access to your authenticator app.",
+    "forgotPasswordLink": "Forgot your password?",
+    "forgotPasswordTitle": "Reset your password",
+    "forgotPasswordDescription": "Enter your email address and we'll send you a code to reset your password.",
+    "forgotPasswordButton": "Send reset code",
+    "forgotPasswordSuccess": "If that email is registered, a reset code has been sent. Check your inbox.",
+    "resetPasswordTitle": "Choose a new password",
+    "resetPasswordDescription": "Enter the code from the email along with your new password.",
+    "resetCodeLabel": "Reset code",
+    "newPasswordLabel": "New password",
+    "confirmNewPasswordLabel": "Confirm new password",
+    "resetPasswordButton": "Reset password",
+    "resetPasswordSuccess": "Your password has been reset. You can now log in."
   }
 }

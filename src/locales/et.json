@@ -23,9 +23,51 @@
   },
   "nav": {
     "menuLabel": "Menüü",
-    "guestLabel": "Külaline"
+    "guestLabel": "Külaline",
+    "adminLabel": "Haldus",
+    "equipmentsLabel": "Seadmed",
+    "accountsPermissionsLabel": "Kontod ja õigused"
   },
   "modal": {
     "itemSelected": "{{item}} valitud"
+  },
+  "auth": {
+    "emailLabel": "E-post",
+    "passwordLabel": "Parool",
+    "confirmPasswordLabel": "Kinnita parool",
+    "displayNameLabel": "Kuvatav nimi (valikuline)",
+    "loginButton": "Logi sisse",
+    "registerButton": "Registreeru",
+    "logoutButton": "Logi välja",
+    "needAccount": "Kas vajate kontot?",
+    "haveAccount": "Kas teil on juba konto?",
+    "loginTitle": "Logi sisse",
+    "registerTitle": "Loo konto",
+    "emailInvalid": "Sisestage kehtiv e-posti aadress.",
+    "passwordMismatch": "Paroolid ei ühti.",
+    "registerSuccess": "Konto on loodud. Nüüd saate sisse logida.",
+    "close": "Sulge",
+    "mfaTitle": "Kaheastmeline autentimine",
+    "mfaDescription": "Sisestage oma autentimisrakenduse 6-kohaline kood.",
+    "mfaCodeLabel": "Autentimiskood",
+    "verifyButton": "Kinnita",
+    "mfaSetupTitle": "Kaheastmeline autentimine",
+    "mfaSetupDescription": "Skannige see QR-kood Microsoft Authenticatoriga (või muu autentimisrakendusega) ja sisestage seejärel kuvatud kood, et lubada kaheastmeline autentimine.",
+    "mfaAlreadyEnabled": "Kaheastmeline autentimine on lubatud. Selle keelamiseks sisestage parool.",
+    "mfaEnableButton": "Luba",
+    "mfaDisableButton": "Keela",
+    "mfaRecoveryCodesDescription": "Salvestage need taastekoodid turvalisse kohta. Igaüht saab kasutada üks kord sisselogimiseks, kui kaotate juurdepääsu oma autentimisrakendusele.",
+    "forgotPasswordLink": "Unustasite parooli?",
+    "forgotPasswordTitle": "Lähtestage oma parool",
+    "forgotPasswordDescription": "Sisestage oma e-posti aadress ja saadame teile koodi parooli lähtestamiseks.",
+    "forgotPasswordButton": "Saada lähtestamiskood",
+    "forgotPasswordSuccess": "Kui see e-post on registreeritud, on lähtestamiskood saadetud. Kontrollige oma postkasti.",
+    "resetPasswordTitle": "Valige uus parool",
+    "resetPasswordDescription": "Sisestage e-kirjast saadud kood koos oma uue parooliga.",
+    "resetCodeLabel": "Lähtestamiskood",
+    "newPasswordLabel": "Uus parool",
+    "confirmNewPasswordLabel": "Kinnita uus parool",
+    "resetPasswordButton": "Lähtesta parool",
+    "resetPasswordSuccess": "Teie parool on lähtestatud. Nüüd saate sisse logida."
   }
 }

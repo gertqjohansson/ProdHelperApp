@@ -23,9 +23,51 @@
   },
   "nav": {
     "menuLabel": "Menyja",
-    "guestLabel": "Mysafir"
+    "guestLabel": "Mysafir",
+    "adminLabel": "Administrimi",
+    "equipmentsLabel": "Pajisjet",
+    "accountsPermissionsLabel": "Llogaritë dhe lejet"
   },
   "modal": {
     "itemSelected": "{{item}} u zgjodh"
+  },
+  "auth": {
+    "emailLabel": "Email",
+    "passwordLabel": "Fjalëkalimi",
+    "confirmPasswordLabel": "Konfirmo fjalëkalimin",
+    "displayNameLabel": "Emri i shfaqur (opsional)",
+    "loginButton": "Hyr",
+    "registerButton": "Regjistrohu",
+    "logoutButton": "Dil",
+    "needAccount": "Keni nevojë për një llogari?",
+    "haveAccount": "Keni tashmë një llogari?",
+    "loginTitle": "Hyr",
+    "registerTitle": "Krijo llogari",
+    "emailInvalid": "Vendosni një adresë email të vlefshme.",
+    "passwordMismatch": "Fjalëkalimet nuk përputhen.",
+    "registerSuccess": "Llogaria u krijua. Tani mund të hyni.",
+    "close": "Mbyll",
+    "mfaTitle": "Vërtetimi me dy faktorë",
+    "mfaDescription": "Vendosni kodin 6-shifror nga aplikacioni juaj i vërtetimit.",
+    "mfaCodeLabel": "Kodi i vërtetimit",
+    "verifyButton": "Verifiko",
+    "mfaSetupTitle": "Vërtetimi me dy faktorë",
+    "mfaSetupDescription": "Skanoni këtë kod QR me Microsoft Authenticator (ose një aplikacion tjetër vërtetimi), pastaj vendosni kodin e shfaqur për të aktivizuar vërtetimin me dy faktorë.",
+    "mfaAlreadyEnabled": "Vërtetimi me dy faktorë është aktivizuar. Vendosni fjalëkalimin tuaj për ta çaktivizuar.",
+    "mfaEnableButton": "Aktivizo",
+    "mfaDisableButton": "Çaktivizo",
+    "mfaRecoveryCodesDescription": "Ruani këto kode rikuperimi në një vend të sigurt. Secili mund të përdoret një herë për t'u identifikuar nëse humbisni qasjen te aplikacioni juaj i vërtetimit.",
+    "forgotPasswordLink": "Keni harruar fjalëkalimin?",
+    "forgotPasswordTitle": "Rivendos fjalëkalimin",
+    "forgotPasswordDescription": "Vendosni adresën tuaj email dhe do t'ju dërgojmë një kod për të rivendosur fjalëkalimin.",
+    "forgotPasswordButton": "Dërgo kodin e rivendosjes",
+    "forgotPasswordSuccess": "Nëse ky email është regjistruar, është dërguar një kod rivendosjeje. Kontrolloni kutinë tuaj postare.",
+    "resetPasswordTitle": "Zgjidhni një fjalëkalim të ri",
+    "resetPasswordDescription": "Vendosni kodin nga email-i së bashku me fjalëkalimin tuaj të ri.",
+    "resetCodeLabel": "Kodi i rivendosjes",
+    "newPasswordLabel": "Fjalëkalimi i ri",
+    "confirmNewPasswordLabel": "Konfirmo fjalëkalimin e ri",
+    "resetPasswordButton": "Rivendos fjalëkalimin",
+    "resetPasswordSuccess": "Fjalëkalimi juaj u rivendos. Tani mund të hyni."
   }
 }

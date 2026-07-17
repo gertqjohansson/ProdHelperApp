@@ -2,9 +2,11 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import './App.css'
 import { callController, RelayError } from './relayClient'
+import { useAuth } from './auth/AuthContext'
 import TopBar from './components/TopBar'
 import Footer from './components/Footer'
 import Modal from './components/Modal'
+import LoginPage from './components/LoginPage'
 
 const TRY1 = {
   controller: 'Oee',
@@ -20,10 +22,16 @@ const TRY2 = {
 
 function App() {
   const { t } = useTranslation()
+  const { isReady, isAuthenticated } = useAuth()
   const [status, setStatus] = useState('idle')
   const [result, setResult] = useState(null)
   const [error, setError] = useState(null)
   const [plannerModalOpen, setPlannerModalOpen] = useState(false)
+  const [equipmentsModalOpen, setEquipmentsModalOpen] = useState(false)
+  const [accountsPermissionsModalOpen, setAccountsPermissionsModalOpen] = useState(false)
+
+  if (!isReady) return null
+  if (!isAuthenticated) return <LoginPage />
 
   async function callRelay(call) {
     setStatus('sending')
@@ -41,7 +49,11 @@ function App() {
 
   return (
     <div className="page">
-      <TopBar onPlannerSelected={() => setPlannerModalOpen(true)} />
+      <TopBar
+        onPlannerSelected={() => setPlannerModalOpen(true)}
+        onEquipmentsSelected={() => setEquipmentsModalOpen(true)}
+        onAccountsPermissionsSelected={() => setAccountsPermissionsModalOpen(true)}
+      />
 
       <main className="app">
         <h1>ProdHelper</h1>
@@ -82,6 +94,22 @@ function App() {
           title="Planner"
           message={t('modal.itemSelected', { item: 'Planner' })}
           onClose={() => setPlannerModalOpen(false)}
+        />
+      )}
+
+      {equipmentsModalOpen && (
+        <Modal
+          title={t('nav.equipmentsLabel')}
+          message={t('modal.itemSelected', { item: t('nav.equipmentsLabel') })}
+          onClose={() => setEquipmentsModalOpen(false)}
+        />
+      )}
+
+      {accountsPermissionsModalOpen && (
+        <Modal
+          title={t('nav.accountsPermissionsLabel')}
+          message={t('modal.itemSelected', { item: t('nav.accountsPermissionsLabel') })}
+          onClose={() => setAccountsPermissionsModalOpen(false)}
         />
       )}
     </div>

@@ -23,9 +23,51 @@
   },
   "nav": {
     "menuLabel": "Izvēlne",
-    "guestLabel": "Viesis"
+    "guestLabel": "Viesis",
+    "adminLabel": "Administrēšana",
+    "equipmentsLabel": "Aprīkojums",
+    "accountsPermissionsLabel": "Konti un atļaujas"
   },
   "modal": {
     "itemSelected": "{{item}} izvēlēts"
+  },
+  "auth": {
+    "emailLabel": "E-pasts",
+    "passwordLabel": "Parole",
+    "confirmPasswordLabel": "Apstipriniet paroli",
+    "displayNameLabel": "Attēlotais vārds (neobligāts)",
+    "loginButton": "Pieteikties",
+    "registerButton": "Reģistrēties",
+    "logoutButton": "Izrakstīties",
+    "needAccount": "Nepieciešams konts?",
+    "haveAccount": "Jau ir konts?",
+    "loginTitle": "Pieteikties",
+    "registerTitle": "Izveidot kontu",
+    "emailInvalid": "Ievadiet derīgu e-pasta adresi.",
+    "passwordMismatch": "Paroles nesakrīt.",
+    "registerSuccess": "Konts izveidots. Tagad varat pieteikties.",
+    "close": "Aizvērt",
+    "mfaTitle": "Divfaktoru autentifikācija",
+    "mfaDescription": "Ievadiet 6 ciparu kodu no savas autentifikācijas lietotnes.",
+    "mfaCodeLabel": "Autentifikācijas kods",
+    "verifyButton": "Pārbaudīt",
+    "mfaSetupTitle": "Divfaktoru autentifikācija",
+    "mfaSetupDescription": "Skenējiet šo QR kodu ar Microsoft Authenticator (vai citu autentifikācijas lietotni) un pēc tam ievadiet parādīto kodu, lai iespējotu divfaktoru autentifikāciju.",
+    "mfaAlreadyEnabled": "Divfaktoru autentifikācija ir iespējota. Ievadiet paroli, lai to atspējotu.",
+    "mfaEnableButton": "Iespējot",
+    "mfaDisableButton": "Atspējot",
+    "mfaRecoveryCodesDescription": "Saglabājiet šos atkopšanas kodus drošā vietā. Katru var izmantot vienu reizi, lai pieteiktos, ja zaudējat piekļuvi autentifikācijas lietotnei.",
+    "forgotPasswordLink": "Aizmirsāt paroli?",
+    "forgotPasswordTitle": "Atiestatiet paroli",
+    "forgotPasswordDescription": "Ievadiet savu e-pasta adresi, un mēs nosūtīsim jums kodu paroles atiestatīšanai.",
+    "forgotPasswordButton": "Sūtīt atiestatīšanas kodu",
+    "forgotPasswordSuccess": "Ja šī e-pasta adrese ir reģistrēta, ir nosūtīts atiestatīšanas kods. Pārbaudiet savu iesūtni.",
+    "resetPasswordTitle": "Izvēlieties jaunu paroli",
+    "resetPasswordDescription": "Ievadiet e-pastā saņemto kodu kopā ar jauno paroli.",
+    "resetCodeLabel": "Atiestatīšanas kods",
+    "newPasswordLabel": "Jaunā parole",
+    "confirmNewPasswordLabel": "Apstipriniet jauno paroli",
+    "resetPasswordButton": "Atiestatīt paroli",
+    "resetPasswordSuccess": "Jūsu parole ir atiestatīta. Tagad varat pieteikties."
   }
 }

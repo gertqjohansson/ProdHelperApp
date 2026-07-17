@@ -23,9 +23,51 @@
   },
   "nav": {
     "menuLabel": "Menu",
-    "guestLabel": "Gæst"
+    "guestLabel": "Gæst",
+    "adminLabel": "Administration",
+    "equipmentsLabel": "Udstyr",
+    "accountsPermissionsLabel": "Konti og rettigheder"
   },
   "modal": {
     "itemSelected": "{{item}} valgt"
+  },
+  "auth": {
+    "emailLabel": "E-mail",
+    "passwordLabel": "Adgangskode",
+    "confirmPasswordLabel": "Bekræft adgangskode",
+    "displayNameLabel": "Visningsnavn (valgfrit)",
+    "loginButton": "Log ind",
+    "registerButton": "Registrer",
+    "logoutButton": "Log ud",
+    "needAccount": "Har du ikke en konto?",
+    "haveAccount": "Har du allerede en konto?",
+    "loginTitle": "Log ind",
+    "registerTitle": "Opret konto",
+    "emailInvalid": "Angiv en gyldig e-mailadresse.",
+    "passwordMismatch": "Adgangskoderne stemmer ikke overens.",
+    "registerSuccess": "Konto oprettet. Du kan nu logge ind.",
+    "close": "Luk",
+    "mfaTitle": "Totrinsbekræftelse",
+    "mfaDescription": "Angiv den 6-cifrede kode fra din autentificeringsapp.",
+    "mfaCodeLabel": "Bekræftelseskode",
+    "verifyButton": "Bekræft",
+    "mfaSetupTitle": "Totrinsbekræftelse",
+    "mfaSetupDescription": "Scan denne QR-kode med Microsoft Authenticator (eller en anden autentificeringsapp), og angiv derefter koden, den viser, for at aktivere totrinsbekræftelse.",
+    "mfaAlreadyEnabled": "Totrinsbekræftelse er aktiveret. Angiv din adgangskode for at deaktivere den.",
+    "mfaEnableButton": "Aktivér",
+    "mfaDisableButton": "Deaktivér",
+    "mfaRecoveryCodesDescription": "Gem disse gendannelseskoder et sikkert sted. Hver kan bruges én gang til at logge ind, hvis du mister adgangen til din autentificeringsapp.",
+    "forgotPasswordLink": "Glemt adgangskode?",
+    "forgotPasswordTitle": "Nulstil din adgangskode",
+    "forgotPasswordDescription": "Angiv din e-mailadresse, så sender vi dig en kode til at nulstille din adgangskode.",
+    "forgotPasswordButton": "Send nulstillingskode",
+    "forgotPasswordSuccess": "Hvis denne e-mail er registreret, er der sendt en nulstillingskode. Tjek din indbakke.",
+    "resetPasswordTitle": "Vælg en ny adgangskode",
+    "resetPasswordDescription": "Angiv koden fra e-mailen sammen med din nye adgangskode.",
+    "resetCodeLabel": "Nulstillingskode",
+    "newPasswordLabel": "Ny adgangskode",
+    "confirmNewPasswordLabel": "Bekræft ny adgangskode",
+    "resetPasswordButton": "Nulstil adgangskode",
+    "resetPasswordSuccess": "Din adgangskode er blevet nulstillet. Du kan nu logge ind."
   }
 }

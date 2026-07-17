@@ -23,9 +23,51 @@
   },
   "nav": {
     "menuLabel": "Meniu",
-    "guestLabel": "Svečias"
+    "guestLabel": "Svečias",
+    "adminLabel": "Administravimas",
+    "equipmentsLabel": "Įranga",
+    "accountsPermissionsLabel": "Paskyros ir teisės"
   },
   "modal": {
     "itemSelected": "Pasirinkta {{item}}"
+  },
+  "auth": {
+    "emailLabel": "El. paštas",
+    "passwordLabel": "Slaptažodis",
+    "confirmPasswordLabel": "Patvirtinkite slaptažodį",
+    "displayNameLabel": "Rodomas vardas (neprivaloma)",
+    "loginButton": "Prisijungti",
+    "registerButton": "Registruotis",
+    "logoutButton": "Atsijungti",
+    "needAccount": "Reikia paskyros?",
+    "haveAccount": "Jau turite paskyrą?",
+    "loginTitle": "Prisijungti",
+    "registerTitle": "Sukurti paskyrą",
+    "emailInvalid": "Įveskite galiojantį el. pašto adresą.",
+    "passwordMismatch": "Slaptažodžiai nesutampa.",
+    "registerSuccess": "Paskyra sukurta. Dabar galite prisijungti.",
+    "close": "Uždaryti",
+    "mfaTitle": "Dviejų veiksnių autentifikavimas",
+    "mfaDescription": "Įveskite 6 skaitmenų kodą iš savo autentifikavimo programėlės.",
+    "mfaCodeLabel": "Autentifikavimo kodas",
+    "verifyButton": "Patvirtinti",
+    "mfaSetupTitle": "Dviejų veiksnių autentifikavimas",
+    "mfaSetupDescription": "Nuskaitykite šį QR kodą su „Microsoft Authenticator“ (arba kita autentifikavimo programėle), tada įveskite rodomą kodą, kad įjungtumėte dviejų veiksnių autentifikavimą.",
+    "mfaAlreadyEnabled": "Dviejų veiksnių autentifikavimas įjungtas. Įveskite slaptažodį, kad jį išjungtumėte.",
+    "mfaEnableButton": "Įjungti",
+    "mfaDisableButton": "Išjungti",
+    "mfaRecoveryCodesDescription": "Išsaugokite šiuos atkūrimo kodus saugioje vietoje. Kiekvienas gali būti panaudotas vieną kartą prisijungimui, jei prarasite prieigą prie autentifikavimo programėlės.",
+    "forgotPasswordLink": "Pamiršote slaptažodį?",
+    "forgotPasswordTitle": "Iš naujo nustatykite slaptažodį",
+    "forgotPasswordDescription": "Įveskite savo el. pašto adresą ir atsiųsime jums kodą slaptažodžiui iš naujo nustatyti.",
+    "forgotPasswordButton": "Siųsti atkūrimo kodą",
+    "forgotPasswordSuccess": "Jei šis el. paštas užregistruotas, atkūrimo kodas išsiųstas. Patikrinkite savo pašto dėžutę.",
+    "resetPasswordTitle": "Pasirinkite naują slaptažodį",
+    "resetPasswordDescription": "Įveskite kodą iš el. laiško kartu su nauju slaptažodžiu.",
+    "resetCodeLabel": "Atkūrimo kodas",
+    "newPasswordLabel": "Naujas slaptažodis",
+    "confirmNewPasswordLabel": "Patvirtinkite naują slaptažodį",
+    "resetPasswordButton": "Iš naujo nustatyti slaptažodį",
+    "resetPasswordSuccess": "Jūsų slaptažodis nustatytas iš naujo. Dabar galite prisijungti."
   }
 }
