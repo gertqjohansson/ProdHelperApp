@@ -7,6 +7,7 @@ import TopBar from './components/TopBar'
 import Footer from './components/Footer'
 import Modal from './components/Modal'
 import LoginPage from './components/LoginPage'
+import EquipmentsPage from './equipment/EquipmentsPage'
 
 const TRY1 = {
   controller: 'Oee',
@@ -27,8 +28,8 @@ function App() {
   const [result, setResult] = useState(null)
   const [error, setError] = useState(null)
   const [plannerModalOpen, setPlannerModalOpen] = useState(false)
-  const [equipmentsModalOpen, setEquipmentsModalOpen] = useState(false)
   const [accountsPermissionsModalOpen, setAccountsPermissionsModalOpen] = useState(false)
+  const [view, setView] = useState('home') // 'home' | 'equipments'
 
   if (!isReady) return null
   if (!isAuthenticated) return <LoginPage />
@@ -51,39 +52,45 @@ function App() {
     <div className="page">
       <TopBar
         onPlannerSelected={() => setPlannerModalOpen(true)}
-        onEquipmentsSelected={() => setEquipmentsModalOpen(true)}
+        onEquipmentsSelected={() => setView('equipments')}
         onAccountsPermissionsSelected={() => setAccountsPermissionsModalOpen(true)}
       />
 
-      <main className="app">
-        <h1>ProdHelper</h1>
-        <p>{t('app.description')}</p>
+      <main className={view === 'equipments' ? 'app app-equipments' : 'app'}>
+        {view === 'equipments' ? (
+          <EquipmentsPage />
+        ) : (
+          <>
+            <h1>ProdHelper</h1>
+            <p>{t('app.description')}</p>
 
-        <div className="buttons">
-          <button type="button" onClick={() => callRelay(TRY1)} disabled={status === 'sending'}>
-            {t('buttons.try1')}
-          </button>
-          <button type="button" onClick={() => callRelay(TRY2)} disabled={status === 'sending'}>
-            {t('buttons.try2')}
-          </button>
-        </div>
+            <div className="buttons">
+              <button type="button" onClick={() => callRelay(TRY1)} disabled={status === 'sending'}>
+                {t('buttons.try1')}
+              </button>
+              <button type="button" onClick={() => callRelay(TRY2)} disabled={status === 'sending'}>
+                {t('buttons.try2')}
+              </button>
+            </div>
 
-        {status === 'sending' && <p className="status">{t('status.sending')}</p>}
+            {status === 'sending' && <p className="status">{t('status.sending')}</p>}
 
-        {result && (
-          <div className="panel">
-            <h2>{t('result.calledHeading', { controller: result.sent.controller, function: result.sent.function })}</h2>
-            <pre>{JSON.stringify(result.sent.parameters, null, 2)}</pre>
-            <h2>{t('result.relayResponseHeading')}</h2>
-            <pre>{result.body}</pre>
-          </div>
-        )}
+            {result && (
+              <div className="panel">
+                <h2>{t('result.calledHeading', { controller: result.sent.controller, function: result.sent.function })}</h2>
+                <pre>{JSON.stringify(result.sent.parameters, null, 2)}</pre>
+                <h2>{t('result.relayResponseHeading')}</h2>
+                <pre>{result.body}</pre>
+              </div>
+            )}
 
-        {error && (
-          <div className="panel error">
-            <h2>{t('result.errorHeading')}</h2>
-            <pre>{error}</pre>
-          </div>
+            {error && (
+              <div className="panel error">
+                <h2>{t('result.errorHeading')}</h2>
+                <pre>{error}</pre>
+              </div>
+            )}
+          </>
         )}
       </main>
 
@@ -91,17 +98,9 @@ function App() {
 
       {plannerModalOpen && (
         <Modal
-          title="Planner"
-          message={t('modal.itemSelected', { item: 'Planner' })}
+          title={t('nav.planningLabel')}
+          message={t('modal.itemSelected', { item: t('nav.planningLabel') })}
           onClose={() => setPlannerModalOpen(false)}
-        />
-      )}
-
-      {equipmentsModalOpen && (
-        <Modal
-          title={t('nav.equipmentsLabel')}
-          message={t('modal.itemSelected', { item: t('nav.equipmentsLabel') })}
-          onClose={() => setEquipmentsModalOpen(false)}
         />
       )}
 

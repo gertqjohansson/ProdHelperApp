@@ -122,7 +122,7 @@ export default function TopBar({ onPlannerSelected, onEquipmentsSelected, onAcco
           <ul className="topbar-dropdown" role="menu">
             <li role="none">
               <button type="button" role="menuitem" className="topbar-dropdown-item" onClick={handlePlannerClick}>
-                Planner
+                {t('nav.planningLabel')}
               </button>
             </li>
             <li role="none">

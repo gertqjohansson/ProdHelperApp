@@ -436,6 +436,7 @@
 /* ---- Main content ---- */
 
 .app {
+  box-sizing: border-box;
   padding: 24px 20px;
   max-width: 640px;
   margin: 0 auto;
@@ -492,4 +493,266 @@
   overflow-x: auto;
   white-space: pre-wrap;
   word-break: break-word;
+}
+
+/* ---- Equipments page ---- */
+
+.app-equipments {
+  max-width: 1500px;
+  width: 100%;
+}
+
+.equipments-toolbar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.equipments-toolbar-button {
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 9px 18px;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  background: var(--color-primary);
+  cursor: pointer;
+}
+
+.equipments-toolbar-button:hover:not(:disabled) {
+  background: var(--color-primary-dark);
+}
+
+.equipments-toolbar-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.equipments-toolbar-button-danger {
+  background: var(--color-error);
+}
+
+.equipments-toolbar-button-danger:hover:not(:disabled) {
+  background: #a83a1f;
+}
+
+.equipments-body {
+  text-align: left;
+}
+
+.equipments-tree-pane {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 16px;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  box-sizing: border-box;
+}
+
+.equipments-search-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.equipments-search-icon {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  color: var(--text-h);
+  opacity: 0.6;
+}
+
+.equipments-search {
+  width: 100%;
+  font: inherit;
+  font-size: 14px;
+  padding: 9px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-h);
+  background: #fff;
+}
+
+.equipments-search:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: -1px;
+}
+
+.equipment-tree,
+.equipment-tree ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.equipment-tree {
+  padding-left: 0;
+}
+
+.equipment-tree-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 4px;
+}
+
+.equipment-tree-row.selected {
+  background: var(--color-primary-dark);
+  color: #fff;
+}
+
+.equipment-tree-chevron-btn {
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.equipment-tree-chevron-spacer {
+  display: inline-block;
+  width: 24px;
+}
+
+.equipment-tree-name {
+  flex: 1;
+  text-align: left;
+  background: none;
+  border: none;
+  font: inherit;
+  font-size: 14px;
+  color: inherit;
+  padding: 6px 4px;
+  cursor: pointer;
+}
+
+.modal-cancel {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.modal-cancel:hover:not(:disabled) {
+  background: var(--bg);
+}
+
+.modal-ok.modal-danger {
+  background: var(--color-error);
+}
+
+.modal-ok.modal-danger:hover {
+  background: #a83a1f;
+}
+
+.equipment-checkbox-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.login-field select {
+  font: inherit;
+  font-size: 15px;
+  padding: 9px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-h);
+  background: #fff;
+}
+
+.login-field input[type='color'] {
+  width: 60px;
+  height: 38px;
+  padding: 2px;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+.equipment-color-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.equipment-used-colors-select {
+  flex: 1;
+  font: inherit;
+  font-size: 14px;
+  padding: 9px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-h);
+  background: #fff;
+}
+
+.equipment-subfields {
+  margin: 0 0 8px 24px;
+}
+
+.login-field textarea {
+  font: inherit;
+  font-size: 15px;
+  padding: 9px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-h);
+  background: #fff;
+  resize: vertical;
+}
+
+.equipments-no-categories {
+  color: var(--color-error);
+  margin: 0 0 16px;
+}
+
+.equipment-category-modal {
+  max-width: 440px;
+}
+
+.equipment-category-list {
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.equipment-category-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 4px;
+  border-bottom: 1px solid var(--border);
+}
+
+.equipment-category-list-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.equipment-category-list-actions button {
+  font: inherit;
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  background: #fff;
+  cursor: pointer;
 }
