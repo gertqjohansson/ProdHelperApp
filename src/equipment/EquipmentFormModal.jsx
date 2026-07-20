@@ -1,10 +1,24 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { useAuth } from '../auth/AuthContext'
+import { translateText } from '../translation/translationClient'
+import {
+  dateInputToUtcIso,
+  utcIsoToDateInput,
+  localDateTimeInputToUtcIso,
+  utcIsoToLocalDateTimeInput,
+} from './dateTimeUtc'
 
 const DEFAULT_COLOR = '#cccccc'
 
-function toDateInputValue(value) {
-  return value ? String(value).slice(0, 10) : ''
+// Locale-aware preview of a datetime-local value (which itself always displays/edits using the
+// browser's own fixed format, ignoring the page's language) so the user can see the date/time
+// rendered in their selected UI language.
+function formatLocalizedDateTime(dateTimeLocalValue, language) {
+  if (!dateTimeLocalValue) return ''
+  const date = new Date(dateTimeLocalValue)
+  if (Number.isNaN(date.getTime())) return ''
+  return new Intl.DateTimeFormat(language, { dateStyle: 'medium', timeStyle: 'short' }).format(date)
 }
 
 // onSave(fields) - fields is { isTopNode, name, externalCode, isOee, isPlannable, colorCode, equipmentCategoryId,
@@ -12,7 +26,8 @@ function toDateInputValue(value) {
 // Must resolve on success (the caller is responsible for closing this modal) or throw an Error
 // whose message is already a user-facing translated string.
 export default function EquipmentFormModal({ mode, categories, usedColors, initialValues, onSave, onCancel }) {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
+  const { authFetch } = useAuth()
   const [isTopNode, setIsTopNode] = useState(!!initialValues.isTopNode)
   const [name, setName] = useState(initialValues.name)
   const [externalCode, setExternalCode] = useState(initialValues.externalCode)
@@ -21,14 +36,62 @@ export default function EquipmentFormModal({ mode, categories, usedColors, initi
   const [colorCode, setColorCode] = useState(initialValues.colorCode)
   const [categoryId, setCategoryId] = useState(initialValues.categoryId)
   const [useEconomy, setUseEconomy] = useState(!!initialValues.useEconomy)
-  const [dateOfPurchase, setDateOfPurchase] = useState(toDateInputValue(initialValues.dateOfPurchase))
+  const [dateOfPurchase, setDateOfPurchase] = useState(utcIsoToDateInput(initialValues.dateOfPurchase))
   const [price, setPrice] = useState(initialValues.price ?? '')
   const [depreciationPeriod, setDepreciationPeriod] = useState(initialValues.depreciationPeriod ?? '')
   const [useNotification, setUseNotification] = useState(!!initialValues.useNotification)
-  const [notificationDate, setNotificationDate] = useState(toDateInputValue(initialValues.notificationDate))
+  const [notificationDate, setNotificationDate] = useState(utcIsoToLocalDateTimeInput(initialValues.notificationDate))
   const [notification, setNotification] = useState(initialValues.notification ?? '')
   const [error, setError] = useState(null)
   const [busy, setBusy] = useState(false)
+  const [translatedNotification, setTranslatedNotification] = useState(null)
+  const [translatingNotification, setTranslatingNotification] = useState(false)
+
+  // Read-only translated preview of the ORIGINALLY SAVED notification - mirrors
+  // EquipmentCommentPanel's comment translation. The editable textarea below always shows/edits
+  // the live draft, so saving never overwrites the original with a machine translation.
+  useEffect(() => {
+    let cancelled = false
+    setTranslatedNotification(null)
+
+    const needsTranslation =
+      initialValues.notification && initialValues.notificationLanguage && initialValues.notificationLanguage !== i18n.language
+
+    if (!needsTranslation) return undefined
+
+    setTranslatingNotification(true)
+    authFetch((token) =>
+      translateText(token, {
+        text: initialValues.notification,
+        fromLanguageIsoCode: initialValues.notificationLanguage,
+        toLanguageIsoCode: i18n.language,
+      })
+    )
+      .then((res) => {
+        if (!cancelled) setTranslatedNotification(res.translatedText)
+      })
+      .catch(() => {
+        // Translation unavailable/unsupported language pair - fall back to the plain
+        // "written in X" note below, same as the comment panel.
+      })
+      .finally(() => {
+        if (!cancelled) setTranslatingNotification(false)
+      })
+
+    return () => {
+      cancelled = true
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [initialValues.notification, initialValues.notificationLanguage, i18n.language])
+
+  let notificationLanguageName = null
+  if (initialValues.notification && initialValues.notificationLanguage && initialValues.notificationLanguage !== i18n.language) {
+    try {
+      notificationLanguageName = new Intl.DisplayNames([i18n.language], { type: 'language' }).of(initialValues.notificationLanguage)
+    } catch {
+      // Intl.DisplayNames couldn't resolve the code - skip the note rather than show a broken label.
+    }
+  }
 
   async function handleSubmit(e) {
     e.preventDefault()
@@ -44,11 +107,11 @@ export default function EquipmentFormModal({ mode, categories, usedColors, initi
         colorCode: colorCode || null,
         equipmentCategoryId: Number(categoryId) || 0,
         useEconomy,
-        dateOfPurchase: useEconomy && dateOfPurchase ? dateOfPurchase : null,
+        dateOfPurchase: useEconomy && dateOfPurchase ? dateInputToUtcIso(dateOfPurchase) : null,
         price: useEconomy && price !== '' ? Number(price) : null,
         depreciationPeriod: useEconomy && depreciationPeriod !== '' ? Number(depreciationPeriod) : null,
         useNotification,
-        notificationDate: useNotification && notificationDate ? notificationDate : null,
+        notificationDate: useNotification && notificationDate ? localDateTimeInputToUtcIso(notificationDate) : null,
         notification: useNotification && notification ? notification : null,
       })
     } catch (err) {
@@ -145,10 +208,29 @@ export default function EquipmentFormModal({ mode, categories, usedColors, initi
             <div className="equipment-subfields">
               <label className="login-field">
                 <span>{t('equipment.notificationDateLabel')}</span>
-                <input type="date" value={notificationDate} onChange={(e) => setNotificationDate(e.target.value)} />
+                <input type="datetime-local" value={notificationDate} onChange={(e) => setNotificationDate(e.target.value)} />
+                {notificationDate && (
+                  <span className="equipment-datetime-preview">{formatLocalizedDateTime(notificationDate, i18n.language)}</span>
+                )}
               </label>
               <label className="login-field">
                 <span>{t('equipment.notificationLabel')}</span>
+                {notificationLanguageName && translatingNotification && (
+                  <p className="equipments-comment-language-note">{t('equipment.translatingStatus')}</p>
+                )}
+                {notificationLanguageName && !translatingNotification && translatedNotification !== null && (
+                  <div className="equipments-comment-translated">
+                    <p className="equipments-comment-language-note">
+                      {t('equipment.notificationTranslatedFromLabel', { language: notificationLanguageName })}
+                    </p>
+                    <p className="equipments-comment-translated-text">{translatedNotification}</p>
+                  </div>
+                )}
+                {notificationLanguageName && !translatingNotification && translatedNotification === null && (
+                  <p className="equipments-comment-language-note">
+                    {t('equipment.notificationWrittenInLabel', { language: notificationLanguageName })}
+                  </p>
+                )}
                 <textarea rows="3" value={notification} onChange={(e) => setNotification(e.target.value)} />
               </label>
             </div>

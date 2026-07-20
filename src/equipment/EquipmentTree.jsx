@@ -47,6 +47,27 @@ function EquipmentTreeItem({ node, selectedId, onSelect, forceExpanded }) {
         <button type="button" className="equipment-tree-name" onClick={() => onSelect(node.id)}>
           {node.name}
         </button>
+        <span className="equipment-tree-badges">
+          {node.isOee && (
+            <span className="equipment-tree-badge" title={t('equipment.isOeeLabel')} aria-label={t('equipment.isOeeLabel')}>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+                <line x1="5" y1="20" x2="5" y2="12" />
+                <line x1="12" y1="20" x2="12" y2="6" />
+                <line x1="19" y1="20" x2="19" y2="15" />
+              </svg>
+            </span>
+          )}
+          {node.isPlannable && (
+            <span className="equipment-tree-badge" title={t('equipment.isPlannableLabel')} aria-label={t('equipment.isPlannableLabel')}>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="4" y="5" width="16" height="15" rx="2" />
+                <line x1="4" y1="10" x2="20" y2="10" />
+                <line x1="8" y1="3" x2="8" y2="7" />
+                <line x1="16" y1="3" x2="16" y2="7" />
+              </svg>
+            </span>
+          )}
+        </span>
       </div>
       {showChildren && (
         <EquipmentTree nodes={node.children} selectedId={selectedId} onSelect={onSelect} forceExpanded={forceExpanded} />

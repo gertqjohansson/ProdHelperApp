@@ -55,6 +55,8 @@ export function createEquipment(
     useNotification,
     notificationDate,
     notification,
+    actionTimeUtc,
+    madeByUser,
   }
 ) {
   return request('Equipment/Create', {
@@ -74,6 +76,8 @@ export function createEquipment(
       useNotification,
       notificationDate,
       notification,
+      actionTimeUtc,
+      madeByUser,
     },
     accessToken,
   })
@@ -98,6 +102,8 @@ export function updateEquipment(
     useNotification,
     notificationDate,
     notification,
+    actionTimeUtc,
+    madeByUser,
   }
 ) {
   return request('Equipment/Update', {
@@ -118,11 +124,17 @@ export function updateEquipment(
       useNotification,
       notificationDate,
       notification,
+      actionTimeUtc,
+      madeByUser,
     },
     accessToken,
   })
 }
 
-export function deleteEquipment(accessToken, id) {
-  return request('Equipment/Delete', { body: { id }, accessToken })
+export function deleteEquipment(accessToken, { id, actionTimeUtc, madeByUser }) {
+  return request('Equipment/Delete', { body: { id, actionTimeUtc, madeByUser }, accessToken })
+}
+
+export function saveEquipmentComment(accessToken, { id, comment, languageIsoCode }) {
+  return request('Equipment/SaveComment', { body: { id, comment, languageIsoCode }, accessToken })
 }

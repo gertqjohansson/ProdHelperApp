@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 import Modal from './components/Modal'
 import LoginPage from './components/LoginPage'
 import EquipmentsPage from './equipment/EquipmentsPage'
+import ShiftsCalendarPage from './shiftsCalendar/ShiftsCalendarPage'
 
 const TRY1 = {
   controller: 'Oee',
@@ -29,7 +30,8 @@ function App() {
   const [error, setError] = useState(null)
   const [plannerModalOpen, setPlannerModalOpen] = useState(false)
   const [accountsPermissionsModalOpen, setAccountsPermissionsModalOpen] = useState(false)
-  const [view, setView] = useState('home') // 'home' | 'equipments'
+  const [articlesModalOpen, setArticlesModalOpen] = useState(false)
+  const [view, setView] = useState('home') // 'home' | 'equipments' | 'shiftsCalendar'
 
   if (!isReady) return null
   if (!isAuthenticated) return <LoginPage />
@@ -54,11 +56,15 @@ function App() {
         onPlannerSelected={() => setPlannerModalOpen(true)}
         onEquipmentsSelected={() => setView('equipments')}
         onAccountsPermissionsSelected={() => setAccountsPermissionsModalOpen(true)}
+        onArticlesSelected={() => setArticlesModalOpen(true)}
+        onShiftsCalendarSelected={() => setView('shiftsCalendar')}
       />
 
-      <main className={view === 'equipments' ? 'app app-equipments' : 'app'}>
+      <main className={view === 'equipments' || view === 'shiftsCalendar' ? 'app app-equipments' : 'app'}>
         {view === 'equipments' ? (
           <EquipmentsPage />
+        ) : view === 'shiftsCalendar' ? (
+          <ShiftsCalendarPage />
         ) : (
           <>
             <h1>ProdHelper</h1>
@@ -109,6 +115,14 @@ function App() {
           title={t('nav.accountsPermissionsLabel')}
           message={t('modal.itemSelected', { item: t('nav.accountsPermissionsLabel') })}
           onClose={() => setAccountsPermissionsModalOpen(false)}
+        />
+      )}
+
+      {articlesModalOpen && (
+        <Modal
+          title={t('nav.articlesLabel')}
+          message={t('modal.itemSelected', { item: t('nav.articlesLabel') })}
+          onClose={() => setArticlesModalOpen(false)}
         />
       )}
     </div>

@@ -6,7 +6,7 @@ import { useAuth } from '../auth/AuthContext'
 
 // Only ever mounted while authenticated - App.jsx renders LoginPage instead
 // of the rest of the app (including this component) until login succeeds.
-export default function TopBar({ onPlannerSelected, onEquipmentsSelected, onAccountsPermissionsSelected }) {
+export default function TopBar({ onPlannerSelected, onEquipmentsSelected, onAccountsPermissionsSelected, onArticlesSelected, onShiftsCalendarSelected }) {
   const { t } = useTranslation()
   const { user, logout } = useAuth()
   const [navOpen, setNavOpen] = useState(false)
@@ -64,6 +64,18 @@ export default function TopBar({ onPlannerSelected, onEquipmentsSelected, onAcco
     setNavOpen(false)
     setAdminMenuOpen(false)
     onAccountsPermissionsSelected()
+  }
+
+  function handleArticlesClick() {
+    setNavOpen(false)
+    setAdminMenuOpen(false)
+    onArticlesSelected()
+  }
+
+  function handleShiftsCalendarClick() {
+    setNavOpen(false)
+    setAdminMenuOpen(false)
+    onShiftsCalendarSelected()
   }
 
   function toggleNav() {
@@ -149,6 +161,16 @@ export default function TopBar({ onPlannerSelected, onEquipmentsSelected, onAcco
                   <li role="none">
                     <button type="button" role="menuitem" className="topbar-dropdown-item" onClick={handleAccountsPermissionsClick}>
                       {t('nav.accountsPermissionsLabel')}
+                    </button>
+                  </li>
+                  <li role="none">
+                    <button type="button" role="menuitem" className="topbar-dropdown-item" onClick={handleArticlesClick}>
+                      {t('nav.articlesLabel')}
+                    </button>
+                  </li>
+                  <li role="none">
+                    <button type="button" role="menuitem" className="topbar-dropdown-item" onClick={handleShiftsCalendarClick}>
+                      {t('nav.shiftsCalendarLabel')}
                     </button>
                   </li>
                 </ul>

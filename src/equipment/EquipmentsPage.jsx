@@ -1,13 +1,55 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useAuth } from '../auth/AuthContext'
-import { listEquipment, createEquipment, updateEquipment, deleteEquipment } from './equipmentClient'
+import { listEquipment, createEquipment, updateEquipment, deleteEquipment, saveEquipmentComment } from './equipmentClient'
 import { listEquipmentCategories } from './equipmentCategoryClient'
-import EquipmentTree from './EquipmentTree'
+import { buildTree, filterTree } from './treeUtils'
+import EquipmentTreePane from './EquipmentTreePane'
 import EquipmentFormModal from './EquipmentFormModal'
 import EquipmentCategoryManagerModal from './EquipmentCategoryManagerModal'
+import EquipmentCommentPanel from './EquipmentCommentPanel'
+import EquipmentUploadsPanel from './EquipmentUploadsPanel'
+import EquipmentLinksPanel from './EquipmentLinksPanel'
+import EquipmentLogPanel from './EquipmentLogPanel'
 
 const DEFAULT_COLOR = '#cccccc'
+
+function AddIcon() {
+  return (
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
+      <line x1="12" y1="5" x2="12" y2="19" />
+      <line x1="5" y1="12" x2="19" y2="12" />
+    </svg>
+  )
+}
+
+function EditIcon() {
+  return (
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z" />
+    </svg>
+  )
+}
+
+function DeleteIcon() {
+  return (
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <polyline points="4 7 20 7" />
+      <path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" />
+      <path d="M18 7l-1 13a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2L6 7" />
+      <line x1="10" y1="11" x2="10" y2="17" />
+      <line x1="14" y1="11" x2="14" y2="17" />
+    </svg>
+  )
+}
+
+function FolderIcon() {
+  return (
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M3 6a1 1 0 0 1 1-1h5l2 2h9a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Z" />
+    </svg>
+  )
+}
 
 const ERROR_CODE_KEYS = {
   NameRequired: 'equipment.nameRequired',
@@ -23,38 +65,9 @@ function describeError(err, t) {
   return key ? t(key) : err.message
 }
 
-function buildTree(items) {
-  const byParent = new Map()
-  for (const item of items) {
-    const parentId = item.parentId ?? null
-    const list = byParent.get(parentId) ?? []
-    list.push(item)
-    byParent.set(parentId, list)
-  }
-  function attach(parentId) {
-    return (byParent.get(parentId) ?? [])
-      .slice()
-      .sort((a, b) => a.name.localeCompare(b.name))
-      .map((item) => ({ ...item, children: attach(item.id) }))
-  }
-  return attach(null)
-}
-
-function filterTree(nodes, filterText) {
-  if (!filterText) return nodes
-  const lower = filterText.toLowerCase()
-  return nodes
-    .map((node) => {
-      const children = filterTree(node.children, filterText)
-      const matches = node.name.toLowerCase().includes(lower)
-      return matches || children.length > 0 ? { ...node, children } : null
-    })
-    .filter((node) => node !== null)
-}
-
 export default function EquipmentsPage() {
   const { t, i18n } = useTranslation()
-  const { authFetch } = useAuth()
+  const { authFetch, user } = useAuth()
 
   const [items, setItems] = useState([])
   const [categories, setCategories] = useState([])
@@ -69,24 +82,6 @@ export default function EquipmentsPage() {
   const [deleteConfirmOpen, setDeleteConfirmOpen] = useState(false)
   const [deleteError, setDeleteError] = useState(null)
   const [deleteBusy, setDeleteBusy] = useState(false)
-
-  // Keep the tree frame's width matched to the toolbar's rendered width (the toolbar's own width
-  // varies with button label length, which varies per language), so the frame ends exactly where
-  // the last toolbar button ends instead of always spanning the full page width.
-  const toolbarRef = useRef(null)
-  const [treeFrameWidth, setTreeFrameWidth] = useState(null)
-
-  useEffect(() => {
-    const el = toolbarRef.current
-    if (!el || typeof ResizeObserver === 'undefined') return
-    const observer = new ResizeObserver((entries) => {
-      for (const entry of entries) {
-        setTreeFrameWidth(entry.contentRect.width)
-      }
-    })
-    observer.observe(el)
-    return () => observer.disconnect()
-  }, [])
 
   useEffect(() => {
     let cancelled = false
@@ -146,13 +141,18 @@ export default function EquipmentsPage() {
 
   async function handleFormSave(fields) {
     const { isTopNode, ...rest } = fields
+    const actionTimeUtc = new Date().toISOString()
     try {
       if (formMode === 'add') {
         const parentId = isTopNode ? null : selectedItem ? selectedItem.id : null
-        await authFetch((token) => createEquipment(token, { parentId, ...rest, languageIsoCode: i18n.language }))
+        await authFetch((token) =>
+          createEquipment(token, { parentId, ...rest, languageIsoCode: i18n.language, actionTimeUtc, madeByUser: user.email })
+        )
       } else if (formMode === 'edit' && selectedItem) {
         const parentId = isTopNode ? null : selectedItem.parentId
-        await authFetch((token) => updateEquipment(token, { id: selectedItem.id, parentId, ...rest, languageIsoCode: i18n.language }))
+        await authFetch((token) =>
+          updateEquipment(token, { id: selectedItem.id, parentId, ...rest, languageIsoCode: i18n.language, actionTimeUtc, madeByUser: user.email })
+        )
       }
       setFormMode(null)
       await reload()
@@ -178,6 +178,7 @@ export default function EquipmentsPage() {
           useNotification: !!selectedItem.useNotification,
           notificationDate: selectedItem.notificationDate ?? null,
           notification: selectedItem.notification ?? '',
+          notificationLanguage: selectedItem.notificationLanguage ?? null,
         }
       : {
           isTopNode: !selectedItem,
@@ -194,7 +195,17 @@ export default function EquipmentsPage() {
           useNotification: false,
           notificationDate: null,
           notification: '',
+          notificationLanguage: null,
         }
+
+  async function handleCommentSave(comment) {
+    try {
+      await authFetch((token) => saveEquipmentComment(token, { id: selectedItem.id, comment, languageIsoCode: i18n.language }))
+      await reload()
+    } catch (err) {
+      throw new Error(describeError(err, t))
+    }
+  }
 
   function openDeleteConfirm() {
     setDeleteError(null)
@@ -206,7 +217,9 @@ export default function EquipmentsPage() {
     setDeleteError(null)
     setDeleteBusy(true)
     try {
-      await authFetch((token) => deleteEquipment(token, selectedItem.id))
+      await authFetch((token) =>
+        deleteEquipment(token, { id: selectedItem.id, actionTimeUtc: new Date().toISOString(), madeByUser: user.email })
+      )
       setDeleteConfirmOpen(false)
       setSelectedId(null)
       await reload()
@@ -219,53 +232,55 @@ export default function EquipmentsPage() {
 
   return (
     <div className="equipments-page">
-      <div className="equipments-toolbar" ref={toolbarRef}>
-        <button type="button" className="equipments-toolbar-button" onClick={openAdd} disabled={categories.length === 0}>
-          {t('equipment.addButton')}
-        </button>
-        <button type="button" className="equipments-toolbar-button" onClick={openEdit} disabled={!selectedItem}>
-          {t('equipment.editButton')}
-        </button>
-        <button
-          type="button"
-          className="equipments-toolbar-button equipments-toolbar-button-danger"
-          onClick={openDeleteConfirm}
-          disabled={!selectedItem}
-        >
-          {t('equipment.deleteButton')}
-        </button>
-        <button type="button" className="equipments-toolbar-button" onClick={() => setManageCategoriesOpen(true)}>
-          {t('equipmentCategory.manageButton')}
-        </button>
+      <div className="equipments-menubar">
+        <span className="equipments-menubar-title">{t('equipment.pageTitle')}</span>
+        <div className="equipments-menubar-actions">
+          <button type="button" className="equipments-toolbar-button" onClick={openAdd} disabled={categories.length === 0}>
+            <AddIcon />
+            {t('equipment.addButton')}
+          </button>
+          <button type="button" className="equipments-toolbar-button" onClick={openEdit} disabled={!selectedItem}>
+            <EditIcon />
+            {t('equipment.editButton')}
+          </button>
+          <button
+            type="button"
+            className="equipments-toolbar-button equipments-toolbar-button-danger"
+            onClick={openDeleteConfirm}
+            disabled={!selectedItem}
+          >
+            <DeleteIcon />
+            {t('equipment.deleteButton')}
+          </button>
+          <button type="button" className="equipments-toolbar-button" onClick={() => setManageCategoriesOpen(true)}>
+            <FolderIcon />
+            {t('equipmentCategory.manageButton')}
+          </button>
+        </div>
       </div>
 
       {categories.length === 0 && <p className="equipments-no-categories">{t('equipment.noCategoriesMessage')}</p>}
 
       <div className="equipments-body">
-        <div className="equipments-tree-pane" style={treeFrameWidth ? { width: treeFrameWidth } : undefined}>
-          <div className="equipments-search-row">
-            <svg className="equipments-search-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" strokeWidth="2" />
-              <line x1="21" y1="21" x2="16.3" y2="16.3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-            </svg>
-            <input
-              type="text"
-              className="equipments-search"
-              placeholder={t('equipment.searchPlaceholder')}
-              value={filterText}
-              onChange={(e) => setFilterText(e.target.value)}
-            />
-          </div>
-          {loading ? (
-            <p>{t('status.sending')}</p>
-          ) : error ? (
-            <p className="login-error">{error}</p>
-          ) : tree.length === 0 ? (
-            <p>{t('equipment.emptyTree')}</p>
-          ) : (
-            <EquipmentTree nodes={tree} selectedId={selectedId} onSelect={setSelectedId} forceExpanded={!!filterText} />
-          )}
-        </div>
+        <EquipmentTreePane
+          tree={tree}
+          selectedId={selectedId}
+          onSelect={setSelectedId}
+          loading={loading}
+          error={error}
+          filterText={filterText}
+          onFilterTextChange={setFilterText}
+        />
+
+        <EquipmentCommentPanel selectedItem={selectedItem} onSave={handleCommentSave} />
+
+        <EquipmentUploadsPanel selectedItem={selectedItem} />
+      </div>
+
+      <div className="equipments-body">
+        <EquipmentLinksPanel selectedItem={selectedItem} />
+
+        <EquipmentLogPanel selectedItem={selectedItem} />
       </div>
 
       {formMode && (
