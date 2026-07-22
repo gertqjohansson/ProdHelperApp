@@ -36,7 +36,41 @@
   },
   "shiftsCalendar": {
     "pageTitle": "Pamainos ir kalendorius",
-    "noSelection": "Pasirinkite įrangą, kad pamatytumėte jos pamainas ir kalendorių."
+    "noSelection": "Pasirinkite įrangą, kad pamatytumėte jos pamainas ir kalendorių.",
+    "createCalendarButton": "Sukurti kalendorių",
+    "createCalendarModalTitle": "Sukurti kalendorių įrangai „{{name}}“",
+    "startDateLabel": "Pradžios data",
+    "startDateMinHint": "Turi būti {{date}} arba vėlesnė",
+    "numberOfDaysLabel": "Dienų skaičius",
+    "selectedEquipmentLabel": "Pasirinkta įranga",
+    "selectedDateLabel": "Pasirinkta data",
+    "noDateSelected": "Spustelėkite dieną, kad ją pasirinktumėte.",
+    "selectionMarkedLabel": "Pažymėta: {{title}}",
+    "selectionNoneLabel": "Spustelėkite įvykį, kad jį pažymėtumėte",
+    "editButton": "Redaguoti",
+    "deleteButton": "Ištrinti",
+    "deleteConfirmMessage": "Ištrinti „{{title}}“?",
+    "timeFormatSwitchLabel": "Laiko formatas",
+    "calendar": {
+      "messages": {
+        "today": "Šiandien",
+        "previous": "Atgal",
+        "next": "Kitas",
+        "month": "Mėnuo",
+        "week": "Savaitė",
+        "work_week": "Darbo savaitė",
+        "day": "Diena",
+        "agenda": "Darbotvarkė",
+        "date": "Data",
+        "time": "Laikas",
+        "event": "Įvykis",
+        "allDay": "Visą dieną",
+        "yesterday": "Vakar",
+        "tomorrow": "Rytoj",
+        "noEventsInRange": "Šiuo laikotarpiu įvykių nėra.",
+        "showMore": "+{{count}} daugiau"
+      }
+    }
   },
   "equipment": {
     "pageTitle": "Įranga",
@@ -86,7 +120,14 @@
     "categoryNotFound": "Pasirinktos kategorijos nėra.",
     "noCategoriesMessage": "Pirmiausia sukurkite įrangos kategoriją.",
     "dateTimeRequired": "Būtina nurodyti datą ir laiką.",
-    "madeByUserRequired": "Būtina nurodyti naudotoją."
+    "madeByUserRequired": "Būtina nurodyti naudotoją.",
+    "linksLogSectionTitle": "Nuorodos ir žurnalas",
+    "expandSection": "Išskleisti skiltį",
+    "collapseSection": "Suskleisti skiltį",
+    "helpButton": "Pagalba",
+    "moveButton": "Perkelti į...",
+    "moveTitle": "Perkelti „{{name}}“",
+    "hasScheduleLabel": "Turi kalendorių"
   },
   "equipmentUpload": {
     "sectionTitle": "Failai",

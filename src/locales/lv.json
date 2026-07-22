@@ -36,7 +36,41 @@
   },
   "shiftsCalendar": {
     "pageTitle": "Maiņas un kalendārs",
-    "noSelection": "Izvēlieties aprīkojumu, lai skatītu tā maiņas un kalendāru."
+    "noSelection": "Izvēlieties aprīkojumu, lai skatītu tā maiņas un kalendāru.",
+    "createCalendarButton": "Izveidot kalendāru",
+    "createCalendarModalTitle": "Izveidot kalendāru aprīkojumam „{{name}}”",
+    "startDateLabel": "Sākuma datums",
+    "startDateMinHint": "Datumam jābūt {{date}} vai vēlākam",
+    "numberOfDaysLabel": "Dienu skaits",
+    "selectedEquipmentLabel": "Izvēlētais aprīkojums",
+    "selectedDateLabel": "Izvēlētais datums",
+    "noDateSelected": "Noklikšķiniet uz dienas, lai to atlasītu.",
+    "selectionMarkedLabel": "Atzīmēts: {{title}}",
+    "selectionNoneLabel": "Noklikšķiniet uz notikuma, lai to atzīmētu",
+    "editButton": "Rediģēt",
+    "deleteButton": "Dzēst",
+    "deleteConfirmMessage": "Dzēst „{{title}}”?",
+    "timeFormatSwitchLabel": "Laika formāts",
+    "calendar": {
+      "messages": {
+        "today": "Šodien",
+        "previous": "Atpakaļ",
+        "next": "Nākamais",
+        "month": "Mēnesis",
+        "week": "Nedēļa",
+        "work_week": "Darba nedēļa",
+        "day": "Diena",
+        "agenda": "Darba kārtība",
+        "date": "Datums",
+        "time": "Laiks",
+        "event": "Notikums",
+        "allDay": "Visu dienu",
+        "yesterday": "Vakar",
+        "tomorrow": "Rīt",
+        "noEventsInRange": "Šajā periodā nav notikumu.",
+        "showMore": "+{{count}} vairāk"
+      }
+    }
   },
   "equipment": {
     "pageTitle": "Aprīkojums",
@@ -86,7 +120,14 @@
     "categoryNotFound": "Izvēlētās kategorijas nav.",
     "noCategoriesMessage": "Vispirms izveidojiet aprīkojuma kategoriju.",
     "dateTimeRequired": "Datums un laiks ir obligāti.",
-    "madeByUserRequired": "Lietotājs ir obligāts."
+    "madeByUserRequired": "Lietotājs ir obligāts.",
+    "linksLogSectionTitle": "Saites un žurnāls",
+    "expandSection": "Izvērst sadaļu",
+    "collapseSection": "Sakļaut sadaļu",
+    "helpButton": "Palīdzība",
+    "moveButton": "Pārvietot uz...",
+    "moveTitle": "Pārvietot „{{name}}”",
+    "hasScheduleLabel": "Ir kalendārs"
   },
   "equipmentUpload": {
     "sectionTitle": "Faili",

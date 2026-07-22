@@ -36,7 +36,41 @@
   },
   "shiftsCalendar": {
     "pageTitle": "Zmiany i kalendarz",
-    "noSelection": "Wybierz sprzęt, aby zobaczyć jego zmiany i kalendarz."
+    "noSelection": "Wybierz sprzęt, aby zobaczyć jego zmiany i kalendarz.",
+    "createCalendarButton": "Utwórz kalendarz",
+    "createCalendarModalTitle": "Utwórz kalendarz dla „{{name}}”",
+    "startDateLabel": "Data rozpoczęcia",
+    "startDateMinHint": "Musi być {{date}} lub późniejsza",
+    "numberOfDaysLabel": "Liczba dni",
+    "selectedEquipmentLabel": "Wybrany sprzęt",
+    "selectedDateLabel": "Wybrana data",
+    "noDateSelected": "Kliknij dzień, aby go wybrać.",
+    "selectionMarkedLabel": "Zaznaczone: {{title}}",
+    "selectionNoneLabel": "Kliknij wydarzenie, aby je zaznaczyć",
+    "editButton": "Edytuj",
+    "deleteButton": "Usuń",
+    "deleteConfirmMessage": "Usunąć „{{title}}”?",
+    "timeFormatSwitchLabel": "Format godziny",
+    "calendar": {
+      "messages": {
+        "today": "Dziś",
+        "previous": "Wstecz",
+        "next": "Dalej",
+        "month": "Miesiąc",
+        "week": "Tydzień",
+        "work_week": "Tydzień roboczy",
+        "day": "Dzień",
+        "agenda": "Agenda",
+        "date": "Data",
+        "time": "Czas",
+        "event": "Wydarzenie",
+        "allDay": "Cały dzień",
+        "yesterday": "Wczoraj",
+        "tomorrow": "Jutro",
+        "noEventsInRange": "Brak wydarzeń w tym zakresie.",
+        "showMore": "+{{count}} więcej"
+      }
+    }
   },
   "equipment": {
     "pageTitle": "Sprzęt",
@@ -86,7 +120,14 @@
     "categoryNotFound": "Wybrana kategoria nie istnieje.",
     "noCategoriesMessage": "Najpierw utwórz kategorię sprzętu.",
     "dateTimeRequired": "Data i godzina są wymagane.",
-    "madeByUserRequired": "Użytkownik jest wymagany."
+    "madeByUserRequired": "Użytkownik jest wymagany.",
+    "linksLogSectionTitle": "Linki i dziennik",
+    "expandSection": "Rozwiń sekcję",
+    "collapseSection": "Zwiń sekcję",
+    "helpButton": "Pomoc",
+    "moveButton": "Przenieś do...",
+    "moveTitle": "Przenieś „{{name}}”",
+    "hasScheduleLabel": "Ma kalendarz"
   },
   "equipmentUpload": {
     "sectionTitle": "Pliki",

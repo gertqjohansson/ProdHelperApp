@@ -36,7 +36,41 @@
   },
   "shiftsCalendar": {
     "pageTitle": "Skift & kalender",
-    "noSelection": "Velg et utstyr for å se skift og kalender."
+    "noSelection": "Velg et utstyr for å se skift og kalender.",
+    "createCalendarButton": "Opprett kalender",
+    "createCalendarModalTitle": "Opprett kalender for \"{{name}}\"",
+    "startDateLabel": "Startdato",
+    "startDateMinHint": "Må være {{date}} eller senere",
+    "numberOfDaysLabel": "Antall dager",
+    "selectedEquipmentLabel": "Valgt utstyr",
+    "selectedDateLabel": "Valgt dato",
+    "noDateSelected": "Klikk på en dag for å velge den.",
+    "selectionMarkedLabel": "Merket: {{title}}",
+    "selectionNoneLabel": "Klikk på en hendelse for å merke den",
+    "editButton": "Rediger",
+    "deleteButton": "Slett",
+    "deleteConfirmMessage": "Slett \"{{title}}\"?",
+    "timeFormatSwitchLabel": "Tidsformat",
+    "calendar": {
+      "messages": {
+        "today": "I dag",
+        "previous": "Tilbake",
+        "next": "Neste",
+        "month": "Måned",
+        "week": "Uke",
+        "work_week": "Arbeidsuke",
+        "day": "Dag",
+        "agenda": "Agenda",
+        "date": "Dato",
+        "time": "Tid",
+        "event": "Hendelse",
+        "allDay": "Hele dagen",
+        "yesterday": "I går",
+        "tomorrow": "I morgen",
+        "noEventsInRange": "Det er ingen hendelser i denne perioden.",
+        "showMore": "+{{count}} til"
+      }
+    }
   },
   "equipment": {
     "pageTitle": "Utstyr",
@@ -86,7 +120,14 @@
     "categoryNotFound": "Den valgte kategorien finnes ikke.",
     "noCategoriesMessage": "Opprett en utstyrskategori først.",
     "dateTimeRequired": "Dato og klokkeslett er påkrevd.",
-    "madeByUserRequired": "Brukeren er påkrevd."
+    "madeByUserRequired": "Brukeren er påkrevd.",
+    "linksLogSectionTitle": "Lenker & logg",
+    "expandSection": "Utvid seksjon",
+    "collapseSection": "Skjul seksjon",
+    "helpButton": "Hjelp",
+    "moveButton": "Flytt til...",
+    "moveTitle": "Flytt \"{{name}}\"",
+    "hasScheduleLabel": "Har en kalender"
   },
   "equipmentUpload": {
     "sectionTitle": "Filer",

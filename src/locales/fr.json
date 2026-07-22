@@ -36,7 +36,41 @@
   },
   "shiftsCalendar": {
     "pageTitle": "Équipes et calendrier",
-    "noSelection": "Sélectionnez un équipement pour voir ses équipes et son calendrier."
+    "noSelection": "Sélectionnez un équipement pour voir ses équipes et son calendrier.",
+    "createCalendarButton": "Créer un calendrier",
+    "createCalendarModalTitle": "Créer un calendrier pour « {{name}} »",
+    "startDateLabel": "Date de début",
+    "startDateMinHint": "Doit être {{date}} ou postérieure",
+    "numberOfDaysLabel": "Nombre de jours",
+    "selectedEquipmentLabel": "Équipement sélectionné",
+    "selectedDateLabel": "Date sélectionnée",
+    "noDateSelected": "Cliquez sur un jour pour le sélectionner.",
+    "selectionMarkedLabel": "Marqué : {{title}}",
+    "selectionNoneLabel": "Cliquez sur un événement pour le marquer",
+    "editButton": "Modifier",
+    "deleteButton": "Supprimer",
+    "deleteConfirmMessage": "Supprimer « {{title}} » ?",
+    "timeFormatSwitchLabel": "Format de l'heure",
+    "calendar": {
+      "messages": {
+        "today": "Aujourd'hui",
+        "previous": "Précédent",
+        "next": "Suivant",
+        "month": "Mois",
+        "week": "Semaine",
+        "work_week": "Semaine de travail",
+        "day": "Jour",
+        "agenda": "Agenda",
+        "date": "Date",
+        "time": "Heure",
+        "event": "Événement",
+        "allDay": "Toute la journée",
+        "yesterday": "Hier",
+        "tomorrow": "Demain",
+        "noEventsInRange": "Il n'y a aucun événement dans cette période.",
+        "showMore": "+{{count}} de plus"
+      }
+    }
   },
   "equipment": {
     "pageTitle": "Équipements",
@@ -86,7 +120,14 @@
     "categoryNotFound": "La catégorie sélectionnée n'existe pas.",
     "noCategoriesMessage": "Créez d'abord une catégorie d'équipement.",
     "dateTimeRequired": "La date et l'heure sont requises.",
-    "madeByUserRequired": "L'utilisateur est requis."
+    "madeByUserRequired": "L'utilisateur est requis.",
+    "linksLogSectionTitle": "Liens et journal",
+    "expandSection": "Développer la section",
+    "collapseSection": "Réduire la section",
+    "helpButton": "Aide",
+    "moveButton": "Déplacer vers...",
+    "moveTitle": "Déplacer « {{name}} »",
+    "hasScheduleLabel": "Possède un calendrier"
   },
   "equipmentUpload": {
     "sectionTitle": "Fichiers",

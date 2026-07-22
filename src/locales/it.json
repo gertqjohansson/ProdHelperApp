@@ -36,7 +36,41 @@
   },
   "shiftsCalendar": {
     "pageTitle": "Turni e calendario",
-    "noSelection": "Seleziona un'attrezzatura per vedere i suoi turni e il calendario."
+    "noSelection": "Seleziona un'attrezzatura per vedere i suoi turni e il calendario.",
+    "createCalendarButton": "Crea calendario",
+    "createCalendarModalTitle": "Crea calendario per \"{{name}}\"",
+    "startDateLabel": "Data di inizio",
+    "startDateMinHint": "Deve essere {{date}} o successiva",
+    "numberOfDaysLabel": "Numero di giorni",
+    "selectedEquipmentLabel": "Attrezzatura selezionata",
+    "selectedDateLabel": "Data selezionata",
+    "noDateSelected": "Fai clic su un giorno per selezionarlo.",
+    "selectionMarkedLabel": "Selezionato: {{title}}",
+    "selectionNoneLabel": "Fai clic su un evento per selezionarlo",
+    "editButton": "Modifica",
+    "deleteButton": "Elimina",
+    "deleteConfirmMessage": "Eliminare \"{{title}}\"?",
+    "timeFormatSwitchLabel": "Formato ora",
+    "calendar": {
+      "messages": {
+        "today": "Oggi",
+        "previous": "Indietro",
+        "next": "Avanti",
+        "month": "Mese",
+        "week": "Settimana",
+        "work_week": "Settimana lavorativa",
+        "day": "Giorno",
+        "agenda": "Agenda",
+        "date": "Data",
+        "time": "Ora",
+        "event": "Evento",
+        "allDay": "Tutto il giorno",
+        "yesterday": "Ieri",
+        "tomorrow": "Domani",
+        "noEventsInRange": "Non ci sono eventi in questo intervallo.",
+        "showMore": "+{{count}} altri"
+      }
+    }
   },
   "equipment": {
     "pageTitle": "Attrezzature",
@@ -86,7 +120,14 @@
     "categoryNotFound": "La categoria selezionata non esiste.",
     "noCategoriesMessage": "Crea prima una categoria di attrezzatura.",
     "dateTimeRequired": "Data e ora sono obbligatorie.",
-    "madeByUserRequired": "L'utente è obbligatorio."
+    "madeByUserRequired": "L'utente è obbligatorio.",
+    "linksLogSectionTitle": "Link e registro",
+    "expandSection": "Espandi sezione",
+    "collapseSection": "Comprimi sezione",
+    "helpButton": "Aiuto",
+    "moveButton": "Sposta in...",
+    "moveTitle": "Sposta \"{{name}}\"",
+    "hasScheduleLabel": "Ha un calendario"
   },
   "equipmentUpload": {
     "sectionTitle": "File",

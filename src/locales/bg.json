@@ -36,7 +36,41 @@
   },
   "shiftsCalendar": {
     "pageTitle": "Смени и календар",
-    "noSelection": "Изберете оборудване, за да видите неговите смени и календар."
+    "noSelection": "Изберете оборудване, за да видите неговите смени и календар.",
+    "createCalendarButton": "Създаване на календар",
+    "createCalendarModalTitle": "Създаване на календар за „{{name}}“",
+    "startDateLabel": "Начална дата",
+    "startDateMinHint": "Трябва да бъде {{date}} или по-късно",
+    "numberOfDaysLabel": "Брой дни",
+    "selectedEquipmentLabel": "Избрано оборудване",
+    "selectedDateLabel": "Избрана дата",
+    "noDateSelected": "Щракнете върху ден, за да го изберете.",
+    "selectionMarkedLabel": "Маркирано: {{title}}",
+    "selectionNoneLabel": "Кликнете върху събитие, за да го маркирате",
+    "editButton": "Редактиране",
+    "deleteButton": "Изтриване",
+    "deleteConfirmMessage": "Изтриване на „{{title}}“?",
+    "timeFormatSwitchLabel": "Формат на часа",
+    "calendar": {
+      "messages": {
+        "today": "Днес",
+        "previous": "Назад",
+        "next": "Напред",
+        "month": "Месец",
+        "week": "Седмица",
+        "work_week": "Работна седмица",
+        "day": "Ден",
+        "agenda": "Дневен ред",
+        "date": "Дата",
+        "time": "Час",
+        "event": "Събитие",
+        "allDay": "Цял ден",
+        "yesterday": "Вчера",
+        "tomorrow": "Утре",
+        "noEventsInRange": "Няма събития в този период.",
+        "showMore": "+{{count}} още"
+      }
+    }
   },
   "equipment": {
     "pageTitle": "Оборудване",
@@ -86,7 +120,14 @@
     "categoryNotFound": "Избраната категория не съществува.",
     "noCategoriesMessage": "Първо създайте категория оборудване.",
     "dateTimeRequired": "Датата и часът са задължителни.",
-    "madeByUserRequired": "Потребителят е задължителен."
+    "madeByUserRequired": "Потребителят е задължителен.",
+    "linksLogSectionTitle": "Връзки и дневник",
+    "expandSection": "Разгъване на секцията",
+    "collapseSection": "Свиване на секцията",
+    "helpButton": "Помощ",
+    "moveButton": "Преместване в...",
+    "moveTitle": "Преместване на „{{name}}“",
+    "hasScheduleLabel": "Има календар"
   },
   "equipmentUpload": {
     "sectionTitle": "Файлове",

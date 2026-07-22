@@ -36,7 +36,41 @@
   },
   "shiftsCalendar": {
     "pageTitle": "Turnet dhe kalendari",
-    "noSelection": "Zgjidhni një pajisje për të parë turnet dhe kalendarin e saj."
+    "noSelection": "Zgjidhni një pajisje për të parë turnet dhe kalendarin e saj.",
+    "createCalendarButton": "Krijo kalendar",
+    "createCalendarModalTitle": "Krijo kalendar për \"{{name}}\"",
+    "startDateLabel": "Data e fillimit",
+    "startDateMinHint": "Duhet të jetë {{date}} ose më vonë",
+    "numberOfDaysLabel": "Numri i ditëve",
+    "selectedEquipmentLabel": "Pajisja e zgjedhur",
+    "selectedDateLabel": "Data e zgjedhur",
+    "noDateSelected": "Klikoni një ditë për ta zgjedhur.",
+    "selectionMarkedLabel": "Shënuar: {{title}}",
+    "selectionNoneLabel": "Klikoni mbi një ngjarje për ta shënuar",
+    "editButton": "Ndrysho",
+    "deleteButton": "Fshi",
+    "deleteConfirmMessage": "Të fshihet \"{{title}}\"?",
+    "timeFormatSwitchLabel": "Formati i orës",
+    "calendar": {
+      "messages": {
+        "today": "Sot",
+        "previous": "Prapa",
+        "next": "Tjetër",
+        "month": "Muaji",
+        "week": "Java",
+        "work_week": "Java e punës",
+        "day": "Dita",
+        "agenda": "Axhenda",
+        "date": "Data",
+        "time": "Ora",
+        "event": "Ngjarja",
+        "allDay": "Gjithë ditën",
+        "yesterday": "Dje",
+        "tomorrow": "Nesër",
+        "noEventsInRange": "Nuk ka ngjarje në këtë periudhë.",
+        "showMore": "+{{count}} më shumë"
+      }
+    }
   },
   "equipment": {
     "pageTitle": "Pajisjet",
@@ -86,7 +120,14 @@
     "categoryNotFound": "Kategoria e zgjedhur nuk ekziston.",
     "noCategoriesMessage": "Krijo fillimisht një kategori pajisjeje.",
     "dateTimeRequired": "Data dhe ora janë të detyrueshme.",
-    "madeByUserRequired": "Përdoruesi është i detyrueshëm."
+    "madeByUserRequired": "Përdoruesi është i detyrueshëm.",
+    "linksLogSectionTitle": "Lidhjet dhe regjistri",
+    "expandSection": "Zgjero seksionin",
+    "collapseSection": "Palos seksionin",
+    "helpButton": "Ndihmë",
+    "moveButton": "Zhvendos te...",
+    "moveTitle": "Zhvendos \"{{name}}\"",
+    "hasScheduleLabel": "Ka kalendar"
   },
   "equipmentUpload": {
     "sectionTitle": "Skedarët",

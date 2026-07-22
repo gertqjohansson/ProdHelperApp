@@ -36,7 +36,41 @@
   },
   "shiftsCalendar": {
     "pageTitle": "Βάρδιες & Ημερολόγιο",
-    "noSelection": "Επιλέξτε εξοπλισμό για να δείτε τις βάρδιες και το ημερολόγιό του."
+    "noSelection": "Επιλέξτε εξοπλισμό για να δείτε τις βάρδιες και το ημερολόγιό του.",
+    "createCalendarButton": "Δημιουργία ημερολογίου",
+    "createCalendarModalTitle": "Δημιουργία ημερολογίου για «{{name}}»",
+    "startDateLabel": "Ημερομηνία έναρξης",
+    "startDateMinHint": "Πρέπει να είναι {{date}} ή μεταγενέστερη",
+    "numberOfDaysLabel": "Αριθμός ημερών",
+    "selectedEquipmentLabel": "Επιλεγμένος εξοπλισμός",
+    "selectedDateLabel": "Επιλεγμένη ημερομηνία",
+    "noDateSelected": "Κάντε κλικ σε μια ημέρα για να την επιλέξετε.",
+    "selectionMarkedLabel": "Επισημασμένο: {{title}}",
+    "selectionNoneLabel": "Κάντε κλικ σε ένα συμβάν για να το επισημάνετε",
+    "editButton": "Επεξεργασία",
+    "deleteButton": "Διαγραφή",
+    "deleteConfirmMessage": "Διαγραφή «{{title}}»;",
+    "timeFormatSwitchLabel": "Μορφή ώρας",
+    "calendar": {
+      "messages": {
+        "today": "Σήμερα",
+        "previous": "Πίσω",
+        "next": "Επόμενο",
+        "month": "Μήνας",
+        "week": "Εβδομάδα",
+        "work_week": "Εργάσιμη εβδομάδα",
+        "day": "Ημέρα",
+        "agenda": "Ατζέντα",
+        "date": "Ημερομηνία",
+        "time": "Ώρα",
+        "event": "Συμβάν",
+        "allDay": "Όλη την ημέρα",
+        "yesterday": "Χθες",
+        "tomorrow": "Αύριο",
+        "noEventsInRange": "Δεν υπάρχουν συμβάντα σε αυτό το εύρος.",
+        "showMore": "+{{count}} ακόμη"
+      }
+    }
   },
   "equipment": {
     "pageTitle": "Εξοπλισμός",
@@ -86,7 +120,14 @@
     "categoryNotFound": "Η επιλεγμένη κατηγορία δεν υπάρχει.",
     "noCategoriesMessage": "Δημιουργήστε πρώτα μια κατηγορία εξοπλισμού.",
     "dateTimeRequired": "Απαιτείται ημερομηνία και ώρα.",
-    "madeByUserRequired": "Ο χρήστης είναι υποχρεωτικός."
+    "madeByUserRequired": "Ο χρήστης είναι υποχρεωτικός.",
+    "linksLogSectionTitle": "Σύνδεσμοι & Ημερολόγιο",
+    "expandSection": "Ανάπτυξη ενότητας",
+    "collapseSection": "Σύμπτυξη ενότητας",
+    "helpButton": "Βοήθεια",
+    "moveButton": "Μετακίνηση σε...",
+    "moveTitle": "Μετακίνηση «{{name}}»",
+    "hasScheduleLabel": "Έχει ημερολόγιο"
   },
   "equipmentUpload": {
     "sectionTitle": "Αρχεία",

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Equipment page help</title>
+<style>
+  :root {
+    color-scheme: light;
+  }
+  body {
+    margin: 0;
+    padding: 32px 16px 64px;
+    font: 15px/1.5 Helvetica, Arial, system-ui, 'Segoe UI', Roboto, sans-serif;
+    color: #222222;
+    background: #ebebeb;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 24px 32px 40px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 10px 15px -3px, rgba(0, 0, 0, 0.08) 0 4px 6px -2px;
+  }
+  h1 {
+    font-size: 28px;
+    color: #18130c;
+    margin: 0 0 24px;
+    border-bottom: 3px solid #27627b;
+    padding-bottom: 12px;
+  }
+  h2 {
+    font-size: 18px;
+    color: #1b4455;
+    margin: 28px 0 8px;
+  }
+  p {
+    margin: 0 0 8px;
+  }
+  #status {
+    color: #444444;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1 id="title">Equipment page help</h1>
+  <div id="status">Loading...</div>
+  <div id="sections"></div>
+</main>
+<script>
+  (function () {
+    var params = new URLSearchParams(window.location.search)
+    var lang = params.get('lang') || 'en'
+
+    fetch('/help/content/equipment-help.json')
+      .then(function (res) {
+        if (!res.ok) throw new Error('Failed to load help content (' + res.status + ')')
+        return res.json()
+      })
+      .then(function (data) {
+        var entry = data[lang] || data.en
+        if (!entry) throw new Error('No help content available')
+
+        document.title = entry.title
+        document.getElementById('title').textContent = entry.title
+        document.documentElement.lang = data[lang] ? lang : 'en'
+
+        var statusEl = document.getElementById('status')
+        statusEl.remove()
+
+        var container = document.getElementById('sections')
+        entry.sections.forEach(function (section) {
+          var h2 = document.createElement('h2')
+          h2.textContent = section.heading
+          var p = document.createElement('p')
+          p.textContent = section.body
+          container.appendChild(h2)
+          container.appendChild(p)
+        })
+      })
+      .catch(function (err) {
+        document.getElementById('status').textContent = 'Could not load help content: ' + err.message
+      })
+  })()
+</script>
+</body>
+</html>

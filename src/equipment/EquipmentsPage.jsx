@@ -6,6 +6,7 @@ import { listEquipmentCategories } from './equipmentCategoryClient'
 import { buildTree, filterTree } from './treeUtils'
 import EquipmentTreePane from './EquipmentTreePane'
 import EquipmentFormModal from './EquipmentFormModal'
+import EquipmentMoveModal from './EquipmentMoveModal'
 import EquipmentCategoryManagerModal from './EquipmentCategoryManagerModal'
 import EquipmentCommentPanel from './EquipmentCommentPanel'
 import EquipmentUploadsPanel from './EquipmentUploadsPanel'
@@ -51,6 +52,29 @@ function FolderIcon() {
   )
 }
 
+function MoveIcon() {
+  return (
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <polyline points="5 9 2 12 5 15" />
+      <polyline points="9 5 12 2 15 5" />
+      <polyline points="15 19 12 22 9 19" />
+      <polyline points="19 9 22 12 19 15" />
+      <line x1="2" y1="12" x2="22" y2="12" />
+      <line x1="12" y1="2" x2="12" y2="22" />
+    </svg>
+  )
+}
+
+function HelpIcon() {
+  return (
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <circle cx="12" cy="12" r="9" />
+      <path d="M9.5 9.3a2.5 2.5 0 0 1 4.9.7c0 1.7-2.4 2-2.4 3.5" />
+      <line x1="12" y1="17" x2="12" y2="17.1" />
+    </svg>
+  )
+}
+
 const ERROR_CODE_KEYS = {
   NameRequired: 'equipment.nameRequired',
   ParentNotFound: 'equipment.parentNotFound',
@@ -76,8 +100,10 @@ export default function EquipmentsPage() {
   const [error, setError] = useState(null)
   const [filterText, setFilterText] = useState('')
   const [manageCategoriesOpen, setManageCategoriesOpen] = useState(false)
+  const [linksLogExpanded, setLinksLogExpanded] = useState(true)
 
   const [formMode, setFormMode] = useState(null) // null | 'add' | 'edit'
+  const [moveModalOpen, setMoveModalOpen] = useState(false)
 
   const [deleteConfirmOpen, setDeleteConfirmOpen] = useState(false)
   const [deleteError, setDeleteError] = useState(null)
@@ -124,6 +150,7 @@ export default function EquipmentsPage() {
   const selectedItem = items.find((i) => i.id === selectedId) ?? null
   const tree = filterTree(buildTree(items), filterText)
   const usedColors = [...new Set(items.map((i) => i.colorCode).filter(Boolean))]
+  const hasTopNode = items.some((i) => i.parentId == null)
 
   function openAdd() {
     if (categories.length === 0) return
@@ -198,6 +225,39 @@ export default function EquipmentsPage() {
           notificationLanguage: null,
         }
 
+  async function handleMoveSave(newParentId) {
+    if (!selectedItem) return
+    const actionTimeUtc = new Date().toISOString()
+    try {
+      await authFetch((token) =>
+        updateEquipment(token, {
+          id: selectedItem.id,
+          parentId: newParentId,
+          name: selectedItem.name,
+          externalCode: selectedItem.externalCode ?? null,
+          isOee: !!selectedItem.isOee,
+          isPlannable: !!selectedItem.isPlannable,
+          colorCode: selectedItem.colorCode ?? null,
+          equipmentCategoryId: selectedItem.equipmentCategoryId,
+          languageIsoCode: i18n.language,
+          useEconomy: !!selectedItem.useEconomy,
+          dateOfPurchase: selectedItem.dateOfPurchase ?? null,
+          price: selectedItem.price ?? null,
+          depreciationPeriod: selectedItem.depreciationPeriod ?? null,
+          useNotification: !!selectedItem.useNotification,
+          notificationDate: selectedItem.notificationDate ?? null,
+          notification: selectedItem.notification ?? null,
+          actionTimeUtc,
+          madeByUser: user.email,
+        })
+      )
+      setMoveModalOpen(false)
+      await reload()
+    } catch (err) {
+      throw new Error(describeError(err, t))
+    }
+  }
+
   async function handleCommentSave(comment) {
     try {
       await authFetch((token) => saveEquipmentComment(token, { id: selectedItem.id, comment, languageIsoCode: i18n.language }))
@@ -243,6 +303,10 @@ export default function EquipmentsPage() {
             <EditIcon />
             {t('equipment.editButton')}
           </button>
+          <button type="button" className="equipments-toolbar-button" onClick={() => setMoveModalOpen(true)} disabled={!selectedItem}>
+            <MoveIcon />
+            {t('equipment.moveButton')}
+          </button>
           <button
             type="button"
             className="equipments-toolbar-button equipments-toolbar-button-danger"
@@ -257,6 +321,15 @@ export default function EquipmentsPage() {
             {t('equipmentCategory.manageButton')}
           </button>
         </div>
+        <button
+          type="button"
+          className="equipments-help-button"
+          onClick={() => window.open(`/help/equipment.html?lang=${i18n.language}`, '_blank', 'noopener,noreferrer')}
+          aria-label={t('equipment.helpButton')}
+          title={t('equipment.helpButton')}
+        >
+          <HelpIcon />
+        </button>
       </div>
 
       {categories.length === 0 && <p className="equipments-no-categories">{t('equipment.noCategoriesMessage')}</p>}
@@ -277,11 +350,26 @@ export default function EquipmentsPage() {
         <EquipmentUploadsPanel selectedItem={selectedItem} />
       </div>
 
-      <div className="equipments-body">
-        <EquipmentLinksPanel selectedItem={selectedItem} />
+      <button
+        type="button"
+        className="equipments-section-toggle"
+        onClick={() => setLinksLogExpanded((open) => !open)}
+        aria-expanded={linksLogExpanded}
+        aria-label={linksLogExpanded ? t('equipment.collapseSection') : t('equipment.expandSection')}
+      >
+        <span className={`topbar-dropdown-chevron${linksLogExpanded ? ' open' : ''}`} aria-hidden="true">
+          ›
+        </span>
+        <span>{t('equipment.linksLogSectionTitle')}</span>
+      </button>
 
-        <EquipmentLogPanel selectedItem={selectedItem} />
-      </div>
+      {linksLogExpanded && (
+        <div className="equipments-body">
+          <EquipmentLinksPanel selectedItem={selectedItem} />
+
+          <EquipmentLogPanel selectedItem={selectedItem} />
+        </div>
+      )}
 
       {formMode && (
         <EquipmentFormModal
@@ -289,8 +377,18 @@ export default function EquipmentsPage() {
           categories={categories}
           usedColors={usedColors}
           initialValues={formInitialValues}
+          forceTopNode={formMode === 'add' && !hasTopNode}
           onSave={handleFormSave}
           onCancel={closeForm}
+        />
+      )}
+
+      {moveModalOpen && selectedItem && (
+        <EquipmentMoveModal
+          item={selectedItem}
+          items={items}
+          onSave={handleMoveSave}
+          onCancel={() => setMoveModalOpen(false)}
         />
       )}
 

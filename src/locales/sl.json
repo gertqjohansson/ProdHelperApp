@@ -36,7 +36,41 @@
   },
   "shiftsCalendar": {
     "pageTitle": "Izmene in koledar",
-    "noSelection": "Izberite opremo za ogled njenih izmen in koledarja."
+    "noSelection": "Izberite opremo za ogled njenih izmen in koledarja.",
+    "createCalendarButton": "Ustvari koledar",
+    "createCalendarModalTitle": "Ustvari koledar za „{{name}}“",
+    "startDateLabel": "Datum začetka",
+    "startDateMinHint": "Mora biti {{date}} ali kasneje",
+    "numberOfDaysLabel": "Število dni",
+    "selectedEquipmentLabel": "Izbrana oprema",
+    "selectedDateLabel": "Izbrani datum",
+    "noDateSelected": "Kliknite dan, da ga izberete.",
+    "selectionMarkedLabel": "Označeno: {{title}}",
+    "selectionNoneLabel": "Kliknite dogodek, da ga označite",
+    "editButton": "Uredi",
+    "deleteButton": "Izbriši",
+    "deleteConfirmMessage": "Izbrišem „{{title}}“?",
+    "timeFormatSwitchLabel": "Oblika časa",
+    "calendar": {
+      "messages": {
+        "today": "Danes",
+        "previous": "Nazaj",
+        "next": "Naprej",
+        "month": "Mesec",
+        "week": "Teden",
+        "work_week": "Delovni teden",
+        "day": "Dan",
+        "agenda": "Dnevni red",
+        "date": "Datum",
+        "time": "Čas",
+        "event": "Dogodek",
+        "allDay": "Ves dan",
+        "yesterday": "Včeraj",
+        "tomorrow": "Jutri",
+        "noEventsInRange": "V tem obdobju ni dogodkov.",
+        "showMore": "+{{count}} več"
+      }
+    }
   },
   "equipment": {
     "pageTitle": "Oprema",
@@ -86,7 +120,14 @@
     "categoryNotFound": "Izbrana kategorija ne obstaja.",
     "noCategoriesMessage": "Najprej ustvarite kategorijo opreme.",
     "dateTimeRequired": "Datum in čas sta obvezna.",
-    "madeByUserRequired": "Uporabnik je obvezen."
+    "madeByUserRequired": "Uporabnik je obvezen.",
+    "linksLogSectionTitle": "Povezave in dnevnik",
+    "expandSection": "Razširi razdelek",
+    "collapseSection": "Strni razdelek",
+    "helpButton": "Pomoč",
+    "moveButton": "Premakni v...",
+    "moveTitle": "Premakni „{{name}}“",
+    "hasScheduleLabel": "Ima koledar"
   },
   "equipmentUpload": {
     "sectionTitle": "Datoteke",

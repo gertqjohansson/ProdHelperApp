@@ -4,7 +4,17 @@ import EquipmentTree from './EquipmentTree'
 // The search + tree UI shared between EquipmentsPage and any other page that needs to show the
 // same equipment tree (e.g. ShiftsCalendarPage). Data fetching stays with the caller - pages fetch
 // differently (EquipmentsPage also loads categories in the same round trip).
-export default function EquipmentTreePane({ tree, selectedId, onSelect, loading, error, filterText, onFilterTextChange }) {
+export default function EquipmentTreePane({
+  tree,
+  selectedId,
+  onSelect,
+  loading,
+  error,
+  filterText,
+  onFilterTextChange,
+  showBadges = true,
+  equipmentIdsWithSchedule,
+}) {
   const { t } = useTranslation()
 
   return (
@@ -29,7 +39,14 @@ export default function EquipmentTreePane({ tree, selectedId, onSelect, loading,
       ) : tree.length === 0 ? (
         <p>{t('equipment.emptyTree')}</p>
       ) : (
-        <EquipmentTree nodes={tree} selectedId={selectedId} onSelect={onSelect} forceExpanded={!!filterText} />
+        <EquipmentTree
+          nodes={tree}
+          selectedId={selectedId}
+          onSelect={onSelect}
+          forceExpanded={!!filterText}
+          showBadges={showBadges}
+          equipmentIdsWithSchedule={equipmentIdsWithSchedule}
+        />
       )}
     </div>
   )

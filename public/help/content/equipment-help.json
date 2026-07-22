@@ -1,0 +1,1313 @@
+{
+  "en": {
+    "title": "Equipment page help",
+    "sections": [
+      {
+        "heading": "Overview",
+        "body": "The Equipment page lets you build and maintain a hierarchical tree of your equipment (for example: Site > Line > Machine), and manage everything that belongs to each item - comments, files, links and log entries - from one place."
+      },
+      {
+        "heading": "The equipment tree and search",
+        "body": "The tree on the left shows all equipment, organized by parent/child relationships. Use the arrow next to an item to expand or collapse its children. Use the search box to filter the tree by name - matching items and their parents stay visible, everything else is hidden. Each row can show small badges: one for \"Is OEE\" and one for \"Is plannable\". Rows can also be colored using the color you assign to each equipment item."
+      },
+      {
+        "heading": "Selecting an item",
+        "body": "Click an equipment item's name in the tree to select it. The Comment, Files, Links and Log sections always show information for whichever item is currently selected."
+      },
+      {
+        "heading": "Adding and editing equipment",
+        "body": "Use the Add button to create a new equipment item, or select an item and use Edit to change it. In the form: \"Top-level node\" marks an item as having no parent (a root of the tree) - if the tree is currently empty, this is locked on for the very first item you add, since the tree always needs at least one root. Fill in a name, pick a category, and optionally an external code and a color. The \"Use economy\" section lets you record a purchase date, price and depreciation period. The \"Use notification\" section lets you set a date/time and a message that is meant to remind you about this equipment."
+      },
+      {
+        "heading": "OEE and plannable equipment",
+        "body": "Checking \"Is OEE\" creates the conditions to measure OEE (Overall Equipment Effectiveness). External equipment is needed to record every cycle the equipment goes through - check out Prodhelper.com to see how cycle registration can be done. Once OEE is checked, the equipment also automatically becomes plannable. Checking \"Is plannable\" makes the equipment visible as a resource in the planning view, where production orders can be scheduled in a Gantt chart."
+      },
+      {
+        "heading": "Moving equipment to a different parent",
+        "body": "Select an item and use \"Move to...\" to give it a different parent. Choose a new parent from the list, or choose the top-level option to make it a root item, then confirm. An item can never be moved under itself or one of its own descendants, so those are left out of the list."
+      },
+      {
+        "heading": "Deleting equipment",
+        "body": "Select an item and use Delete. You'll be asked to confirm. An item that still has child items in the tree cannot be deleted - remove or move its children first."
+      },
+      {
+        "heading": "Managing categories",
+        "body": "Every equipment item belongs to a category. Use \"Manage categories\" in the toolbar to add, rename or remove categories. At least one category must exist before you can add equipment."
+      },
+      {
+        "heading": "Comments",
+        "body": "The Comment panel lets you write a free-text comment about the selected equipment item. If the comment was originally written in a different language than the one you're currently using, a translated preview is shown alongside a note about the original language."
+      },
+      {
+        "heading": "Files",
+        "body": "The Files panel lets you upload files to the selected equipment item, and download or delete files that were already uploaded. Give each file a short description so it's easy to recognize later."
+      },
+      {
+        "heading": "Links",
+        "body": "The Links panel lets you attach links to the selected equipment item - either a normal webpage or a document (for example a SharePoint document). Use the checkbox in the Add dialog to mark a link as a document. Select a link in the table to Open or Download it, or to remove it."
+      },
+      {
+        "heading": "Log",
+        "body": "The Log panel lets you keep a dated history of freeform notes about the selected equipment item. Add a new entry with a short description and the note text. Click a log entry's description (or select it and use View) to read the full entry. Editing an entry updates its timestamp but keeps the original author. Use the search box to filter entries by description or text."
+      },
+      {
+        "heading": "Showing and hiding the Links & Log section",
+        "body": "Click the bar above the Links and Log panels to expand or collapse that section, the same way sections can be expanded or collapsed in Swagger's API documentation."
+      }
+    ]
+  },
+  "sv": {
+    "title": "Hjälp för utrustningssidan",
+    "sections": [
+      {
+        "heading": "Översikt",
+        "body": "Utrustningssidan låter dig bygga och underhålla ett hierarkiskt träd av din utrustning (till exempel: Anläggning > Linje > Maskin), och hantera allt som hör till varje objekt - kommentarer, filer, länkar och loggposter - på ett och samma ställe."
+      },
+      {
+        "heading": "Utrustningsträdet och sökning",
+        "body": "Trädet till vänster visar all utrustning, organiserad efter förälder/barn-relationer. Använd pilen bredvid ett objekt för att expandera eller komprimera dess underobjekt. Använd sökfältet för att filtrera trädet på namn - matchande objekt och deras föräldrar förblir synliga, allt annat döljs. Varje rad kan visa små märken: ett för \"Är OEE\" och ett för \"Är planerbar\". Rader kan även färgas med den färg du tilldelar respektive utrustningsobjekt."
+      },
+      {
+        "heading": "Att välja ett objekt",
+        "body": "Klicka på ett utrustningsobjekts namn i trädet för att välja det. Avsnitten Kommentar, Filer, Länkar och Logg visar alltid information för det objekt som för tillfället är valt."
+      },
+      {
+        "heading": "Lägga till och redigera utrustning",
+        "body": "Använd knappen Lägg till för att skapa ett nytt utrustningsobjekt, eller markera ett objekt och använd Redigera för att ändra det. I formuläret: \"Toppnivånod\" markerar att ett objekt saknar förälder (en rot i trädet) - om trädet just nu är tomt är detta låst för det allra första objektet du lägger till, eftersom trädet alltid behöver minst en rot. Fyll i ett namn, välj en kategori, och ange eventuellt en extern kod och en färg. Avsnittet \"Använd ekonomi\" låter dig registrera inköpsdatum, pris och avskrivningsperiod. Avsnittet \"Använd avisering\" låter dig ange ett datum/tid och ett meddelande som är tänkt att påminna dig om denna utrustning."
+      },
+      {
+        "heading": "OEE och planeringsbar utrustning",
+        "body": "Om du kryssar i \"OEE\" skapas förutsättningarna för att mäta OEE (Overall Equipment Effectiveness). Extern utrustning krävs för att registrera varje cykel utrustningen genomgår - besök Prodhelper.com för att se hur cykelregistrering kan göras. När OEE är ikryssat blir utrustningen även automatiskt planeringsbar. Om du kryssar i \"Planeringsbar\" blir utrustningen synlig som en resurs i planeringsvyn, där produktionsorder kan schemaläggas i ett Gantt-schema."
+      },
+      {
+        "heading": "Flytta utrustning till en annan förälder",
+        "body": "Markera ett objekt och använd \"Flytta till...\" för att ge det en annan förälder. Välj en ny förälder i listan, eller välj alternativet för toppnivå för att göra det till ett rotobjekt, och bekräfta sedan. Ett objekt kan aldrig flyttas under sig självt eller något av sina egna underobjekt, så dessa utesluts från listan."
+      },
+      {
+        "heading": "Ta bort utrustning",
+        "body": "Markera ett objekt och använd Ta bort. Du blir ombedd att bekräfta. Ett objekt som fortfarande har underobjekt i trädet kan inte tas bort - ta bort eller flytta dess underobjekt först."
+      },
+      {
+        "heading": "Hantera kategorier",
+        "body": "Varje utrustningsobjekt tillhör en kategori. Använd \"Hantera kategorier\" i verktygsfältet för att lägga till, byta namn på eller ta bort kategorier. Minst en kategori måste finnas innan du kan lägga till utrustning."
+      },
+      {
+        "heading": "Kommentarer",
+        "body": "Kommentarpanelen låter dig skriva en fritextkommentar om det valda utrustningsobjektet. Om kommentaren ursprungligen skrevs på ett annat språk än det du för tillfället använder visas en översatt förhandsvisning tillsammans med en notering om originalspråket."
+      },
+      {
+        "heading": "Filer",
+        "body": "Filpanelen låter dig ladda upp filer till det valda utrustningsobjektet, samt ladda ner eller ta bort filer som redan laddats upp. Ge varje fil en kort beskrivning så att den är lätt att känna igen senare."
+      },
+      {
+        "heading": "Länkar",
+        "body": "Länkpanelen låter dig koppla länkar till det valda utrustningsobjektet - antingen en vanlig webbsida eller ett dokument (till exempel ett SharePoint-dokument). Använd kryssrutan i dialogen Lägg till för att markera en länk som ett dokument. Markera en länk i tabellen för att Öppna eller Ladda ner den, eller för att ta bort den."
+      },
+      {
+        "heading": "Logg",
+        "body": "Loggpanelen låter dig föra en daterad historik av fritextanteckningar om det valda utrustningsobjektet. Lägg till en ny post med en kort beskrivning och anteckningstext. Klicka på en loggposts beskrivning (eller markera den och använd Visa) för att läsa hela posten. Att redigera en post uppdaterar dess tidsstämpel men behåller den ursprungliga författaren. Använd sökfältet för att filtrera poster på beskrivning eller text."
+      },
+      {
+        "heading": "Visa och dölja avsnittet Länkar & Logg",
+        "body": "Klicka på raden ovanför panelerna Länkar och Logg för att expandera eller komprimera det avsnittet, på samma sätt som avsnitt kan expanderas eller komprimeras i Swaggers API-dokumentation."
+      }
+    ]
+  },
+  "da": {
+    "title": "Hjælp til udstyrssiden",
+    "sections": [
+      {
+        "heading": "Oversigt",
+        "body": "Udstyrssiden lader dig opbygge og vedligeholde et hierarkisk træ af dit udstyr (for eksempel: Anlæg > Linje > Maskine), og administrere alt, der hører til hvert emne - kommentarer, filer, links og logposter - ét sted."
+      },
+      {
+        "heading": "Udstyrstræet og søgning",
+        "body": "Træet til venstre viser alt udstyr, organiseret efter forælder/barn-relationer. Brug pilen ved siden af et emne til at udvide eller skjule dets underemner. Brug søgefeltet til at filtrere træet efter navn - matchende emner og deres forældre forbliver synlige, alt andet skjules. Hver række kan vise små mærker: ét for \"Er OEE\" og ét for \"Er planlægbar\". Rækker kan også farves med den farve, du tildeler hvert udstyrsemne."
+      },
+      {
+        "heading": "At vælge et emne",
+        "body": "Klik på et udstyrsemnes navn i træet for at vælge det. Afsnittene Kommentar, Filer, Links og Log viser altid oplysninger for det emne, der aktuelt er valgt."
+      },
+      {
+        "heading": "Tilføje og redigere udstyr",
+        "body": "Brug knappen Tilføj til at oprette et nyt udstyrsemne, eller vælg et emne og brug Rediger til at ændre det. I formularen: \"Topniveau-node\" markerer, at et emne ikke har en forælder (en rod i træet) - hvis træet aktuelt er tomt, er dette låst for det allerførste emne, du tilføjer, da træet altid skal have mindst én rod. Udfyld et navn, vælg en kategori, og angiv eventuelt en ekstern kode og en farve. Afsnittet \"Brug økonomi\" lader dig registrere købsdato, pris og afskrivningsperiode. Afsnittet \"Brug påmindelse\" lader dig angive en dato/tid og en besked, der er tænkt som en påmindelse om dette udstyr."
+      },
+      {
+        "heading": "OEE og planlægningsbart udstyr",
+        "body": "Hvis du markerer \"OEE\", skabes forudsætningerne for at måle OEE (Overall Equipment Effectiveness). Der kræves eksternt udstyr til at registrere hver cyklus, udstyret gennemgår - besøg Prodhelper.com for at se, hvordan cyklusregistrering kan gøres. Når OEE er markeret, bliver udstyret også automatisk planlægningsbart. Hvis du markerer \"Planlægningsbar\", bliver udstyret synligt som en ressource i planlægningsvisningen, hvor produktionsordrer kan planlægges i et Gantt-diagram."
+      },
+      {
+        "heading": "Flytte udstyr til en anden forælder",
+        "body": "Vælg et emne, og brug \"Flyt til...\" for at give det en anden forælder. Vælg en ny forælder fra listen, eller vælg topniveau-muligheden for at gøre det til et rodemne, og bekræft derefter. Et emne kan aldrig flyttes ind under sig selv eller et af sine egne underemner, så de udelades fra listen."
+      },
+      {
+        "heading": "Slette udstyr",
+        "body": "Vælg et emne, og brug Slet. Du bliver bedt om at bekræfte. Et emne, der stadig har underemner i træet, kan ikke slettes - fjern eller flyt dets underemner først."
+      },
+      {
+        "heading": "Administrere kategorier",
+        "body": "Hvert udstyrsemne tilhører en kategori. Brug \"Administrer kategorier\" i værktøjslinjen til at tilføje, omdøbe eller fjerne kategorier. Mindst én kategori skal findes, før du kan tilføje udstyr."
+      },
+      {
+        "heading": "Kommentarer",
+        "body": "Kommentarpanelet lader dig skrive en fritekstkommentar om det valgte udstyrsemne. Hvis kommentaren oprindeligt blev skrevet på et andet sprog end det, du aktuelt bruger, vises en oversat forhåndsvisning sammen med en note om originalsproget."
+      },
+      {
+        "heading": "Filer",
+        "body": "Filpanelet lader dig uploade filer til det valgte udstyrsemne samt downloade eller slette filer, der allerede er uploadet. Giv hver fil en kort beskrivelse, så den er let at genkende senere."
+      },
+      {
+        "heading": "Links",
+        "body": "Linkpanelet lader dig knytte links til det valgte udstyrsemne - enten en almindelig webside eller et dokument (for eksempel et SharePoint-dokument). Brug afkrydsningsfeltet i dialogen Tilføj til at markere et link som et dokument. Vælg et link i tabellen for at Åbne eller Downloade det, eller for at fjerne det."
+      },
+      {
+        "heading": "Log",
+        "body": "Logpanelet lader dig føre en dateret historik af fritekstnoter om det valgte udstyrsemne. Tilføj en ny post med en kort beskrivelse og notetekst. Klik på en logposts beskrivelse (eller vælg den, og brug Vis) for at læse hele posten. Redigering af en post opdaterer dens tidsstempel, men bevarer den oprindelige forfatter. Brug søgefeltet til at filtrere poster efter beskrivelse eller tekst."
+      },
+      {
+        "heading": "Vise og skjule afsnittet Links & Log",
+        "body": "Klik på linjen over panelerne Links og Log for at udvide eller skjule det afsnit, på samme måde som afsnit kan udvides eller skjules i Swaggers API-dokumentation."
+      }
+    ]
+  },
+  "nb": {
+    "title": "Hjelp til utstyrssiden",
+    "sections": [
+      {
+        "heading": "Oversikt",
+        "body": "Utstyrssiden lar deg bygge og vedlikeholde et hierarkisk tre av utstyret ditt (for eksempel: Anlegg > Linje > Maskin), og administrere alt som hører til hvert element - kommentarer, filer, lenker og loggoppføringer - på ett sted."
+      },
+      {
+        "heading": "Utstyrstreet og søk",
+        "body": "Treet til venstre viser alt utstyr, organisert etter forelder/barn-relasjoner. Bruk pilen ved siden av et element for å utvide eller kollapse underelementene. Bruk søkefeltet for å filtrere treet på navn - elementer som treffer, og deres foreldre, forblir synlige, alt annet skjules. Hver rad kan vise små merker: ett for \"Er OEE\" og ett for \"Er planbar\". Rader kan også fargelegges med fargen du tildeler hvert utstyrselement."
+      },
+      {
+        "heading": "Å velge et element",
+        "body": "Klikk på et utstyrselements navn i treet for å velge det. Seksjonene Kommentar, Filer, Lenker og Logg viser alltid informasjon for elementet som er valgt."
+      },
+      {
+        "heading": "Legge til og redigere utstyr",
+        "body": "Bruk Legg til-knappen for å opprette et nytt utstyrselement, eller velg et element og bruk Rediger for å endre det. I skjemaet: \"Toppnivånode\" markerer at et element ikke har en forelder (en rot i treet) - hvis treet er tomt akkurat nå, er dette låst for det aller første elementet du legger til, siden treet alltid trenger minst én rot. Fyll inn et navn, velg en kategori, og angi eventuelt en ekstern kode og en farge. Seksjonen \"Bruk økonomi\" lar deg registrere kjøpsdato, pris og avskrivningsperiode. Seksjonen \"Bruk varsling\" lar deg angi en dato/tid og en melding ment å minne deg på dette utstyret."
+      },
+      {
+        "heading": "OEE og planleggbart utstyr",
+        "body": "Hvis du krysser av for \"OEE\", skapes forutsetningene for å måle OEE (Overall Equipment Effectiveness). Det kreves eksternt utstyr for å registrere hver syklus utstyret gjennomgår - se Prodhelper.com for å se hvordan sykluregistrering kan gjøres. Når OEE er krysset av, blir utstyret også automatisk planleggbart. Hvis du krysser av for \"Planleggbar\", blir utstyret synlig som en ressurs i planleggingsvisningen, der produksjonsordrer kan planlegges i et Gantt-diagram."
+      },
+      {
+        "heading": "Flytte utstyr til en annen forelder",
+        "body": "Velg et element og bruk \"Flytt til...\" for å gi det en annen forelder. Velg en ny forelder fra listen, eller velg toppnivå-alternativet for å gjøre det til et rotelement, og bekreft deretter. Et element kan aldri flyttes under seg selv eller et av sine egne underelementer, så disse er utelatt fra listen."
+      },
+      {
+        "heading": "Slette utstyr",
+        "body": "Velg et element og bruk Slett. Du blir bedt om å bekrefte. Et element som fortsatt har underelementer i treet, kan ikke slettes - fjern eller flytt underelementene først."
+      },
+      {
+        "heading": "Administrere kategorier",
+        "body": "Hvert utstyrselement tilhører en kategori. Bruk \"Administrer kategorier\" i verktøylinjen for å legge til, gi nytt navn til eller fjerne kategorier. Minst én kategori må finnes før du kan legge til utstyr."
+      },
+      {
+        "heading": "Kommentarer",
+        "body": "Kommentarpanelet lar deg skrive en fritekstkommentar om det valgte utstyrselementet. Hvis kommentaren opprinnelig ble skrevet på et annet språk enn det du bruker nå, vises en oversatt forhåndsvisning sammen med en merknad om originalspråket."
+      },
+      {
+        "heading": "Filer",
+        "body": "Filpanelet lar deg laste opp filer til det valgte utstyrselementet, og laste ned eller slette filer som allerede er lastet opp. Gi hver fil en kort beskrivelse slik at den er lett å kjenne igjen senere."
+      },
+      {
+        "heading": "Lenker",
+        "body": "Lenkepanelet lar deg knytte lenker til det valgte utstyrselementet - enten en vanlig nettside eller et dokument (for eksempel et SharePoint-dokument). Bruk avkrysningsboksen i Legg til-dialogen for å merke en lenke som et dokument. Velg en lenke i tabellen for å Åpne eller Laste ned den, eller for å fjerne den."
+      },
+      {
+        "heading": "Logg",
+        "body": "Loggpanelet lar deg føre en datert historikk av fritekstnotater om det valgte utstyrselementet. Legg til en ny oppføring med en kort beskrivelse og notattekst. Klikk på en loggoppførings beskrivelse (eller velg den og bruk Vis) for å lese hele oppføringen. Redigering av en oppføring oppdaterer tidsstempelet, men beholder den opprinnelige forfatteren. Bruk søkefeltet for å filtrere oppføringer på beskrivelse eller tekst."
+      },
+      {
+        "heading": "Vise og skjule Lenker & Logg-seksjonen",
+        "body": "Klikk på linjen over Lenker- og Logg-panelene for å utvide eller kollapse den seksjonen, på samme måte som seksjoner kan utvides eller kollapses i Swaggers API-dokumentasjon."
+      }
+    ]
+  },
+  "fi": {
+    "title": "Laitesivun ohje",
+    "sections": [
+      {
+        "heading": "Yleiskatsaus",
+        "body": "Laitesivulla voit rakentaa ja ylläpitää laitteidesi hierarkkista puurakennetta (esimerkiksi: Toimipiste > Linja > Kone) sekä hallita kaikkea kuhunkin kohteeseen liittyvää - kommentteja, tiedostoja, linkkejä ja lokimerkintöjä - yhdessä paikassa."
+      },
+      {
+        "heading": "Laitepuu ja haku",
+        "body": "Vasemmalla oleva puu näyttää kaikki laitteet järjestettynä ylä- ja alakohteiden mukaan. Käytä kohteen vieressä olevaa nuolta laajentaaksesi tai supistaaksesi sen alakohteet. Käytä hakukenttää suodattaaksesi puuta nimen perusteella - täsmäävät kohteet ja niiden yläkohteet pysyvät näkyvissä, kaikki muu piilotetaan. Jokainen rivi voi näyttää pieniä merkkejä: yhden kohteelle \"On OEE\" ja yhden kohteelle \"On suunniteltavissa\". Rivit voidaan myös värittää kullekin laitteelle määritetyllä värillä."
+      },
+      {
+        "heading": "Kohteen valitseminen",
+        "body": "Valitse laite napsauttamalla sen nimeä puussa. Kommentti-, Tiedostot-, Linkit- ja Loki-osiot näyttävät aina tiedot sillä hetkellä valitusta kohteesta."
+      },
+      {
+        "heading": "Laitteen lisääminen ja muokkaaminen",
+        "body": "Luo uusi laite Lisää-painikkeella, tai valitse kohde ja muokkaa sitä Muokkaa-painikkeella. Lomakkeessa: \"Ylimmän tason solmu\" merkitsee, ettei kohteella ole yläkohdetta (puun juuri) - jos puu on tällä hetkellä tyhjä, tämä on lukittu päälle ensimmäistä lisättävää kohdetta varten, koska puussa on aina oltava vähintään yksi juuri. Täytä nimi, valitse kategoria ja anna halutessasi ulkoinen koodi ja väri. \"Käytä taloustietoja\" -osiossa voit tallentaa ostopäivän, hinnan ja poistoajan. \"Käytä muistutusta\" -osiossa voit asettaa päivämäärän/ajan ja viestin, joka on tarkoitettu muistuttamaan sinua tästä laitteesta."
+      },
+      {
+        "heading": "OEE ja suunniteltavissa oleva laite",
+        "body": "\"OEE\"-valintaruudun valitseminen luo edellytykset OEE:n (Overall Equipment Effectiveness) mittaamiselle. Ulkoista laitteistoa tarvitaan tallentamaan jokainen laitteen läpikäymä sykli - katso Prodhelper.com-sivustolta, miten syklirekisteröinti voidaan tehdä. Kun OEE on valittu, laitteesta tulee myös automaattisesti suunniteltavissa. \"Suunniteltavissa\"-valintaruudun valitseminen tekee laitteesta näkyvän resurssin suunnitteluohjelmassa, jossa tuotantotilauksia voidaan aikatauluttaa Gantt-kaaviossa."
+      },
+      {
+        "heading": "Laitteen siirtäminen toisen kohteen alle",
+        "body": "Valitse kohde ja käytä \"Siirrä...\" -toimintoa antaaksesi sille toisen yläkohteen. Valitse uusi yläkohde luettelosta, tai valitse ylimmän tason vaihtoehto tehdäksesi siitä juurikohteen, ja vahvista sitten. Kohdetta ei voi koskaan siirtää itsensä tai minkään omista alakohteistaan alle, joten ne on jätetty pois luettelosta."
+      },
+      {
+        "heading": "Laitteen poistaminen",
+        "body": "Valitse kohde ja käytä Poista-toimintoa. Sinua pyydetään vahvistamaan poisto. Kohdetta, jolla on vielä alakohteita puussa, ei voi poistaa - poista tai siirrä sen alakohteet ensin."
+      },
+      {
+        "heading": "Kategorioiden hallinta",
+        "body": "Jokainen laite kuuluu johonkin kategoriaan. Käytä työkalurivin \"Hallitse kategorioita\" -toimintoa kategorioiden lisäämiseen, uudelleennimeämiseen tai poistamiseen. Vähintään yhden kategorian on oltava olemassa, ennen kuin voit lisätä laitteita."
+      },
+      {
+        "heading": "Kommentit",
+        "body": "Kommenttipaneelissa voit kirjoittaa vapaamuotoisen kommentin valitusta laitteesta. Jos kommentti on alun perin kirjoitettu eri kielellä kuin se, jota parhaillaan käytät, näytetään käännetty esikatselu sekä huomautus alkuperäisestä kielestä."
+      },
+      {
+        "heading": "Tiedostot",
+        "body": "Tiedostopaneelissa voit lähettää tiedostoja valitulle laitteelle sekä ladata tai poistaa jo lähetettyjä tiedostoja. Anna jokaiselle tiedostolle lyhyt kuvaus, jotta se on myöhemmin helppo tunnistaa."
+      },
+      {
+        "heading": "Linkit",
+        "body": "Linkkipaneelissa voit liittää linkkejä valittuun laitteeseen - joko tavallisen verkkosivun tai asiakirjan (esimerkiksi SharePoint-asiakirjan). Merkitse linkki asiakirjaksi Lisää-valintaikkunan valintaruudulla. Valitse linkki taulukosta avataksesi tai ladataksesi sen, tai poistaaksesi sen."
+      },
+      {
+        "heading": "Loki",
+        "body": "Lokipaneelissa voit pitää päivätyn historian vapaamuotoisista muistiinpanoista valitusta laitteesta. Lisää uusi merkintä lyhyellä kuvauksella ja muistiinpanotekstillä. Napsauta lokimerkinnän kuvausta (tai valitse se ja käytä Näytä-toimintoa) lukeaksesi koko merkinnän. Merkinnän muokkaaminen päivittää sen aikaleiman, mutta säilyttää alkuperäisen kirjoittajan. Käytä hakukenttää suodattaaksesi merkintöjä kuvauksen tai tekstin perusteella."
+      },
+      {
+        "heading": "Linkit ja loki -osion näyttäminen ja piilottaminen",
+        "body": "Napsauta Linkit- ja Loki-paneelien yläpuolella olevaa palkkia laajentaaksesi tai supistaaksesi kyseisen osion, samalla tavalla kuin osioita voi laajentaa tai supistaa Swaggerin API-dokumentaatiossa."
+      }
+    ]
+  },
+  "de": {
+    "title": "Hilfe zur Ausrüstungsseite",
+    "sections": [
+      {
+        "heading": "Überblick",
+        "body": "Auf der Ausrüstungsseite können Sie eine hierarchische Baumstruktur Ihrer Ausrüstung aufbauen und pflegen (zum Beispiel: Standort > Linie > Maschine) und alles, was zu jedem Element gehört - Kommentare, Dateien, Links und Protokolleinträge - an einem Ort verwalten."
+      },
+      {
+        "heading": "Der Ausrüstungsbaum und die Suche",
+        "body": "Der Baum links zeigt die gesamte Ausrüstung, organisiert nach Eltern-Kind-Beziehungen. Verwenden Sie den Pfeil neben einem Element, um dessen untergeordnete Elemente ein- oder auszuklappen. Verwenden Sie das Suchfeld, um den Baum nach Namen zu filtern - passende Elemente und ihre übergeordneten Elemente bleiben sichtbar, alles andere wird ausgeblendet. Jede Zeile kann kleine Symbole anzeigen: eines für \"Ist OEE\" und eines für \"Ist planbar\". Zeilen können außerdem mit der Farbe eingefärbt werden, die Sie jedem Ausrüstungselement zuweisen."
+      },
+      {
+        "heading": "Ein Element auswählen",
+        "body": "Klicken Sie im Baum auf den Namen eines Ausrüstungselements, um es auszuwählen. Die Bereiche Kommentar, Dateien, Links und Protokoll zeigen immer Informationen zum aktuell ausgewählten Element."
+      },
+      {
+        "heading": "Ausrüstung hinzufügen und bearbeiten",
+        "body": "Verwenden Sie die Schaltfläche Hinzufügen, um ein neues Ausrüstungselement zu erstellen, oder wählen Sie ein Element aus und verwenden Sie Bearbeiten, um es zu ändern. Im Formular: \"Oberste Ebene\" markiert ein Element als übergeordnet-los (eine Wurzel des Baums) - wenn der Baum derzeit leer ist, ist dies für das allererste hinzugefügte Element gesperrt, da der Baum immer mindestens eine Wurzel benötigt. Geben Sie einen Namen ein, wählen Sie eine Kategorie und optional einen externen Code sowie eine Farbe. Der Bereich \"Wirtschaftlichkeit verwenden\" ermöglicht die Erfassung von Kaufdatum, Preis und Abschreibungszeitraum. Der Bereich \"Benachrichtigung verwenden\" ermöglicht das Festlegen von Datum/Uhrzeit und einer Nachricht, die als Erinnerung an diese Ausrüstung dienen soll."
+      },
+      {
+        "heading": "OEE und planbare Ausrüstung",
+        "body": "Wenn Sie \"OEE\" aktivieren, werden die Voraussetzungen geschaffen, um die OEE (Overall Equipment Effectiveness) zu messen. Externe Ausrüstung wird benötigt, um jeden Zyklus zu erfassen, den die Ausrüstung durchläuft - besuchen Sie Prodhelper.com, um zu sehen, wie die Zykluserfassung erfolgen kann. Sobald OEE aktiviert ist, wird die Ausrüstung außerdem automatisch planbar. Wenn Sie \"Planbar\" aktivieren, wird die Ausrüstung als Ressource in der Planungsansicht sichtbar, wo Fertigungsaufträge in einem Gantt-Diagramm eingeplant werden können."
+      },
+      {
+        "heading": "Ausrüstung einem anderen übergeordneten Element zuordnen",
+        "body": "Wählen Sie ein Element aus und verwenden Sie \"Verschieben...\", um ihm ein anderes übergeordnetes Element zuzuweisen. Wählen Sie ein neues übergeordnetes Element aus der Liste oder wählen Sie die oberste Ebene, um es zu einem Wurzelelement zu machen, und bestätigen Sie anschließend. Ein Element kann nie unter sich selbst oder eines seiner eigenen untergeordneten Elemente verschoben werden, daher sind diese in der Liste nicht enthalten."
+      },
+      {
+        "heading": "Ausrüstung löschen",
+        "body": "Wählen Sie ein Element aus und verwenden Sie Löschen. Sie werden zur Bestätigung aufgefordert. Ein Element, das noch untergeordnete Elemente im Baum hat, kann nicht gelöscht werden - entfernen oder verschieben Sie zuerst dessen untergeordnete Elemente."
+      },
+      {
+        "heading": "Kategorien verwalten",
+        "body": "Jedes Ausrüstungselement gehört zu einer Kategorie. Verwenden Sie \"Kategorien verwalten\" in der Symbolleiste, um Kategorien hinzuzufügen, umzubenennen oder zu entfernen. Es muss mindestens eine Kategorie vorhanden sein, bevor Sie Ausrüstung hinzufügen können."
+      },
+      {
+        "heading": "Kommentare",
+        "body": "Im Kommentarbereich können Sie einen Freitextkommentar zum ausgewählten Ausrüstungselement verfassen. Wurde der Kommentar ursprünglich in einer anderen Sprache verfasst als der, die Sie gerade verwenden, wird eine übersetzte Vorschau zusammen mit einem Hinweis auf die Originalsprache angezeigt."
+      },
+      {
+        "heading": "Dateien",
+        "body": "Im Dateibereich können Sie Dateien zum ausgewählten Ausrüstungselement hochladen sowie bereits hochgeladene Dateien herunterladen oder löschen. Geben Sie jeder Datei eine kurze Beschreibung, damit sie später leicht wiederzuerkennen ist."
+      },
+      {
+        "heading": "Links",
+        "body": "Im Links-Bereich können Sie Links mit dem ausgewählten Ausrüstungselement verknüpfen - entweder eine normale Webseite oder ein Dokument (zum Beispiel ein SharePoint-Dokument). Verwenden Sie das Kontrollkästchen im Hinzufügen-Dialog, um einen Link als Dokument zu kennzeichnen. Wählen Sie einen Link in der Tabelle aus, um ihn zu öffnen, herunterzuladen oder zu entfernen."
+      },
+      {
+        "heading": "Protokoll",
+        "body": "Im Protokollbereich können Sie einen datierten Verlauf von Freitextnotizen zum ausgewählten Ausrüstungselement führen. Fügen Sie einen neuen Eintrag mit einer kurzen Beschreibung und dem Notiztext hinzu. Klicken Sie auf die Beschreibung eines Protokolleintrags (oder wählen Sie ihn aus und verwenden Sie Anzeigen), um den vollständigen Eintrag zu lesen. Das Bearbeiten eines Eintrags aktualisiert dessen Zeitstempel, behält jedoch den ursprünglichen Autor bei. Verwenden Sie das Suchfeld, um Einträge nach Beschreibung oder Text zu filtern."
+      },
+      {
+        "heading": "Den Bereich Links & Protokoll ein- und ausblenden",
+        "body": "Klicken Sie auf die Leiste über den Bereichen Links und Protokoll, um diesen Bereich ein- oder auszuklappen - auf die gleiche Weise, wie Abschnitte in der API-Dokumentation von Swagger ein- und ausgeklappt werden können."
+      }
+    ]
+  },
+  "fr": {
+    "title": "Aide de la page Équipement",
+    "sections": [
+      {
+        "heading": "Vue d'ensemble",
+        "body": "La page Équipement vous permet de construire et de gérer une arborescence hiérarchique de vos équipements (par exemple : Site > Ligne > Machine), et de gérer tout ce qui appartient à chaque élément - commentaires, fichiers, liens et entrées de journal - au même endroit."
+      },
+      {
+        "heading": "L'arborescence des équipements et la recherche",
+        "body": "L'arborescence à gauche affiche tous les équipements, organisés selon les relations parent/enfant. Utilisez la flèche à côté d'un élément pour développer ou réduire ses éléments enfants. Utilisez le champ de recherche pour filtrer l'arborescence par nom - les éléments correspondants et leurs parents restent visibles, tout le reste est masqué. Chaque ligne peut afficher de petits badges : un pour « Est OEE » et un pour « Est planifiable ». Les lignes peuvent aussi être colorées avec la couleur que vous attribuez à chaque équipement."
+      },
+      {
+        "heading": "Sélectionner un élément",
+        "body": "Cliquez sur le nom d'un équipement dans l'arborescence pour le sélectionner. Les sections Commentaire, Fichiers, Liens et Journal affichent toujours les informations de l'élément actuellement sélectionné."
+      },
+      {
+        "heading": "Ajouter et modifier un équipement",
+        "body": "Utilisez le bouton Ajouter pour créer un nouvel équipement, ou sélectionnez un élément et utilisez Modifier pour le changer. Dans le formulaire : « Nœud de premier niveau » indique qu'un élément n'a pas de parent (une racine de l'arborescence) - si l'arborescence est actuellement vide, cette option est verrouillée pour le tout premier élément ajouté, car l'arborescence a toujours besoin d'au moins une racine. Renseignez un nom, choisissez une catégorie, et éventuellement un code externe et une couleur. La section « Utiliser l'économie » permet d'enregistrer une date d'achat, un prix et une période d'amortissement. La section « Utiliser la notification » permet de définir une date/heure et un message destiné à vous rappeler cet équipement."
+      },
+      {
+        "heading": "Équipement OEE et planifiable",
+        "body": "Cocher « OEE » crée les conditions nécessaires pour mesurer le OEE (Overall Equipment Effectiveness, taux de rendement global). Un équipement externe est nécessaire pour enregistrer chaque cycle que traverse l'équipement - consultez Prodhelper.com pour voir comment l'enregistrement des cycles peut être effectué. Une fois OEE coché, l'équipement devient également automatiquement planifiable. Cocher « Planifiable » rend l'équipement visible comme ressource dans la vue de planification, où des ordres de fabrication peuvent y être planifiés sur un diagramme de Gantt."
+      },
+      {
+        "heading": "Déplacer un équipement vers un autre parent",
+        "body": "Sélectionnez un élément et utilisez « Déplacer vers... » pour lui attribuer un autre parent. Choisissez un nouveau parent dans la liste, ou choisissez l'option de premier niveau pour en faire un élément racine, puis confirmez. Un élément ne peut jamais être déplacé sous lui-même ou l'un de ses propres descendants, ceux-ci sont donc exclus de la liste."
+      },
+      {
+        "heading": "Supprimer un équipement",
+        "body": "Sélectionnez un élément et utilisez Supprimer. Une confirmation vous sera demandée. Un élément qui possède encore des éléments enfants dans l'arborescence ne peut pas être supprimé - supprimez ou déplacez d'abord ses enfants."
+      },
+      {
+        "heading": "Gérer les catégories",
+        "body": "Chaque équipement appartient à une catégorie. Utilisez « Gérer les catégories » dans la barre d'outils pour ajouter, renommer ou supprimer des catégories. Au moins une catégorie doit exister avant de pouvoir ajouter un équipement."
+      },
+      {
+        "heading": "Commentaires",
+        "body": "Le panneau Commentaire vous permet d'écrire un commentaire libre sur l'équipement sélectionné. Si le commentaire a été rédigé à l'origine dans une langue différente de celle que vous utilisez actuellement, un aperçu traduit s'affiche accompagné d'une note sur la langue d'origine."
+      },
+      {
+        "heading": "Fichiers",
+        "body": "Le panneau Fichiers vous permet de télécharger des fichiers vers l'équipement sélectionné, ainsi que de télécharger ou supprimer des fichiers déjà envoyés. Donnez à chaque fichier une courte description pour le reconnaître facilement par la suite."
+      },
+      {
+        "heading": "Liens",
+        "body": "Le panneau Liens vous permet d'associer des liens à l'équipement sélectionné - une page web normale ou un document (par exemple un document SharePoint). Utilisez la case à cocher de la boîte de dialogue Ajouter pour marquer un lien comme document. Sélectionnez un lien dans le tableau pour l'ouvrir, le télécharger ou le supprimer."
+      },
+      {
+        "heading": "Journal",
+        "body": "Le panneau Journal vous permet de tenir un historique daté de notes libres sur l'équipement sélectionné. Ajoutez une nouvelle entrée avec une courte description et le texte de la note. Cliquez sur la description d'une entrée de journal (ou sélectionnez-la et utilisez Afficher) pour lire l'entrée complète. La modification d'une entrée met à jour son horodatage mais conserve l'auteur d'origine. Utilisez le champ de recherche pour filtrer les entrées par description ou par texte."
+      },
+      {
+        "heading": "Afficher et masquer la section Liens & Journal",
+        "body": "Cliquez sur la barre au-dessus des panneaux Liens et Journal pour développer ou réduire cette section, de la même manière que les sections peuvent être développées ou réduites dans la documentation API de Swagger."
+      }
+    ]
+  },
+  "it": {
+    "title": "Guida alla pagina Attrezzature",
+    "sections": [
+      {
+        "heading": "Panoramica",
+        "body": "La pagina Attrezzature consente di costruire e gestire un albero gerarchico delle proprie attrezzature (ad esempio: Sito > Linea > Macchina) e di gestire tutto ciò che appartiene a ciascun elemento - commenti, file, link e voci di registro - in un unico posto."
+      },
+      {
+        "heading": "L'albero delle attrezzature e la ricerca",
+        "body": "L'albero a sinistra mostra tutte le attrezzature, organizzate secondo relazioni padre/figlio. Usa la freccia accanto a un elemento per espandere o comprimere i suoi elementi figli. Usa il campo di ricerca per filtrare l'albero per nome - gli elementi corrispondenti e i loro genitori restano visibili, tutto il resto viene nascosto. Ogni riga può mostrare piccoli badge: uno per \"È OEE\" e uno per \"È pianificabile\". Le righe possono anche essere colorate con il colore assegnato a ciascuna attrezzatura."
+      },
+      {
+        "heading": "Selezionare un elemento",
+        "body": "Fai clic sul nome di un'attrezzatura nell'albero per selezionarla. Le sezioni Commento, File, Link e Registro mostrano sempre le informazioni relative all'elemento attualmente selezionato."
+      },
+      {
+        "heading": "Aggiungere e modificare un'attrezzatura",
+        "body": "Usa il pulsante Aggiungi per creare una nuova attrezzatura, oppure seleziona un elemento e usa Modifica per cambiarlo. Nel modulo: \"Nodo di primo livello\" indica che un elemento non ha un genitore (una radice dell'albero) - se l'albero è attualmente vuoto, questa opzione è bloccata per il primissimo elemento aggiunto, poiché l'albero ha sempre bisogno di almeno una radice. Inserisci un nome, scegli una categoria e, facoltativamente, un codice esterno e un colore. La sezione \"Usa economia\" consente di registrare data di acquisto, prezzo e periodo di ammortamento. La sezione \"Usa notifica\" consente di impostare una data/ora e un messaggio pensato per ricordarti questa attrezzatura."
+      },
+      {
+        "heading": "Attrezzatura OEE e pianificabile",
+        "body": "Selezionando \"OEE\" si creano le condizioni per misurare l'OEE (Overall Equipment Effectiveness). È necessaria un'apparecchiatura esterna per registrare ogni ciclo eseguito dall'attrezzatura - visita Prodhelper.com per scoprire come può essere effettuata la registrazione dei cicli. Una volta selezionato OEE, l'attrezzatura diventa anche automaticamente pianificabile. Selezionando \"Pianificabile\" l'attrezzatura diventa visibile come risorsa nella vista di pianificazione, dove gli ordini di produzione possono essere pianificati in un diagramma di Gantt."
+      },
+      {
+        "heading": "Spostare un'attrezzatura sotto un altro genitore",
+        "body": "Seleziona un elemento e usa \"Sposta in...\" per assegnargli un genitore diverso. Scegli un nuovo genitore dall'elenco, oppure scegli l'opzione di primo livello per renderlo un elemento radice, quindi conferma. Un elemento non può mai essere spostato sotto se stesso o uno dei propri discendenti, che sono quindi esclusi dall'elenco."
+      },
+      {
+        "heading": "Eliminare un'attrezzatura",
+        "body": "Seleziona un elemento e usa Elimina. Ti verrà chiesta conferma. Un elemento che ha ancora elementi figli nell'albero non può essere eliminato - rimuovi o sposta prima i suoi figli."
+      },
+      {
+        "heading": "Gestire le categorie",
+        "body": "Ogni attrezzatura appartiene a una categoria. Usa \"Gestisci categorie\" nella barra degli strumenti per aggiungere, rinominare o rimuovere categorie. Deve esistere almeno una categoria prima di poter aggiungere attrezzature."
+      },
+      {
+        "heading": "Commenti",
+        "body": "Il pannello Commento consente di scrivere un commento libero sull'attrezzatura selezionata. Se il commento è stato scritto originariamente in una lingua diversa da quella attualmente in uso, viene mostrata un'anteprima tradotta insieme a una nota sulla lingua originale."
+      },
+      {
+        "heading": "File",
+        "body": "Il pannello File consente di caricare file sull'attrezzatura selezionata, oltre a scaricare o eliminare file già caricati. Assegna a ciascun file una breve descrizione in modo da riconoscerlo facilmente in seguito."
+      },
+      {
+        "heading": "Link",
+        "body": "Il pannello Link consente di collegare link all'attrezzatura selezionata - una normale pagina web o un documento (ad esempio un documento SharePoint). Usa la casella di controllo nella finestra Aggiungi per contrassegnare un link come documento. Seleziona un link nella tabella per Aprirlo o Scaricarlo, oppure per rimuoverlo."
+      },
+      {
+        "heading": "Registro",
+        "body": "Il pannello Registro consente di tenere una cronologia datata di note libere sull'attrezzatura selezionata. Aggiungi una nuova voce con una breve descrizione e il testo della nota. Fai clic sulla descrizione di una voce di registro (oppure selezionala e usa Visualizza) per leggere la voce completa. La modifica di una voce ne aggiorna la data/ora ma mantiene l'autore originale. Usa il campo di ricerca per filtrare le voci per descrizione o testo."
+      },
+      {
+        "heading": "Mostrare e nascondere la sezione Link e Registro",
+        "body": "Fai clic sulla barra sopra i pannelli Link e Registro per espandere o comprimere quella sezione, allo stesso modo in cui le sezioni possono essere espanse o compresse nella documentazione API di Swagger."
+      }
+    ]
+  },
+  "es": {
+    "title": "Ayuda de la página de Equipos",
+    "sections": [
+      {
+        "heading": "Descripción general",
+        "body": "La página de Equipos le permite construir y mantener un árbol jerárquico de sus equipos (por ejemplo: Planta > Línea > Máquina), y gestionar todo lo que pertenece a cada elemento - comentarios, archivos, enlaces y entradas de registro - en un solo lugar."
+      },
+      {
+        "heading": "El árbol de equipos y la búsqueda",
+        "body": "El árbol de la izquierda muestra todos los equipos, organizados según relaciones padre/hijo. Use la flecha junto a un elemento para expandir o contraer sus elementos hijos. Use el cuadro de búsqueda para filtrar el árbol por nombre - los elementos coincidentes y sus padres permanecen visibles, todo lo demás se oculta. Cada fila puede mostrar pequeñas insignias: una para \"Es OEE\" y otra para \"Es planificable\". Las filas también se pueden colorear con el color que asigne a cada equipo."
+      },
+      {
+        "heading": "Seleccionar un elemento",
+        "body": "Haga clic en el nombre de un equipo en el árbol para seleccionarlo. Las secciones Comentario, Archivos, Enlaces y Registro siempre muestran información del elemento actualmente seleccionado."
+      },
+      {
+        "heading": "Agregar y editar equipos",
+        "body": "Use el botón Agregar para crear un nuevo equipo, o seleccione un elemento y use Editar para modificarlo. En el formulario: \"Nodo de nivel superior\" indica que un elemento no tiene padre (una raíz del árbol) - si el árbol está actualmente vacío, esta opción queda bloqueada para el primer elemento que agregue, ya que el árbol siempre necesita al menos una raíz. Complete un nombre, elija una categoría y, opcionalmente, un código externo y un color. La sección \"Usar economía\" permite registrar la fecha de compra, el precio y el período de depreciación. La sección \"Usar notificación\" permite establecer una fecha/hora y un mensaje pensado para recordarle este equipo."
+      },
+      {
+        "heading": "Equipo OEE y planificable",
+        "body": "Al marcar \"OEE\" se crean las condiciones para medir el OEE (Overall Equipment Effectiveness). Se necesita equipo externo para registrar cada ciclo que realiza el equipo - visite Prodhelper.com para ver cómo se puede realizar el registro de ciclos. Una vez marcado OEE, el equipo también se vuelve automáticamente planificable. Al marcar \"Planificable\" el equipo se vuelve visible como recurso en la vista de planificación, donde se pueden programar órdenes de producción en un diagrama de Gantt."
+      },
+      {
+        "heading": "Mover un equipo a otro padre",
+        "body": "Seleccione un elemento y use \"Mover a...\" para asignarle un padre diferente. Elija un nuevo padre de la lista, o elija la opción de nivel superior para convertirlo en un elemento raíz, y luego confirme. Un elemento nunca puede moverse debajo de sí mismo ni de uno de sus propios descendientes, por lo que quedan excluidos de la lista."
+      },
+      {
+        "heading": "Eliminar equipos",
+        "body": "Seleccione un elemento y use Eliminar. Se le pedirá confirmación. Un elemento que todavía tiene elementos hijos en el árbol no se puede eliminar - elimine o mueva primero sus hijos."
+      },
+      {
+        "heading": "Gestionar categorías",
+        "body": "Cada equipo pertenece a una categoría. Use \"Gestionar categorías\" en la barra de herramientas para agregar, renombrar o eliminar categorías. Debe existir al menos una categoría antes de poder agregar equipos."
+      },
+      {
+        "heading": "Comentarios",
+        "body": "El panel de Comentario le permite escribir un comentario de texto libre sobre el equipo seleccionado. Si el comentario se escribió originalmente en un idioma distinto al que está usando actualmente, se muestra una vista previa traducida junto con una nota sobre el idioma original."
+      },
+      {
+        "heading": "Archivos",
+        "body": "El panel de Archivos le permite subir archivos al equipo seleccionado, así como descargar o eliminar archivos ya subidos. Asigne a cada archivo una breve descripción para reconocerlo fácilmente más adelante."
+      },
+      {
+        "heading": "Enlaces",
+        "body": "El panel de Enlaces le permite asociar enlaces al equipo seleccionado - ya sea una página web normal o un documento (por ejemplo, un documento de SharePoint). Use la casilla de verificación en el diálogo Agregar para marcar un enlace como documento. Seleccione un enlace en la tabla para Abrirlo o Descargarlo, o para eliminarlo."
+      },
+      {
+        "heading": "Registro",
+        "body": "El panel de Registro le permite mantener un historial fechado de notas de texto libre sobre el equipo seleccionado. Agregue una nueva entrada con una breve descripción y el texto de la nota. Haga clic en la descripción de una entrada de registro (o selecciónela y use Ver) para leer la entrada completa. Editar una entrada actualiza su marca de tiempo, pero conserva el autor original. Use el cuadro de búsqueda para filtrar entradas por descripción o texto."
+      },
+      {
+        "heading": "Mostrar y ocultar la sección Enlaces y Registro",
+        "body": "Haga clic en la barra encima de los paneles Enlaces y Registro para expandir o contraer esa sección, de la misma manera que las secciones se pueden expandir o contraer en la documentación de la API de Swagger."
+      }
+    ]
+  },
+  "pt-PT": {
+    "title": "Ajuda da página de Equipamentos",
+    "sections": [
+      {
+        "heading": "Visão geral",
+        "body": "A página de Equipamentos permite-lhe construir e manter uma árvore hierárquica dos seus equipamentos (por exemplo: Local > Linha > Máquina), e gerir tudo o que pertence a cada item - comentários, ficheiros, ligações e entradas de registo - num só lugar."
+      },
+      {
+        "heading": "A árvore de equipamentos e a pesquisa",
+        "body": "A árvore à esquerda mostra todos os equipamentos, organizados por relações pai/filho. Use a seta junto a um item para expandir ou colapsar os seus itens filhos. Use a caixa de pesquisa para filtrar a árvore por nome - os itens correspondentes e os seus pais permanecem visíveis, tudo o resto é ocultado. Cada linha pode mostrar pequenos emblemas: um para \"É OEE\" e outro para \"É planeável\". As linhas também podem ser coloridas com a cor atribuída a cada equipamento."
+      },
+      {
+        "heading": "Selecionar um item",
+        "body": "Clique no nome de um equipamento na árvore para o selecionar. As secções Comentário, Ficheiros, Ligações e Registo mostram sempre informação do item atualmente selecionado."
+      },
+      {
+        "heading": "Adicionar e editar equipamentos",
+        "body": "Use o botão Adicionar para criar um novo equipamento, ou selecione um item e use Editar para o alterar. No formulário: \"Nó de topo\" assinala que um item não tem pai (uma raiz da árvore) - se a árvore estiver atualmente vazia, esta opção fica bloqueada para o primeiríssimo item que adicionar, uma vez que a árvore precisa sempre de pelo menos uma raiz. Preencha um nome, escolha uma categoria e, opcionalmente, um código externo e uma cor. A secção \"Usar economia\" permite registar a data de compra, o preço e o período de depreciação. A secção \"Usar notificação\" permite definir uma data/hora e uma mensagem destinada a lembrá-lo deste equipamento."
+      },
+      {
+        "heading": "Equipamento OEE e planeável",
+        "body": "Ao assinalar \"OEE\" são criadas as condições para medir o OEE (Overall Equipment Effectiveness). É necessário equipamento externo para registar cada ciclo que o equipamento realiza - visite Prodhelper.com para ver como pode ser feito o registo de ciclos. Depois de assinalado o OEE, o equipamento também se torna automaticamente planeável. Ao assinalar \"Planeável\" o equipamento torna-se visível como um recurso na vista de planeamento, onde as ordens de produção podem ser planeadas num diagrama de Gantt."
+      },
+      {
+        "heading": "Mover um equipamento para outro pai",
+        "body": "Selecione um item e use \"Mover para...\" para lhe atribuir um pai diferente. Escolha um novo pai na lista, ou escolha a opção de nível superior para o tornar num item raiz, e depois confirme. Um item nunca pode ser movido para debaixo de si próprio ou de um dos seus próprios descendentes, pelo que estes ficam excluídos da lista."
+      },
+      {
+        "heading": "Eliminar equipamentos",
+        "body": "Selecione um item e use Eliminar. Ser-lhe-á pedida confirmação. Um item que ainda tenha itens filhos na árvore não pode ser eliminado - remova ou mova primeiro os seus filhos."
+      },
+      {
+        "heading": "Gerir categorias",
+        "body": "Cada equipamento pertence a uma categoria. Use \"Gerir categorias\" na barra de ferramentas para adicionar, renomear ou remover categorias. Tem de existir pelo menos uma categoria antes de poder adicionar equipamentos."
+      },
+      {
+        "heading": "Comentários",
+        "body": "O painel Comentário permite-lhe escrever um comentário de texto livre sobre o equipamento selecionado. Se o comentário tiver sido originalmente escrito noutro idioma diferente do que está a usar atualmente, é apresentada uma pré-visualização traduzida juntamente com uma nota sobre o idioma original."
+      },
+      {
+        "heading": "Ficheiros",
+        "body": "O painel Ficheiros permite-lhe carregar ficheiros para o equipamento selecionado, bem como descarregar ou eliminar ficheiros já carregados. Dê a cada ficheiro uma breve descrição para que seja fácil de reconhecer mais tarde."
+      },
+      {
+        "heading": "Ligações",
+        "body": "O painel Ligações permite-lhe associar ligações ao equipamento selecionado - uma página web normal ou um documento (por exemplo, um documento SharePoint). Use a caixa de verificação na caixa de diálogo Adicionar para marcar uma ligação como documento. Selecione uma ligação na tabela para a Abrir ou Descarregar, ou para a remover."
+      },
+      {
+        "heading": "Registo",
+        "body": "O painel Registo permite-lhe manter um histórico datado de notas de texto livre sobre o equipamento selecionado. Adicione uma nova entrada com uma breve descrição e o texto da nota. Clique na descrição de uma entrada de registo (ou selecione-a e use Ver) para ler a entrada completa. Editar uma entrada atualiza a sua data/hora, mas mantém o autor original. Use a caixa de pesquisa para filtrar entradas por descrição ou texto."
+      },
+      {
+        "heading": "Mostrar e ocultar a secção Ligações e Registo",
+        "body": "Clique na barra acima dos painéis Ligações e Registo para expandir ou colapsar essa secção, da mesma forma que as secções podem ser expandidas ou colapsadas na documentação da API do Swagger."
+      }
+    ]
+  },
+  "el": {
+    "title": "Βοήθεια σελίδας Εξοπλισμού",
+    "sections": [
+      {
+        "heading": "Επισκόπηση",
+        "body": "Η σελίδα Εξοπλισμού σάς επιτρέπει να δημιουργείτε και να διατηρείτε ένα ιεραρχικό δέντρο του εξοπλισμού σας (για παράδειγμα: Εγκατάσταση > Γραμμή > Μηχάνημα), και να διαχειρίζεστε όλα όσα ανήκουν σε κάθε στοιχείο - σχόλια, αρχεία, συνδέσμους και καταχωρήσεις ημερολογίου - από ένα μέρος."
+      },
+      {
+        "heading": "Το δέντρο εξοπλισμού και η αναζήτηση",
+        "body": "Το δέντρο στα αριστερά εμφανίζει όλον τον εξοπλισμό, οργανωμένο κατά σχέσεις γονέα/παιδιού. Χρησιμοποιήστε το βέλος δίπλα σε ένα στοιχείο για να το αναπτύξετε ή να το συμπτύξετε. Χρησιμοποιήστε το πεδίο αναζήτησης για να φιλτράρετε το δέντρο κατά όνομα - τα στοιχεία που ταιριάζουν και οι γονείς τους παραμένουν ορατά, όλα τα υπόλοιπα αποκρύπτονται. Κάθε γραμμή μπορεί να εμφανίζει μικρά διακριτικά: ένα για «Είναι OEE» και ένα για «Είναι προγραμματίσιμο». Οι γραμμές μπορούν επίσης να χρωματιστούν με το χρώμα που αντιστοιχίζετε σε κάθε στοιχείο εξοπλισμού."
+      },
+      {
+        "heading": "Επιλογή στοιχείου",
+        "body": "Κάντε κλικ στο όνομα ενός στοιχείου εξοπλισμού στο δέντρο για να το επιλέξετε. Οι ενότητες Σχόλιο, Αρχεία, Σύνδεσμοι και Ημερολόγιο εμφανίζουν πάντα πληροφορίες για το στοιχείο που είναι επί του παρόντος επιλεγμένο."
+      },
+      {
+        "heading": "Προσθήκη και επεξεργασία εξοπλισμού",
+        "body": "Χρησιμοποιήστε το κουμπί Προσθήκη για να δημιουργήσετε νέο στοιχείο εξοπλισμού, ή επιλέξτε ένα στοιχείο και χρησιμοποιήστε Επεξεργασία για να το αλλάξετε. Στη φόρμα: το «Κόμβος ανώτατου επιπέδου» επισημαίνει ότι ένα στοιχείο δεν έχει γονέα (μια ρίζα του δέντρου) - εάν το δέντρο είναι επί του παρόντος κενό, αυτό είναι κλειδωμένο για το πρώτο στοιχείο που θα προσθέσετε, καθώς το δέντρο χρειάζεται πάντα τουλάχιστον μία ρίζα. Συμπληρώστε ένα όνομα, επιλέξτε μια κατηγορία και, προαιρετικά, έναν εξωτερικό κωδικό και ένα χρώμα. Η ενότητα «Χρήση οικονομικών» σάς επιτρέπει να καταγράφετε ημερομηνία αγοράς, τιμή και περίοδο απόσβεσης. Η ενότητα «Χρήση ειδοποίησης» σάς επιτρέπει να ορίσετε ημερομηνία/ώρα και ένα μήνυμα που προορίζεται να σας υπενθυμίσει αυτόν τον εξοπλισμό."
+      },
+      {
+        "heading": "Εξοπλισμός OEE και προγραμματίσιμος",
+        "body": "Επιλέγοντας «OEE» δημιουργούνται οι προϋποθέσεις για τη μέτρηση του OEE (Overall Equipment Effectiveness). Απαιτείται εξωτερικός εξοπλισμός για την καταγραφή κάθε κύκλου που διανύει ο εξοπλισμός - επισκεφθείτε το Prodhelper.com για να δείτε πώς μπορεί να γίνει η καταγραφή κύκλων. Μόλις επιλεγεί το OEE, ο εξοπλισμός γίνεται επίσης αυτόματα προγραμματίσιμος. Επιλέγοντας «Προγραμματίσιμο» ο εξοπλισμός γίνεται ορατός ως πόρος στην προβολή προγραμματισμού, όπου οι παραγγελίες παραγωγής μπορούν να προγραμματιστούν σε διάγραμμα Gantt."
+      },
+      {
+        "heading": "Μετακίνηση εξοπλισμού σε διαφορετικό γονέα",
+        "body": "Επιλέξτε ένα στοιχείο και χρησιμοποιήστε το «Μετακίνηση σε...» για να του αποδώσετε διαφορετικό γονέα. Επιλέξτε νέο γονέα από τη λίστα, ή επιλέξτε την επιλογή ανώτατου επιπέδου για να το κάνετε ριζικό στοιχείο, και έπειτα επιβεβαιώστε. Ένα στοιχείο δεν μπορεί ποτέ να μετακινηθεί κάτω από τον εαυτό του ή κάποιον από τους απογόνους του, γι' αυτό εξαιρούνται από τη λίστα."
+      },
+      {
+        "heading": "Διαγραφή εξοπλισμού",
+        "body": "Επιλέξτε ένα στοιχείο και χρησιμοποιήστε Διαγραφή. Θα σας ζητηθεί επιβεβαίωση. Ένα στοιχείο που εξακολουθεί να έχει θυγατρικά στοιχεία στο δέντρο δεν μπορεί να διαγραφεί - αφαιρέστε ή μετακινήστε πρώτα τα θυγατρικά του στοιχεία."
+      },
+      {
+        "heading": "Διαχείριση κατηγοριών",
+        "body": "Κάθε στοιχείο εξοπλισμού ανήκει σε μια κατηγορία. Χρησιμοποιήστε το «Διαχείριση κατηγοριών» στη γραμμή εργαλείων για να προσθέσετε, να μετονομάσετε ή να αφαιρέσετε κατηγορίες. Πρέπει να υπάρχει τουλάχιστον μία κατηγορία πριν μπορέσετε να προσθέσετε εξοπλισμό."
+      },
+      {
+        "heading": "Σχόλια",
+        "body": "Το πλαίσιο Σχόλιο σάς επιτρέπει να γράψετε ένα ελεύθερο σχόλιο για τον επιλεγμένο εξοπλισμό. Εάν το σχόλιο γράφτηκε αρχικά σε διαφορετική γλώσσα από αυτή που χρησιμοποιείτε αυτήν τη στιγμή, εμφανίζεται μια μεταφρασμένη προεπισκόπηση μαζί με μια σημείωση σχετικά με την αρχική γλώσσα."
+      },
+      {
+        "heading": "Αρχεία",
+        "body": "Το πλαίσιο Αρχεία σάς επιτρέπει να ανεβάζετε αρχεία στον επιλεγμένο εξοπλισμό, καθώς και να κατεβάζετε ή να διαγράφετε αρχεία που έχουν ήδη ανέβει. Δώστε σε κάθε αρχείο μια σύντομη περιγραφή ώστε να είναι εύκολο να το αναγνωρίσετε αργότερα."
+      },
+      {
+        "heading": "Σύνδεσμοι",
+        "body": "Το πλαίσιο Σύνδεσμοι σάς επιτρέπει να συνδέετε συνδέσμους με τον επιλεγμένο εξοπλισμό - είτε μια συνηθισμένη ιστοσελίδα είτε ένα έγγραφο (για παράδειγμα ένα έγγραφο SharePoint). Χρησιμοποιήστε το πλαίσιο ελέγχου στο παράθυρο διαλόγου Προσθήκη για να επισημάνετε έναν σύνδεσμο ως έγγραφο. Επιλέξτε έναν σύνδεσμο στον πίνακα για να τον Ανοίξετε ή να τον Κατεβάσετε, ή για να τον αφαιρέσετε."
+      },
+      {
+        "heading": "Ημερολόγιο",
+        "body": "Το πλαίσιο Ημερολόγιο σάς επιτρέπει να τηρείτε ένα χρονολογημένο ιστορικό ελεύθερων σημειώσεων για τον επιλεγμένο εξοπλισμό. Προσθέστε μια νέα καταχώρηση με μια σύντομη περιγραφή και το κείμενο της σημείωσης. Κάντε κλικ στην περιγραφή μιας καταχώρησης ημερολογίου (ή επιλέξτε την και χρησιμοποιήστε Προβολή) για να διαβάσετε ολόκληρη την καταχώρηση. Η επεξεργασία μιας καταχώρησης ενημερώνει τη χρονική της σήμανση αλλά διατηρεί τον αρχικό συντάκτη. Χρησιμοποιήστε το πεδίο αναζήτησης για να φιλτράρετε καταχωρήσεις κατά περιγραφή ή κείμενο."
+      },
+      {
+        "heading": "Εμφάνιση και απόκρυψη της ενότητας Σύνδεσμοι & Ημερολόγιο",
+        "body": "Κάντε κλικ στη γραμμή πάνω από τα πλαίσια Σύνδεσμοι και Ημερολόγιο για να αναπτύξετε ή να συμπτύξετε αυτήν την ενότητα, με τον ίδιο τρόπο που οι ενότητες μπορούν να αναπτυχθούν ή να συμπτυχθούν στην τεκμηρίωση API του Swagger."
+      }
+    ]
+  },
+  "pl": {
+    "title": "Pomoc strony Sprzęt",
+    "sections": [
+      {
+        "heading": "Przegląd",
+        "body": "Strona Sprzęt umożliwia budowanie i utrzymywanie hierarchicznego drzewa sprzętu (na przykład: Zakład > Linia > Maszyna) oraz zarządzanie wszystkim, co należy do każdej pozycji - komentarzami, plikami, linkami i wpisami dziennika - w jednym miejscu."
+      },
+      {
+        "heading": "Drzewo sprzętu i wyszukiwanie",
+        "body": "Drzewo po lewej stronie pokazuje cały sprzęt, uporządkowany według relacji nadrzędny/podrzędny. Użyj strzałki obok elementu, aby rozwinąć lub zwinąć jego elementy podrzędne. Użyj pola wyszukiwania, aby filtrować drzewo według nazwy - pasujące elementy i ich elementy nadrzędne pozostają widoczne, reszta jest ukrywana. Każdy wiersz może wyświetlać małe odznaki: jedną dla „Jest OEE” i jedną dla „Jest planowalny”. Wiersze można również kolorować kolorem przypisanym do danego sprzętu."
+      },
+      {
+        "heading": "Wybieranie elementu",
+        "body": "Kliknij nazwę elementu sprzętu w drzewie, aby go wybrać. Sekcje Komentarz, Pliki, Linki i Dziennik zawsze pokazują informacje o aktualnie wybranym elemencie."
+      },
+      {
+        "heading": "Dodawanie i edytowanie sprzętu",
+        "body": "Użyj przycisku Dodaj, aby utworzyć nowy element sprzętu, lub wybierz element i użyj Edytuj, aby go zmienić. W formularzu: „Węzeł najwyższego poziomu” oznacza, że element nie ma elementu nadrzędnego (jest korzeniem drzewa) - jeśli drzewo jest obecnie puste, ta opcja jest zablokowana dla pierwszego dodawanego elementu, ponieważ drzewo zawsze potrzebuje co najmniej jednego korzenia. Wprowadź nazwę, wybierz kategorię oraz opcjonalnie kod zewnętrzny i kolor. Sekcja „Użyj ekonomii” pozwala zapisać datę zakupu, cenę i okres amortyzacji. Sekcja „Użyj powiadomienia” pozwala ustawić datę/godzinę i wiadomość mającą przypominać o tym sprzęcie."
+      },
+      {
+        "heading": "Sprzęt OEE i planowalny",
+        "body": "Zaznaczenie „OEE” tworzy warunki do pomiaru OEE (Overall Equipment Effectiveness). Do rejestrowania każdego cyklu, przez który przechodzi sprzęt, potrzebny jest sprzęt zewnętrzny - odwiedź Prodhelper.com, aby zobaczyć, jak można przeprowadzić rejestrację cykli. Po zaznaczeniu OEE sprzęt automatycznie staje się również planowalny. Zaznaczenie „Planowalne” sprawia, że sprzęt staje się widoczny jako zasób w widoku planowania, gdzie zlecenia produkcyjne mogą być planowane na wykresie Gantta."
+      },
+      {
+        "heading": "Przenoszenie sprzętu do innego elementu nadrzędnego",
+        "body": "Wybierz element i użyj „Przenieś do...”, aby przypisać mu inny element nadrzędny. Wybierz nowy element nadrzędny z listy lub wybierz opcję najwyższego poziomu, aby uczynić go elementem głównym, a następnie potwierdź. Elementu nigdy nie można przenieść pod niego samego ani pod żaden z jego własnych elementów podrzędnych, dlatego są one pominięte na liście."
+      },
+      {
+        "heading": "Usuwanie sprzętu",
+        "body": "Wybierz element i użyj Usuń. Zostaniesz poproszony o potwierdzenie. Elementu, który nadal ma elementy podrzędne w drzewie, nie można usunąć - najpierw usuń lub przenieś jego elementy podrzędne."
+      },
+      {
+        "heading": "Zarządzanie kategoriami",
+        "body": "Każdy element sprzętu należy do kategorii. Użyj „Zarządzaj kategoriami” na pasku narzędzi, aby dodawać, zmieniać nazwy lub usuwać kategorie. Zanim będzie można dodać sprzęt, musi istnieć co najmniej jedna kategoria."
+      },
+      {
+        "heading": "Komentarze",
+        "body": "Panel Komentarz pozwala napisać dowolny komentarz tekstowy dotyczący wybranego sprzętu. Jeśli komentarz został pierwotnie napisany w innym języku niż aktualnie używany, wyświetlany jest przetłumaczony podgląd wraz z informacją o języku oryginału."
+      },
+      {
+        "heading": "Pliki",
+        "body": "Panel Pliki pozwala przesyłać pliki do wybranego elementu sprzętu oraz pobierać lub usuwać już przesłane pliki. Nadaj każdemu plikowi krótki opis, aby łatwo było go później rozpoznać."
+      },
+      {
+        "heading": "Linki",
+        "body": "Panel Linki pozwala dołączać linki do wybranego sprzętu - zwykłą stronę internetową lub dokument (na przykład dokument SharePoint). Użyj pola wyboru w oknie Dodaj, aby oznaczyć link jako dokument. Wybierz link w tabeli, aby go Otworzyć lub Pobrać, albo go usunąć."
+      },
+      {
+        "heading": "Dziennik",
+        "body": "Panel Dziennik pozwala prowadzić datowaną historię dowolnych notatek dotyczących wybranego sprzętu. Dodaj nowy wpis z krótkim opisem i treścią notatki. Kliknij opis wpisu dziennika (lub wybierz go i użyj Wyświetl), aby przeczytać cały wpis. Edycja wpisu aktualizuje jego znacznik czasu, ale zachowuje pierwotnego autora. Użyj pola wyszukiwania, aby filtrować wpisy według opisu lub tekstu."
+      },
+      {
+        "heading": "Pokazywanie i ukrywanie sekcji Linki i Dziennik",
+        "body": "Kliknij pasek nad panelami Linki i Dziennik, aby rozwinąć lub zwinąć tę sekcję, w taki sam sposób, w jaki sekcje można rozwijać i zwijać w dokumentacji API Swaggera."
+      }
+    ]
+  },
+  "cs": {
+    "title": "Nápověda ke stránce Zařízení",
+    "sections": [
+      {
+        "heading": "Přehled",
+        "body": "Stránka Zařízení umožňuje vytvářet a udržovat hierarchický strom vašich zařízení (například: Provoz > Linka > Stroj) a spravovat vše, co k danému prvku patří - komentáře, soubory, odkazy a záznamy deníku - na jednom místě."
+      },
+      {
+        "heading": "Strom zařízení a vyhledávání",
+        "body": "Strom vlevo zobrazuje veškerá zařízení uspořádaná podle vztahů nadřazený/podřazený. Pomocí šipky vedle prvku jej rozbalíte nebo sbalíte. Pomocí vyhledávacího pole filtrujte strom podle názvu - odpovídající prvky a jejich nadřazené prvky zůstanou viditelné, vše ostatní se skryje. Každý řádek může zobrazovat malé odznaky: jeden pro „Je OEE“ a jeden pro „Je plánovatelné“. Řádky lze také obarvit barvou přiřazenou danému zařízení."
+      },
+      {
+        "heading": "Výběr prvku",
+        "body": "Kliknutím na název zařízení ve stromu jej vyberete. Sekce Komentář, Soubory, Odkazy a Deník vždy zobrazují informace o aktuálně vybraném prvku."
+      },
+      {
+        "heading": "Přidávání a úprava zařízení",
+        "body": "Pomocí tlačítka Přidat vytvoříte nové zařízení, nebo vyberte prvek a pomocí Upravit jej změňte. Ve formuláři: „Uzel nejvyšší úrovně“ označuje, že prvek nemá nadřazený prvek (je kořenem stromu) - pokud je strom aktuálně prázdný, je tato možnost pro úplně první přidávaný prvek uzamčena, protože strom vždy potřebuje alespoň jeden kořen. Vyplňte název, vyberte kategorii a volitelně externí kód a barvu. Sekce „Použít ekonomiku“ umožňuje zaznamenat datum nákupu, cenu a dobu odpisování. Sekce „Použít upozornění“ umožňuje nastavit datum/čas a zprávu, která má připomínat toto zařízení."
+      },
+      {
+        "heading": "OEE a plánovatelné zařízení",
+        "body": "Zaškrtnutím „OEE“ se vytvoří podmínky pro měření OEE (Overall Equipment Effectiveness). K zaznamenávání každého cyklu, kterým zařízení prochází, je zapotřebí externí zařízení - podívejte se na Prodhelper.com, jak lze provést registraci cyklů. Jakmile je OEE zaškrtnuto, zařízení se také automaticky stane plánovatelným. Zaškrtnutím „Plánovatelné“ se zařízení zobrazí jako zdroj v zobrazení plánování, kde lze pro něj plánovat výrobní zakázky v Ganttově diagramu."
+      },
+      {
+        "heading": "Přesouvání zařízení pod jiný nadřazený prvek",
+        "body": "Vyberte prvek a použijte „Přesunout do...“ pro přiřazení jiného nadřazeného prvku. Vyberte nový nadřazený prvek ze seznamu, nebo vyberte možnost nejvyšší úrovně, aby se stal kořenovým prvkem, a poté potvrďte. Prvek nelze nikdy přesunout pod sebe sama ani pod žádný ze svých vlastních podřazených prvků, proto jsou ze seznamu vynechány."
+      },
+      {
+        "heading": "Odstranění zařízení",
+        "body": "Vyberte prvek a použijte Odstranit. Budete požádáni o potvrzení. Prvek, který má ve stromu stále podřazené prvky, nelze odstranit - nejprve odstraňte nebo přesuňte jeho podřazené prvky."
+      },
+      {
+        "heading": "Správa kategorií",
+        "body": "Každé zařízení patří do kategorie. Pomocí „Spravovat kategorie“ na panelu nástrojů přidávejte, přejmenovávejte nebo odstraňujte kategorie. Než budete moci přidat zařízení, musí existovat alespoň jedna kategorie."
+      },
+      {
+        "heading": "Komentáře",
+        "body": "Panel Komentář umožňuje napsat volný textový komentář k vybranému zařízení. Pokud byl komentář původně napsán v jiném jazyce, než právě používáte, zobrazí se přeložený náhled společně s poznámkou o původním jazyce."
+      },
+      {
+        "heading": "Soubory",
+        "body": "Panel Soubory umožňuje nahrávat soubory k vybranému zařízení a stahovat nebo mazat již nahrané soubory. Každému souboru přiřaďte krátký popis, aby ho bylo později snadné rozpoznat."
+      },
+      {
+        "heading": "Odkazy",
+        "body": "Panel Odkazy umožňuje připojit k vybranému zařízení odkazy - běžnou webovou stránku nebo dokument (například dokument SharePoint). Pomocí zaškrtávacího políčka v dialogu Přidat označte odkaz jako dokument. V tabulce vyberte odkaz a otevřete ho, stáhněte, nebo odstraňte."
+      },
+      {
+        "heading": "Deník",
+        "body": "Panel Deník umožňuje vést datovanou historii volných poznámek k vybranému zařízení. Přidejte nový záznam s krátkým popisem a textem poznámky. Kliknutím na popis záznamu deníku (nebo jeho výběrem a použitím Zobrazit) přečtete celý záznam. Úprava záznamu aktualizuje jeho časové razítko, ale zachová původního autora. Pomocí vyhledávacího pole filtrujte záznamy podle popisu nebo textu."
+      },
+      {
+        "heading": "Zobrazení a skrytí sekce Odkazy a deník",
+        "body": "Kliknutím na lištu nad panely Odkazy a Deník tuto sekci rozbalíte nebo sbalíte, stejným způsobem, jakým lze sekce rozbalovat a sbalovat v dokumentaci API Swagger."
+      }
+    ]
+  },
+  "sk": {
+    "title": "Pomocník k stránke Zariadenia",
+    "sections": [
+      {
+        "heading": "Prehľad",
+        "body": "Stránka Zariadenia umožňuje vytvárať a udržiavať hierarchický strom vašich zariadení (napríklad: Prevádzka > Linka > Stroj) a spravovať všetko, čo k danej položke patrí - komentáre, súbory, odkazy a záznamy denníka - na jednom mieste."
+      },
+      {
+        "heading": "Strom zariadení a vyhľadávanie",
+        "body": "Strom vľavo zobrazuje všetky zariadenia usporiadané podľa vzťahov nadradený/podradený. Pomocou šípky vedľa položky ju rozbaľte alebo zbaľte. Pomocou vyhľadávacieho poľa filtrujte strom podľa názvu - zodpovedajúce položky a ich nadradené položky zostanú viditeľné, všetko ostatné sa skryje. Každý riadok môže zobrazovať malé odznaky: jeden pre „Je OEE“ a jeden pre „Je plánovateľné“. Riadky je možné tiež zafarbiť farbou priradenou danému zariadeniu."
+      },
+      {
+        "heading": "Výber položky",
+        "body": "Kliknutím na názov zariadenia v strome ho vyberiete. Sekcie Komentár, Súbory, Odkazy a Denník vždy zobrazujú informácie o aktuálne vybranej položke."
+      },
+      {
+        "heading": "Pridávanie a úprava zariadení",
+        "body": "Pomocou tlačidla Pridať vytvoríte nové zariadenie, alebo vyberte položku a pomocou Upraviť ju zmeňte. Vo formulári: „Uzol najvyššej úrovne“ označuje, že položka nemá nadradenú položku (je koreňom stromu) - ak je strom momentálne prázdny, táto možnosť je pre úplne prvú pridávanú položku uzamknutá, pretože strom vždy potrebuje aspoň jeden koreň. Vyplňte názov, vyberte kategóriu a voliteľne externý kód a farbu. Sekcia „Použiť ekonomiku“ umožňuje zaznamenať dátum nákupu, cenu a dobu odpisovania. Sekcia „Použiť upozornenie“ umožňuje nastaviť dátum/čas a správu určenú na pripomenutie tohto zariadenia."
+      },
+      {
+        "heading": "OEE a plánovateľné zariadenie",
+        "body": "Zaškrtnutím „OEE“ sa vytvoria podmienky na meranie OEE (Overall Equipment Effectiveness). Na zaznamenávanie každého cyklu, ktorým zariadenie prechádza, je potrebné externé zariadenie - pozrite si Prodhelper.com, ako možno vykonať registráciu cyklov. Po zaškrtnutí OEE sa zariadenie automaticky stane aj plánovateľným. Zaškrtnutím „Plánovateľné“ sa zariadenie zobrazí ako zdroj v zobrazení plánovania, kde možno preň plánovať výrobné zákazky v Ganttovom diagrame."
+      },
+      {
+        "heading": "Presúvanie zariadenia pod iný nadradený prvok",
+        "body": "Vyberte položku a použite „Presunúť do...“ na priradenie iného nadradeného prvku. Vyberte nový nadradený prvok zo zoznamu, alebo vyberte možnosť najvyššej úrovne, aby sa stala koreňovou položkou, a potom potvrďte. Položku nikdy nemožno presunúť pod seba samu ani pod žiadnu zo svojich podradených položiek, preto sú zo zoznamu vynechané."
+      },
+      {
+        "heading": "Odstránenie zariadenia",
+        "body": "Vyberte položku a použite Odstrániť. Budete požiadaní o potvrdenie. Položku, ktorá má v strome ešte podradené položky, nemožno odstrániť - najprv odstráňte alebo presuňte jej podradené položky."
+      },
+      {
+        "heading": "Správa kategórií",
+        "body": "Každé zariadenie patrí do kategórie. Pomocou „Spravovať kategórie“ na paneli s nástrojmi pridávajte, premenúvajte alebo odstraňujte kategórie. Skôr než budete môcť pridať zariadenie, musí existovať aspoň jedna kategória."
+      },
+      {
+        "heading": "Komentáre",
+        "body": "Panel Komentár umožňuje napísať voľný textový komentár k vybranému zariadeniu. Ak bol komentár pôvodne napísaný v inom jazyku, než práve používate, zobrazí sa preložený náhľad spolu s poznámkou o pôvodnom jazyku."
+      },
+      {
+        "heading": "Súbory",
+        "body": "Panel Súbory umožňuje nahrávať súbory k vybranému zariadeniu a sťahovať alebo mazať už nahrané súbory. Každému súboru priraďte krátky popis, aby bolo možné ho neskôr ľahko rozpoznať."
+      },
+      {
+        "heading": "Odkazy",
+        "body": "Panel Odkazy umožňuje pripojiť k vybranému zariadeniu odkazy - bežnú webovú stránku alebo dokument (napríklad dokument SharePoint). Pomocou začiarkavacieho políčka v dialógu Pridať označte odkaz ako dokument. V tabuľke vyberte odkaz a otvorte ho, stiahnite, alebo odstráňte."
+      },
+      {
+        "heading": "Denník",
+        "body": "Panel Denník umožňuje viesť datovanú históriu voľných poznámok k vybranému zariadeniu. Pridajte nový záznam s krátkym popisom a textom poznámky. Kliknutím na popis záznamu denníka (alebo jeho výberom a použitím Zobraziť) prečítate celý záznam. Úprava záznamu aktualizuje jeho časovú pečiatku, ale zachová pôvodného autora. Pomocou vyhľadávacieho poľa filtrujte záznamy podľa popisu alebo textu."
+      },
+      {
+        "heading": "Zobrazenie a skrytie sekcie Odkazy a denník",
+        "body": "Kliknutím na lištu nad panelmi Odkazy a Denník túto sekciu rozbalíte alebo zbalíte, rovnakým spôsobom, akým možno sekcie rozbaľovať a zbaľovať v dokumentácii API Swagger."
+      }
+    ]
+  },
+  "hu": {
+    "title": "Eszközök oldal súgója",
+    "sections": [
+      {
+        "heading": "Áttekintés",
+        "body": "Az Eszközök oldalon felépítheti és karbantarthatja eszközeinek hierarchikus fastruktúráját (például: Telephely > Sor > Gép), és egy helyen kezelheti mindazt, ami az egyes elemekhez tartozik - megjegyzéseket, fájlokat, hivatkozásokat és naplóbejegyzéseket."
+      },
+      {
+        "heading": "Az eszközfa és a keresés",
+        "body": "A bal oldali fa az összes eszközt szülő-gyermek kapcsolatok szerint rendezve jeleníti meg. Az elem melletti nyíllal bonthatja ki vagy csukhatja össze a gyermekelemeket. A keresőmezővel név szerint szűrheti a fát - az egyező elemek és szüleik láthatók maradnak, minden más elrejtődik. Minden sor kis jelvényeket jeleníthet meg: egyet az „OEE” és egyet a „Tervezhető” tulajdonsághoz. A sorok az egyes eszközökhöz rendelt színnel is színezhetők."
+      },
+      {
+        "heading": "Elem kiválasztása",
+        "body": "Kattintson egy eszköz nevére a fában a kiválasztásához. A Megjegyzés, Fájlok, Hivatkozások és Napló szakaszok mindig az aktuálisan kiválasztott elem adatait mutatják."
+      },
+      {
+        "heading": "Eszköz hozzáadása és szerkesztése",
+        "body": "Az Hozzáadás gombbal új eszközt hozhat létre, vagy válasszon ki egy elemet, és a Szerkesztés gombbal módosíthatja. Az űrlapon: a „Legfelső szintű csomópont” azt jelöli, hogy az elemnek nincs szülője (a fa gyökere) - ha a fa jelenleg üres, ez a beállítás a legelső hozzáadott elemnél zárolva van, mivel a fának mindig szüksége van legalább egy gyökérre. Adjon meg egy nevet, válasszon kategóriát, és opcionálisan egy külső kódot és színt. A „Gazdálkodási adatok használata” szakaszban rögzítheti a vásárlás dátumát, az árat és az amortizációs időszakot. Az „Értesítés használata” szakaszban dátumot/időpontot és üzenetet állíthat be, amely az adott eszközre emlékeztet."
+      },
+      {
+        "heading": "OEE és tervezhető eszköz",
+        "body": "Az „OEE” bejelölésével megteremtődnek az OEE (Overall Equipment Effectiveness) mérésének feltételei. Külső eszközre van szükség az eszköz minden egyes ciklusának rögzítéséhez - nézze meg a Prodhelper.com oldalt, hogyan végezhető el a ciklusrögzítés. Az OEE bejelölése után az eszköz automatikusan tervezhetővé is válik. A „Tervezhető” bejelölésével az eszköz erőforrásként jelenik meg a tervezési nézetben, ahol gyártási rendeléseket lehet Gantt-diagramon ütemezni."
+      },
+      {
+        "heading": "Eszköz áthelyezése másik szülőhöz",
+        "body": "Válasszon ki egy elemet, és használja az „Áthelyezés ide...” gombot, hogy másik szülőt rendeljen hozzá. Válasszon új szülőt a listából, vagy válassza a legfelső szintű lehetőséget, hogy gyökérelemmé tegye, majd erősítse meg. Egy elem soha nem helyezhető át saját maga vagy saját gyermekelemei alá, ezért ezek kimaradnak a listából."
+      },
+      {
+        "heading": "Eszköz törlése",
+        "body": "Válasszon ki egy elemet, és használja a Törlés gombot. A rendszer megerősítést kér. Az az elem, amelynek még vannak gyermekelemei a fában, nem törölhető - előbb távolítsa el vagy helyezze át a gyermekelemeket."
+      },
+      {
+        "heading": "Kategóriák kezelése",
+        "body": "Minden eszköz egy kategóriához tartozik. Az eszköztár „Kategóriák kezelése” funkciójával kategóriákat adhat hozzá, nevezhet át vagy távolíthat el. Legalább egy kategóriának léteznie kell, mielőtt eszközt adhatna hozzá."
+      },
+      {
+        "heading": "Megjegyzések",
+        "body": "A Megjegyzés panelen szabad szöveges megjegyzést írhat a kiválasztott eszközről. Ha a megjegyzést eredetileg más nyelven írták, mint amit éppen használ, egy lefordított előnézet jelenik meg az eredeti nyelvre vonatkozó megjegyzéssel együtt."
+      },
+      {
+        "heading": "Fájlok",
+        "body": "A Fájlok panelen fájlokat tölthet fel a kiválasztott eszközhöz, valamint letöltheti vagy törölheti a már feltöltött fájlokat. Adjon minden fájlnak egy rövid leírást, hogy később könnyen felismerhető legyen."
+      },
+      {
+        "heading": "Hivatkozások",
+        "body": "A Hivatkozások panelen hivatkozásokat csatolhat a kiválasztott eszközhöz - vagy egy szokásos weboldalt, vagy egy dokumentumot (például egy SharePoint-dokumentumot). A Hozzáadás párbeszédpanel jelölőnégyzetével jelölheti meg a hivatkozást dokumentumként. Válasszon ki egy hivatkozást a táblázatban a megnyitásához vagy letöltéséhez, vagy az eltávolításához."
+      },
+      {
+        "heading": "Napló",
+        "body": "A Napló panelen dátumozott előzményeket vezethet a kiválasztott eszközről szóló szabad szöveges jegyzetekből. Adjon hozzá új bejegyzést rövid leírással és a jegyzet szövegével. Kattintson egy naplóbejegyzés leírására (vagy jelölje ki, és használja a Megtekintés gombot) a teljes bejegyzés elolvasásához. A bejegyzés szerkesztése frissíti az időbélyeget, de megőrzi az eredeti szerzőt. A keresőmezővel leírás vagy szöveg szerint szűrheti a bejegyzéseket."
+      },
+      {
+        "heading": "A Hivatkozások és napló szakasz megjelenítése és elrejtése",
+        "body": "Kattintson a Hivatkozások és Napló panelek feletti sávra a szakasz kibontásához vagy összecsukásához, ugyanúgy, ahogyan a Swagger API-dokumentációjában is ki lehet bontani és össze lehet csukni a szakaszokat."
+      }
+    ]
+  },
+  "bg": {
+    "title": "Помощ за страницата Оборудване",
+    "sections": [
+      {
+        "heading": "Общ преглед",
+        "body": "Страницата Оборудване ви позволява да изградите и поддържате йерархично дърво на вашето оборудване (например: Обект > Линия > Машина) и да управлявате всичко, свързано с всеки елемент - коментари, файлове, връзки и записи в дневника - на едно място."
+      },
+      {
+        "heading": "Дървото на оборудването и търсенето",
+        "body": "Дървото вляво показва цялото оборудване, организирано по връзки родител/дете. Използвайте стрелката до елемент, за да разгънете или свиете неговите подчинени елементи. Използвайте полето за търсене, за да филтрирате дървото по име - съвпадащите елементи и техните родители остават видими, всичко останало се скрива. Всеки ред може да показва малки значки: една за „Е OEE“ и една за „Може да се планира“. Редовете могат да се оцветяват и с цвета, зададен на всеки елемент от оборудването."
+      },
+      {
+        "heading": "Избиране на елемент",
+        "body": "Кликнете върху името на елемент от оборудването в дървото, за да го изберете. Разделите Коментар, Файлове, Връзки и Дневник винаги показват информация за текущо избрания елемент."
+      },
+      {
+        "heading": "Добавяне и редактиране на оборудване",
+        "body": "Използвайте бутона Добавяне, за да създадете нов елемент от оборудването, или изберете елемент и използвайте Редактиране, за да го промените. Във формуляра: „Възел от най-високо ниво“ означава, че елементът няма родител (корен на дървото) - ако дървото в момента е празно, тази опция е заключена за самия първи добавен елемент, тъй като дървото винаги се нуждае от поне един корен. Попълнете име, изберете категория и по избор - външен код и цвят. Разделът „Използвай икономически данни“ ви позволява да записвате дата на покупка, цена и период на амортизация. Разделът „Използвай известие“ ви позволява да зададете дата/час и съобщение, предназначено да ви напомня за това оборудване."
+      },
+      {
+        "heading": "OEE и планируемо оборудване",
+        "body": "Отмятането на „OEE“ създава условията за измерване на OEE (Overall Equipment Effectiveness). Необходимо е външно оборудване за записване на всеки цикъл, през който преминава оборудването - разгледайте Prodhelper.com, за да видите как може да се извърши регистрацията на цикли. След като OEE бъде отметнато, оборудването автоматично става и планируемо. Отмятането на „Планируемо“ прави оборудването видимо като ресурс в изгледа за планиране, където производствени поръчки могат да бъдат планирани в диаграма на Гант."
+      },
+      {
+        "heading": "Преместване на оборудване към друг родител",
+        "body": "Изберете елемент и използвайте „Преместване в...“, за да му зададете друг родител. Изберете нов родител от списъка или изберете опцията за най-високо ниво, за да го направите коренов елемент, след което потвърдете. Елемент никога не може да бъде преместен под самия себе си или под някой от собствените си подчинени елементи, затова те са изключени от списъка."
+      },
+      {
+        "heading": "Изтриване на оборудване",
+        "body": "Изберете елемент и използвайте Изтриване. Ще бъдете помолени за потвърждение. Елемент, който все още има подчинени елементи в дървото, не може да бъде изтрит - първо премахнете или преместете неговите подчинени елементи."
+      },
+      {
+        "heading": "Управление на категории",
+        "body": "Всеки елемент от оборудването принадлежи към категория. Използвайте „Управление на категории“ в лентата с инструменти, за да добавяте, преименувате или премахвате категории. Трябва да съществува поне една категория, преди да можете да добавяте оборудване."
+      },
+      {
+        "heading": "Коментари",
+        "body": "Панелът Коментар ви позволява да напишете свободен текстов коментар за избрания елемент от оборудването. Ако коментарът първоначално е написан на различен език от този, който използвате в момента, се показва преведен преглед заедно с бележка за оригиналния език."
+      },
+      {
+        "heading": "Файлове",
+        "body": "Панелът Файлове ви позволява да качвате файлове към избрания елемент от оборудването, както и да изтегляте или изтривате вече качени файлове. Дайте на всеки файл кратко описание, за да бъде лесно разпознаваем по-късно."
+      },
+      {
+        "heading": "Връзки",
+        "body": "Панелът Връзки ви позволява да прикачвате връзки към избрания елемент от оборудването - обикновена уеб страница или документ (например документ в SharePoint). Използвайте отметката в диалога Добавяне, за да маркирате връзка като документ. Изберете връзка в таблицата, за да я отворите, изтеглите или премахнете."
+      },
+      {
+        "heading": "Дневник",
+        "body": "Панелът Дневник ви позволява да поддържате датирана история от свободни текстови бележки за избрания елемент от оборудването. Добавете нов запис с кратко описание и текст на бележката. Кликнете върху описанието на запис в дневника (или го изберете и използвайте Преглед), за да прочетете целия запис. Редактирането на запис актуализира времевия му печат, но запазва оригиналния автор. Използвайте полето за търсене, за да филтрирате записите по описание или текст."
+      },
+      {
+        "heading": "Показване и скриване на раздела Връзки и дневник",
+        "body": "Кликнете върху лентата над панелите Връзки и Дневник, за да разгънете или свиете този раздел, по същия начин, по който разделите могат да се разгъват и свиват в API документацията на Swagger."
+      }
+    ]
+  },
+  "hr": {
+    "title": "Pomoć za stranicu Oprema",
+    "sections": [
+      {
+        "heading": "Pregled",
+        "body": "Stranica Oprema omogućuje izradu i održavanje hijerarhijskog stabla vaše opreme (na primjer: Lokacija > Linija > Stroj), te upravljanje svime što pripada svakoj stavci - komentarima, datotekama, poveznicama i zapisima dnevnika - na jednom mjestu."
+      },
+      {
+        "heading": "Stablo opreme i pretraga",
+        "body": "Stablo s lijeve strane prikazuje svu opremu, organiziranu prema odnosima nadređeno/podređeno. Koristite strelicu pored stavke za proširivanje ili sažimanje njezinih podređenih stavki. Koristite polje za pretragu za filtriranje stabla po nazivu - podudarajuće stavke i njihove nadređene stavke ostaju vidljive, sve ostalo se skriva. Svaki redak može prikazivati male oznake: jednu za „Je OEE“ i jednu za „Je planabilno“. Retci se također mogu obojiti bojom dodijeljenom svakoj stavci opreme."
+      },
+      {
+        "heading": "Odabir stavke",
+        "body": "Kliknite na naziv stavke opreme u stablu kako biste je odabrali. Odjeljci Komentar, Datoteke, Poveznice i Dnevnik uvijek prikazuju informacije o trenutno odabranoj stavci."
+      },
+      {
+        "heading": "Dodavanje i uređivanje opreme",
+        "body": "Koristite gumb Dodaj za stvaranje nove stavke opreme, ili odaberite stavku i koristite Uredi za njezinu izmjenu. U obrascu: „Čvor najviše razine“ označava da stavka nema nadređenu stavku (korijen stabla) - ako je stablo trenutno prazno, ova je opcija zaključana za samu prvu dodanu stavku, jer stablo uvijek treba barem jedan korijen. Unesite naziv, odaberite kategoriju te po želji vanjski kod i boju. Odjeljak „Koristi ekonomiju“ omogućuje bilježenje datuma kupnje, cijene i razdoblja amortizacije. Odjeljak „Koristi obavijest“ omogućuje postavljanje datuma/vremena i poruke namijenjene podsjećanju na ovu opremu."
+      },
+      {
+        "heading": "OEE i oprema s mogućnošću planiranja",
+        "body": "Označavanjem „OEE” stvaraju se uvjeti za mjerenje OEE-a (Overall Equipment Effectiveness). Za bilježenje svakog ciklusa kroz koji oprema prolazi potrebna je vanjska oprema - posjetite Prodhelper.com kako biste vidjeli kako se može provesti registracija ciklusa. Nakon što je OEE označen, oprema automatski postaje i planabilna. Označavanjem „Moguće planiranje” oprema postaje vidljiva kao resurs u prikazu planiranja, gdje se proizvodni nalozi mogu planirati na Ganttovom dijagramu."
+      },
+      {
+        "heading": "Premještanje opreme pod drugi nadređeni element",
+        "body": "Odaberite stavku i koristite „Premjesti u...” kako biste joj dodijelili drugi nadređeni element. Odaberite novi nadređeni element s popisa ili odaberite opciju najviše razine kako biste je učinili korijenskom stavkom, a zatim potvrdite. Stavka se nikada ne može premjestiti pod samu sebe ili pod bilo koju od svojih podređenih stavki, stoga su one izostavljene s popisa."
+      },
+      {
+        "heading": "Brisanje opreme",
+        "body": "Odaberite stavku i koristite Izbriši. Bit ćete zamoljeni za potvrdu. Stavka koja u stablu još uvijek ima podređene stavke ne može se izbrisati - prvo uklonite ili premjestite njezine podređene stavke."
+      },
+      {
+        "heading": "Upravljanje kategorijama",
+        "body": "Svaka stavka opreme pripada kategoriji. Koristite „Upravljanje kategorijama“ na alatnoj traci za dodavanje, preimenovanje ili uklanjanje kategorija. Prije nego što možete dodati opremu, mora postojati barem jedna kategorija."
+      },
+      {
+        "heading": "Komentari",
+        "body": "Ploča Komentar omogućuje pisanje slobodnog tekstualnog komentara o odabranoj stavci opreme. Ako je komentar izvorno napisan na drugom jeziku od onog koji trenutno koristite, prikazuje se prevedeni pregled zajedno s napomenom o izvornom jeziku."
+      },
+      {
+        "heading": "Datoteke",
+        "body": "Ploča Datoteke omogućuje prijenos datoteka na odabranu stavku opreme, kao i preuzimanje ili brisanje već prenesenih datoteka. Dajte svakoj datoteci kratak opis kako bi je bilo lako prepoznati kasnije."
+      },
+      {
+        "heading": "Poveznice",
+        "body": "Ploča Poveznice omogućuje povezivanje poveznica s odabranom stavkom opreme - obične web stranice ili dokumenta (na primjer SharePoint dokumenta). Koristite potvrdni okvir u dijaloškom okviru Dodaj za označavanje poveznice kao dokumenta. Odaberite poveznicu u tablici da biste je otvorili ili preuzeli, ili je uklonili."
+      },
+      {
+        "heading": "Dnevnik",
+        "body": "Ploča Dnevnik omogućuje vođenje datirane povijesti slobodnih bilješki o odabranoj stavci opreme. Dodajte novi unos s kratkim opisom i tekstom bilješke. Kliknite na opis unosa dnevnika (ili ga odaberite i koristite Prikaži) kako biste pročitali cijeli unos. Uređivanje unosa ažurira njegovu vremensku oznaku, ali zadržava izvornog autora. Koristite polje za pretragu za filtriranje unosa po opisu ili tekstu."
+      },
+      {
+        "heading": "Prikazivanje i skrivanje odjeljka Poveznice i dnevnik",
+        "body": "Kliknite traku iznad ploča Poveznice i Dnevnik kako biste proširili ili saželi taj odjeljak, na isti način na koji se odjeljci mogu proširivati i sažimati u Swagger API dokumentaciji."
+      }
+    ]
+  },
+  "sr-Latn": {
+    "title": "Pomoć za stranicu Oprema",
+    "sections": [
+      {
+        "heading": "Pregled",
+        "body": "Stranica Oprema omogućava izradu i održavanje hijerarhijskog stabla vaše opreme (na primer: Lokacija > Linija > Mašina), i upravljanje svime što pripada svakoj stavci - komentarima, fajlovima, vezama i zapisima dnevnika - na jednom mestu."
+      },
+      {
+        "heading": "Stablo opreme i pretraga",
+        "body": "Stablo sa leve strane prikazuje svu opremu, organizovanu prema odnosima nadređeno/podređeno. Koristite strelicu pored stavke da proširite ili skupite njene podređene stavke. Koristite polje za pretragu da filtrirate stablo po nazivu - stavke koje se poklapaju i njihove nadređene stavke ostaju vidljive, sve ostalo se skriva. Svaki red može prikazivati male oznake: jednu za „Je OEE“ i jednu za „Je planabilno“. Redovi se takođe mogu obojiti bojom dodeljenom svakoj stavci opreme."
+      },
+      {
+        "heading": "Biranje stavke",
+        "body": "Kliknite na naziv stavke opreme u stablu da je izaberete. Odeljci Komentar, Fajlovi, Veze i Dnevnik uvek prikazuju informacije o trenutno izabranoj stavci."
+      },
+      {
+        "heading": "Dodavanje i uređivanje opreme",
+        "body": "Koristite dugme Dodaj da napravite novu stavku opreme, ili izaberite stavku i koristite Uredi da je izmenite. U obrascu: „Čvor najvišeg nivoa“ označava da stavka nema nadređenu stavku (koren stabla) - ako je stablo trenutno prazno, ova opcija je zaključana za samu prvu dodatu stavku, jer stablu uvek treba bar jedan koren. Unesite naziv, izaberite kategoriju i po želji spoljni kod i boju. Odeljak „Koristi ekonomiju“ omogućava beleženje datuma kupovine, cene i perioda amortizacije. Odeljak „Koristi obaveštenje“ omogućava postavljanje datuma/vremena i poruke namenjene podsećanju na ovu opremu."
+      },
+      {
+        "heading": "OEE i oprema koja se može planirati",
+        "body": "Označavanjem „OEE” stvaraju se uslovi za merenje OEE-a (Overall Equipment Effectiveness). Za beleženje svakog ciklusa kroz koji oprema prolazi potrebna je spoljna oprema - posetite Prodhelper.com da vidite kako se može izvršiti registracija ciklusa. Nakon što je OEE označen, oprema automatski postaje i planabilna. Označavanjem „Moguće planiranje” oprema postaje vidljiva kao resurs u prikazu planiranja, gde proizvodni nalozi mogu biti planirani na Gantovom dijagramu."
+      },
+      {
+        "heading": "Premeštanje opreme pod drugi nadređeni element",
+        "body": "Izaberite stavku i koristite „Premesti u...” da biste joj dodelili drugi nadređeni element. Izaberite novi nadređeni element sa liste ili izaberite opciju najvišeg nivoa da biste je učinili korenskom stavkom, a zatim potvrdite. Stavka se nikada ne može premestiti pod samu sebe ili pod bilo koju od svojih podređenih stavki, pa su one izostavljene sa liste."
+      },
+      {
+        "heading": "Brisanje opreme",
+        "body": "Izaberite stavku i koristite Obriši. Bićete zamoljeni za potvrdu. Stavka koja u stablu i dalje ima podređene stavke ne može se obrisati - prvo uklonite ili premestite njene podređene stavke."
+      },
+      {
+        "heading": "Upravljanje kategorijama",
+        "body": "Svaka stavka opreme pripada kategoriji. Koristite „Upravljanje kategorijama“ na traci sa alatkama da dodate, preimenujete ili uklonite kategorije. Pre nego što možete dodati opremu, mora postojati bar jedna kategorija."
+      },
+      {
+        "heading": "Komentari",
+        "body": "Panel Komentar omogućava pisanje slobodnog tekstualnog komentara o izabranoj stavci opreme. Ako je komentar prvobitno napisan na drugom jeziku od onog koji trenutno koristite, prikazuje se prevedeni pregled zajedno sa napomenom o izvornom jeziku."
+      },
+      {
+        "heading": "Fajlovi",
+        "body": "Panel Fajlovi omogućava otpremanje fajlova na izabranu stavku opreme, kao i preuzimanje ili brisanje već otpremljenih fajlova. Dajte svakom fajlu kratak opis kako bi ga bilo lako prepoznati kasnije."
+      },
+      {
+        "heading": "Veze",
+        "body": "Panel Veze omogućava povezivanje veza sa izabranom stavkom opreme - običnu veb stranicu ili dokument (na primer SharePoint dokument). Koristite polje za potvrdu u dijalogu Dodaj da označite vezu kao dokument. Izaberite vezu u tabeli da je otvorite ili preuzmete, ili da je uklonite."
+      },
+      {
+        "heading": "Dnevnik",
+        "body": "Panel Dnevnik omogućava vođenje datirane istorije slobodnih beleški o izabranoj stavci opreme. Dodajte novi unos sa kratkim opisom i tekstom beleške. Kliknite na opis unosa dnevnika (ili ga izaberite i koristite Prikaži) da pročitate ceo unos. Uređivanje unosa ažurira njegovu vremensku oznaku, ali zadržava izvornog autora. Koristite polje za pretragu da filtrirate unose po opisu ili tekstu."
+      },
+      {
+        "heading": "Prikazivanje i skrivanje odeljka Veze i dnevnik",
+        "body": "Kliknite na traku iznad panela Veze i Dnevnik da proširite ili skupite taj odeljak, na isti način na koji se odeljci mogu proširivati i skupljati u Swagger API dokumentaciji."
+      }
+    ]
+  },
+  "sl": {
+    "title": "Pomoč za stran Oprema",
+    "sections": [
+      {
+        "heading": "Pregled",
+        "body": "Stran Oprema omogoča izgradnjo in vzdrževanje hierarhičnega drevesa vaše opreme (na primer: Lokacija > Linija > Stroj) ter upravljanje vsega, kar pripada posamezni postavki - komentarjev, datotek, povezav in dnevniških vnosov - na enem mestu."
+      },
+      {
+        "heading": "Drevo opreme in iskanje",
+        "body": "Drevo na levi prikazuje vso opremo, organizirano po razmerjih nadrejeno/podrejeno. Uporabite puščico ob postavki za razširitev ali strnitev njenih podrejenih postavk. Uporabite iskalno polje za filtriranje drevesa po imenu - ujemajoče se postavke in njihovi nadrejeni ostanejo vidni, vse ostalo se skrije. Vsaka vrstica lahko prikazuje majhne značke: eno za „Je OEE“ in eno za „Je načrtljivo“. Vrstice je mogoče tudi obarvati z barvo, dodeljeno posamezni opremi."
+      },
+      {
+        "heading": "Izbira postavke",
+        "body": "Kliknite ime opreme v drevesu, da jo izberete. Razdelki Komentar, Datoteke, Povezave in Dnevnik vedno prikazujejo podatke o trenutno izbrani postavki."
+      },
+      {
+        "heading": "Dodajanje in urejanje opreme",
+        "body": "Uporabite gumb Dodaj za ustvarjanje nove opreme, ali izberite postavko in uporabite Uredi za njeno spremembo. V obrazcu: „Vozlišče najvišje ravni“ označuje, da postavka nima nadrejene postavke (koren drevesa) - če je drevo trenutno prazno, je ta možnost zaklenjena za prvo dodano postavko, saj drevo vedno potrebuje vsaj en koren. Vnesite ime, izberite kategorijo ter po želji zunanjo kodo in barvo. Razdelek „Uporabi ekonomiko“ omogoča beleženje datuma nakupa, cene in obdobja amortizacije. Razdelek „Uporabi obvestilo“ omogoča nastavitev datuma/časa in sporočila, namenjenega opozarjanju na to opremo."
+      },
+      {
+        "heading": "OEE in oprema, ki jo je mogoče načrtovati",
+        "body": "Če potrdite „OEE“, se ustvarijo pogoji za merjenje OEE (Overall Equipment Effectiveness). Za beleženje vsakega cikla, skozi katerega gre oprema, je potrebna zunanja oprema - obiščite Prodhelper.com in si oglejte, kako lahko poteka registracija ciklov. Ko je OEE potrjen, oprema samodejno postane tudi načrtljiva. Če potrdite „Načrtljivo“, postane oprema vidna kot vir v pogledu načrtovanja, kjer je mogoče v Ganttovem diagramu načrtovati proizvodne naloge."
+      },
+      {
+        "heading": "Premikanje opreme pod drug nadrejeni element",
+        "body": "Izberite postavko in uporabite „Premakni v...“, da ji dodelite drugega nadrejenega. Izberite novega nadrejenega s seznama ali izberite možnost najvišje ravni, da jo naredite koren, nato pa potrdite. Postavke ni nikoli mogoče premakniti pod njo samo ali pod katero koli od njenih podrejenih postavk, zato so te izpuščene s seznama."
+      },
+      {
+        "heading": "Brisanje opreme",
+        "body": "Izberite postavko in uporabite Izbriši. Zahtevana bo potrditev. Postavke, ki ima v drevesu še vedno podrejene postavke, ni mogoče izbrisati - najprej odstranite ali premaknite njene podrejene postavke."
+      },
+      {
+        "heading": "Upravljanje kategorij",
+        "body": "Vsaka oprema pripada kategoriji. Uporabite „Upravljanje kategorij“ v orodni vrstici za dodajanje, preimenovanje ali odstranjevanje kategorij. Preden lahko dodate opremo, mora obstajati vsaj ena kategorija."
+      },
+      {
+        "heading": "Komentarji",
+        "body": "Podokno Komentar omogoča pisanje prostega besedilnega komentarja o izbrani opremi. Če je bil komentar prvotno napisan v drugem jeziku, kot ga trenutno uporabljate, se prikaže preveden predogled skupaj z opombo o izvirnem jeziku."
+      },
+      {
+        "heading": "Datoteke",
+        "body": "Podokno Datoteke omogoča nalaganje datotek k izbrani opremi ter prenos ali brisanje že naloženih datotek. Vsaki datoteki dodelite kratek opis, da jo boste pozneje lažje prepoznali."
+      },
+      {
+        "heading": "Povezave",
+        "body": "Podokno Povezave omogoča pripenjanje povezav na izbrano opremo - navadno spletno stran ali dokument (na primer dokument SharePoint). Uporabite potrditveno polje v pogovornem oknu Dodaj, da povezavo označite kot dokument. V tabeli izberite povezavo, da jo odprete ali prenesete, ali da jo odstranite."
+      },
+      {
+        "heading": "Dnevnik",
+        "body": "Podokno Dnevnik omogoča vodenje datirane zgodovine prostih zapiskov o izbrani opremi. Dodajte nov vnos s kratkim opisom in besedilom zapiska. Kliknite opis dnevniškega vnosa (ali ga izberite in uporabite Prikaži), da preberete celoten vnos. Urejanje vnosa posodobi njegov časovni žig, vendar ohrani izvirnega avtorja. Uporabite iskalno polje za filtriranje vnosov po opisu ali besedilu."
+      },
+      {
+        "heading": "Prikaz in skrivanje razdelka Povezave in dnevnik",
+        "body": "Kliknite vrstico nad podoknoma Povezave in Dnevnik, da razširite ali strnete ta razdelek, na enak način, kot je mogoče razdelke razširiti ali strniti v Swaggerjevi API dokumentaciji."
+      }
+    ]
+  },
+  "lt": {
+    "title": "Įrangos puslapio pagalba",
+    "sections": [
+      {
+        "heading": "Apžvalga",
+        "body": "Įrangos puslapyje galite kurti ir tvarkyti hierarchinį savo įrangos medį (pavyzdžiui: Objektas > Linija > Mašina) bei valdyti viską, kas priklauso kiekvienam elementui - komentarus, failus, nuorodas ir žurnalo įrašus - vienoje vietoje."
+      },
+      {
+        "heading": "Įrangos medis ir paieška",
+        "body": "Medis kairėje rodo visą įrangą, sutvarkytą pagal tėvinių ir vaikinių elementų ryšius. Naudokite rodyklę šalia elemento, kad išskleistumėte arba suskleistumėte jo vaikinius elementus. Naudokite paieškos lauką, kad filtruotumėte medį pagal pavadinimą - atitinkantys elementai ir jų tėviniai elementai lieka matomi, viskas kita paslepiama. Kiekviena eilutė gali rodyti mažus ženkliukus: vieną „Yra OEE“ ir vieną „Galima planuoti“. Eilutes taip pat galima nuspalvinti kiekvienam įrangos elementui priskirta spalva."
+      },
+      {
+        "heading": "Elemento pasirinkimas",
+        "body": "Spustelėkite įrangos elemento pavadinimą medyje, kad jį pasirinktumėte. Skiltyse Komentaras, Failai, Nuorodos ir Žurnalas visada rodoma informacija apie šiuo metu pasirinktą elementą."
+      },
+      {
+        "heading": "Įrangos pridėjimas ir redagavimas",
+        "body": "Naudokite mygtuką Pridėti, kad sukurtumėte naują įrangos elementą, arba pasirinkite elementą ir naudokite Redaguoti, kad jį pakeistumėte. Formoje: „Aukščiausio lygio mazgas“ žymi, kad elementas neturi tėvinio elemento (medžio šaknis) - jei medis šiuo metu tuščias, ši parinktis užrakinta pirmajam pridedamam elementui, nes medžiui visada reikia bent vienos šaknies. Įveskite pavadinimą, pasirinkite kategoriją ir, jei norite, išorinį kodą bei spalvą. Skiltis „Naudoti ekonomiką“ leidžia įrašyti pirkimo datą, kainą ir nusidėvėjimo laikotarpį. Skiltis „Naudoti pranešimą“ leidžia nustatyti datą/laiką ir žinutę, skirtą priminti apie šią įrangą."
+      },
+      {
+        "heading": "OEE ir planuojama įranga",
+        "body": "Pažymėjus „OEE“, sukuriamos sąlygos matuoti OEE (Overall Equipment Effectiveness). Kiekvienam įrangos atliekamam ciklui registruoti reikalinga išorinė įranga - apsilankykite Prodhelper.com, kad sužinotumėte, kaip galima atlikti ciklų registravimą. Kai OEE pažymėtas, įranga taip pat automatiškai tampa planuojama. Pažymėjus „Planuojama“, įranga tampa matoma kaip resursas planavimo rodinyje, kuriame gamybos užsakymus galima planuoti Gantt diagramoje."
+      },
+      {
+        "heading": "Įrangos perkėlimas po kitu tėviniu elementu",
+        "body": "Pasirinkite elementą ir naudokite „Perkelti į...“, kad priskirtumėte jam kitą tėvinį elementą. Pasirinkite naują tėvinį elementą iš sąrašo arba pasirinkite aukščiausio lygio parinktį, kad jis taptų šakniniu elementu, tada patvirtinkite. Elemento niekada negalima perkelti po juo pačiu ar bet kuriuo jo vaikiniu elementu, todėl jie neįtraukti į sąrašą."
+      },
+      {
+        "heading": "Įrangos šalinimas",
+        "body": "Pasirinkite elementą ir naudokite Šalinti. Bus paprašyta patvirtinimo. Elemento, kuris medyje vis dar turi vaikinių elementų, pašalinti negalima - pirmiausia pašalinkite arba perkelkite jo vaikinius elementus."
+      },
+      {
+        "heading": "Kategorijų valdymas",
+        "body": "Kiekvienas įrangos elementas priklauso kategorijai. Naudokite įrankių juostoje esančią parinktį „Valdyti kategorijas“, kad pridėtumėte, pervadintumėte ar pašalintumėte kategorijas. Kad galėtumėte pridėti įrangą, turi būti bent viena kategorija."
+      },
+      {
+        "heading": "Komentarai",
+        "body": "Skydelyje Komentaras galite parašyti laisvo teksto komentarą apie pasirinktą įrangos elementą. Jei komentaras iš pradžių buvo parašytas kita kalba nei ta, kurią šiuo metu naudojate, rodomas išverstas peržiūros variantas kartu su pastaba apie originalo kalbą."
+      },
+      {
+        "heading": "Failai",
+        "body": "Skydelyje Failai galite įkelti failus į pasirinktą įrangos elementą, taip pat atsisiųsti arba ištrinti jau įkeltus failus. Kiekvienam failui suteikite trumpą aprašymą, kad jį būtų lengva atpažinti vėliau."
+      },
+      {
+        "heading": "Nuorodos",
+        "body": "Skydelyje Nuorodos galite prijungti nuorodas prie pasirinkto įrangos elemento - įprastą tinklalapį arba dokumentą (pavyzdžiui, SharePoint dokumentą). Naudokite žymimąjį langelį dialogo lange Pridėti, kad pažymėtumėte nuorodą kaip dokumentą. Lentelėje pasirinkite nuorodą, kad ją atidarytumėte, atsisiųstumėte arba pašalintumėte."
+      },
+      {
+        "heading": "Žurnalas",
+        "body": "Skydelyje Žurnalas galite tvarkyti datuotą laisvo teksto pastabų apie pasirinktą įrangos elementą istoriją. Pridėkite naują įrašą su trumpu aprašymu ir pastabos tekstu. Spustelėkite žurnalo įrašo aprašymą (arba pasirinkite jį ir naudokite Peržiūrėti), kad perskaitytumėte visą įrašą. Redaguojant įrašą atnaujinama jo laiko žyma, tačiau išsaugomas originalus autorius. Naudokite paieškos lauką, kad filtruotumėte įrašus pagal aprašymą ar tekstą."
+      },
+      {
+        "heading": "Skilties Nuorodos ir žurnalas rodymas ir slėpimas",
+        "body": "Spustelėkite juostą virš skydelių Nuorodos ir Žurnalas, kad išskleistumėte arba suskleistumėte šią skiltį, taip pat, kaip skiltis galima išskleisti ir suskleisti Swagger API dokumentacijoje."
+      }
+    ]
+  },
+  "lv": {
+    "title": "Aprīkojuma lapas palīdzība",
+    "sections": [
+      {
+        "heading": "Pārskats",
+        "body": "Aprīkojuma lapā varat izveidot un uzturēt hierarhisku aprīkojuma koku (piemēram: Objekts > Līnija > Iekārta) un vienuviet pārvaldīt visu, kas pieder katram vienumam - komentārus, failus, saites un žurnāla ierakstus."
+      },
+      {
+        "heading": "Aprīkojuma koks un meklēšana",
+        "body": "Koks kreisajā pusē parāda visu aprīkojumu, sakārtotu pēc vecāku/bērnu attiecībām. Izmantojiet bultiņu blakus vienumam, lai izvērstu vai sakļautu tā bērnu vienumus. Izmantojiet meklēšanas lauku, lai filtrētu koku pēc nosaukuma - atbilstošie vienumi un to vecākvienumi paliek redzami, viss pārējais tiek paslēpts. Katrā rindā var būt redzamas mazas nozīmītes: viena „Ir OEE” un viena „Ir plānojams”. Rindas var arī iekrāsot ar krāsu, kas piešķirta katram aprīkojuma vienumam."
+      },
+      {
+        "heading": "Vienuma izvēle",
+        "body": "Noklikšķiniet uz aprīkojuma vienuma nosaukuma kokā, lai to atlasītu. Sadaļās Komentārs, Faili, Saites un Žurnāls vienmēr tiek rādīta informācija par pašlaik atlasīto vienumu."
+      },
+      {
+        "heading": "Aprīkojuma pievienošana un rediģēšana",
+        "body": "Izmantojiet pogu Pievienot, lai izveidotu jaunu aprīkojuma vienumu, vai atlasiet vienumu un izmantojiet Rediģēt, lai to mainītu. Formā: „Augšējā līmeņa mezgls” norāda, ka vienumam nav vecākvienuma (koka sakne) - ja koks pašlaik ir tukšs, šī opcija ir bloķēta pašam pirmajam pievienotajam vienumam, jo kokam vienmēr nepieciešama vismaz viena sakne. Ievadiet nosaukumu, izvēlieties kategoriju un pēc izvēles ārējo kodu un krāsu. Sadaļa „Izmantot ekonomiku” ļauj reģistrēt pirkuma datumu, cenu un nolietojuma periodu. Sadaļa „Izmantot paziņojumu” ļauj iestatīt datumu/laiku un ziņojumu, kas paredzēts, lai atgādinātu par šo aprīkojumu."
+      },
+      {
+        "heading": "OEE un plānojams aprīkojums",
+        "body": "Atzīmējot „OEE”, tiek radīti nosacījumi OEE (Overall Equipment Effectiveness) mērīšanai. Katra aprīkojuma cikla reģistrēšanai ir nepieciešams ārējs aprīkojums - apmeklējiet Prodhelper.com, lai uzzinātu, kā var veikt ciklu reģistrāciju. Kad OEE ir atzīmēts, aprīkojums arī automātiski kļūst plānojams. Atzīmējot „Plānojams”, aprīkojums kļūst redzams kā resurss plānošanas skatā, kur ražošanas pasūtījumus var plānot Ganta diagrammā."
+      },
+      {
+        "heading": "Aprīkojuma pārvietošana zem cita vecākelementa",
+        "body": "Atlasiet vienumu un izmantojiet „Pārvietot uz...”, lai piešķirtu tam citu vecākelementu. Izvēlieties jaunu vecākelementu no saraksta vai izvēlieties augšējā līmeņa opciju, lai padarītu to par saknes vienumu, un pēc tam apstipriniet. Vienumu nekad nevar pārvietot zem paša vai kāda no tā bērnu vienumiem, tāpēc tie nav iekļauti sarakstā."
+      },
+      {
+        "heading": "Aprīkojuma dzēšana",
+        "body": "Atlasiet vienumu un izmantojiet Dzēst. Jums tiks lūgts apstiprinājums. Vienumu, kuram kokā joprojām ir bērnu vienumi, nevar izdzēst - vispirms noņemiet vai pārvietojiet tā bērnu vienumus."
+      },
+      {
+        "heading": "Kategoriju pārvaldība",
+        "body": "Katrs aprīkojuma vienums pieder kategorijai. Izmantojiet rīkjoslā esošo „Pārvaldīt kategorijas”, lai pievienotu, pārdēvētu vai noņemtu kategorijas. Pirms varat pievienot aprīkojumu, ir jāpastāv vismaz vienai kategorijai."
+      },
+      {
+        "heading": "Komentāri",
+        "body": "Panelis Komentārs ļauj rakstīt brīvu teksta komentāru par atlasīto aprīkojuma vienumu. Ja komentārs sākotnēji tika rakstīts citā valodā, nekā jūs pašlaik izmantojat, tiek parādīts tulkots priekšskatījums kopā ar piezīmi par sākotnējo valodu."
+      },
+      {
+        "heading": "Faili",
+        "body": "Panelis Faili ļauj augšupielādēt failus atlasītajam aprīkojuma vienumam, kā arī lejupielādēt vai dzēst jau augšupielādētus failus. Piešķiriet katram failam īsu aprakstu, lai to vēlāk būtu viegli atpazīt."
+      },
+      {
+        "heading": "Saites",
+        "body": "Panelis Saites ļauj pievienot saites atlasītajam aprīkojuma vienumam - vai nu parastu tīmekļa lapu, vai dokumentu (piemēram, SharePoint dokumentu). Izmantojiet izvēles rūtiņu dialoglodziņā Pievienot, lai atzīmētu saiti kā dokumentu. Atlasiet saiti tabulā, lai to atvērtu vai lejupielādētu, vai lai to noņemtu."
+      },
+      {
+        "heading": "Žurnāls",
+        "body": "Panelis Žurnāls ļauj uzturēt datētu brīvu piezīmju vēsturi par atlasīto aprīkojuma vienumu. Pievienojiet jaunu ierakstu ar īsu aprakstu un piezīmes tekstu. Noklikšķiniet uz žurnāla ieraksta apraksta (vai atlasiet to un izmantojiet Skatīt), lai izlasītu visu ierakstu. Ieraksta rediģēšana atjaunina tā laika zīmogu, taču saglabā sākotnējo autoru. Izmantojiet meklēšanas lauku, lai filtrētu ierakstus pēc apraksta vai teksta."
+      },
+      {
+        "heading": "Sadaļas Saites un žurnāls rādīšana un slēpšana",
+        "body": "Noklikšķiniet uz joslas virs paneļiem Saites un Žurnāls, lai izvērstu vai sakļautu šo sadaļu - tāpat, kā sadaļas var izvērst un sakļaut Swagger API dokumentācijā."
+      }
+    ]
+  },
+  "et": {
+    "title": "Seadmete lehe abiteave",
+    "sections": [
+      {
+        "heading": "Ülevaade",
+        "body": "Seadmete lehel saate luua ja hallata oma seadmete hierarhilist puud (näiteks: Tehas > Liin > Masin) ning hallata kõike, mis kuulub iga üksuse juurde - kommentaare, faile, linke ja logikirjeid - ühest kohast."
+      },
+      {
+        "heading": "Seadmepuu ja otsing",
+        "body": "Vasakul olev puu näitab kõiki seadmeid, korraldatuna ülem-alam suhete järgi. Kasutage üksuse kõrval olevat noolt, et laiendada või ahendada selle alamüksusi. Kasutage otsinguvälja, et filtreerida puud nime järgi - vastavad üksused ja nende ülemüksused jäävad nähtavaks, kõik muu peidetakse. Iga rida võib näidata väikeseid märke: üks „On OEE” ja üks „On planeeritav”. Ridu saab värvida ka igale seadmele määratud värviga."
+      },
+      {
+        "heading": "Üksuse valimine",
+        "body": "Klõpsake puus seadme nimel, et see valida. Jaotised Kommentaar, Failid, Lingid ja Logi näitavad alati hetkel valitud üksuse teavet."
+      },
+      {
+        "heading": "Seadmete lisamine ja muutmine",
+        "body": "Kasutage uue seadme loomiseks nuppu Lisa, või valige üksus ja kasutage selle muutmiseks nuppu Muuda. Vormil: „Tipptaseme sõlm” tähistab, et üksusel pole ülemüksust (puu juur) - kui puu on hetkel tühi, on see valik lukustatud kõige esimese lisatava üksuse jaoks, kuna puul on alati vaja vähemalt ühte juurt. Sisestage nimi, valige kategooria ning soovi korral väline kood ja värv. Jaotis „Kasuta majandusandmeid” võimaldab salvestada ostukuupäeva, hinna ja amortisatsiooniperioodi. Jaotis „Kasuta teavitust” võimaldab määrata kuupäeva/kellaaja ja sõnumi, mis on mõeldud selle seadme meeldetuletamiseks."
+      },
+      {
+        "heading": "OEE ja planeeritav seade",
+        "body": "Märkeruudu „OEE” märkimine loob tingimused OEE (Overall Equipment Effectiveness) mõõtmiseks. Iga seadme läbitava tsükli salvestamiseks on vaja välist seadet - külastage Prodhelper.com, et näha, kuidas tsüklite registreerimist saab teha. Kui OEE on märgitud, muutub seade automaatselt ka planeeritavaks. Märkeruudu „Planeeritav” märkimine muudab seadme planeerimisvaates ressursina nähtavaks, kus tootmistellimusi saab Gantti diagrammil planeerida."
+      },
+      {
+        "heading": "Seadme teisaldamine teise ülemelemendi alla",
+        "body": "Valige üksus ja kasutage nuppu „Teisalda...”, et määrata sellele teine ülemelement. Valige loendist uus ülemelement või valige tipptaseme valik, et muuta see juurüksuseks, ja seejärel kinnitage. Üksust ei saa kunagi teisaldada enda ega mõne oma alamüksuse alla, seetõttu on need loendist välja jäetud."
+      },
+      {
+        "heading": "Seadmete kustutamine",
+        "body": "Valige üksus ja kasutage nuppu Kustuta. Teilt küsitakse kinnitust. Üksust, millel on puus endiselt alamüksusi, ei saa kustutada - eemaldage või liigutage kõigepealt selle alamüksused."
+      },
+      {
+        "heading": "Kategooriate haldamine",
+        "body": "Iga seade kuulub kategooriasse. Kasutage tööriistaribal „Halda kategooriaid”, et lisada, ümber nimetada või eemaldada kategooriaid. Enne seadme lisamist peab olema olemas vähemalt üks kategooria."
+      },
+      {
+        "heading": "Kommentaarid",
+        "body": "Kommentaaripaneel võimaldab kirjutada valitud seadme kohta vabas vormis kommentaari. Kui kommentaar kirjutati algselt teises keeles kui see, mida te hetkel kasutate, kuvatakse tõlgitud eelvaade koos märkusega algkeele kohta."
+      },
+      {
+        "heading": "Failid",
+        "body": "Failide paneel võimaldab laadida faile valitud seadmele ning alla laadida või kustutada juba üles laaditud faile. Andke igale failile lühike kirjeldus, et seda oleks hiljem lihtne ära tunda."
+      },
+      {
+        "heading": "Lingid",
+        "body": "Lingipaneel võimaldab lisada valitud seadmele linke - tavalise veebilehe või dokumendi (näiteks SharePointi dokumendi). Kasutage dialoogis Lisa märkeruutu, et märkida link dokumendiks. Valige tabelis link, et see avada või alla laadida, või see eemaldada."
+      },
+      {
+        "heading": "Logi",
+        "body": "Logipaneel võimaldab pidada valitud seadme kohta kuupäevastatud vabas vormis märkmete ajalugu. Lisage uus kirje lühikese kirjelduse ja märkme tekstiga. Klõpsake logikirje kirjeldusel (või valige see ja kasutage nuppu Vaata), et lugeda kogu kirjet. Kirje muutmine uuendab selle ajatemplit, kuid säilitab algse autori. Kasutage otsinguvälja, et filtreerida kirjeid kirjelduse või teksti järgi."
+      },
+      {
+        "heading": "Jaotise Lingid ja logi näitamine ja peitmine",
+        "body": "Klõpsake paneelide Lingid ja Logi kohal oleval ribal, et see jaotis laiendada või ahendada - samamoodi, nagu Swaggeri API dokumentatsioonis saab jaotisi laiendada ja ahendada."
+      }
+    ]
+  },
+  "sq": {
+    "title": "Ndihma e faqes së Pajisjeve",
+    "sections": [
+      {
+        "heading": "Përmbledhje",
+        "body": "Faqja e Pajisjeve ju lejon të ndërtoni dhe mirëmbani një pemë hierarkike të pajisjeve tuaja (për shembull: Objekt > Linjë > Makinë), dhe të menaxhoni gjithçka që i përket çdo elementi - komente, skedarë, lidhje dhe hyrje regjistri - në një vend."
+      },
+      {
+        "heading": "Pema e pajisjeve dhe kërkimi",
+        "body": "Pema në të majtë tregon të gjitha pajisjet, të organizuara sipas marrëdhënieve prind/fëmijë. Përdorni shigjetën pranë një elementi për ta zgjeruar ose palosur elementët e tij fëmijë. Përdorni kutinë e kërkimit për të filtruar pemën sipas emrit - elementët përputhës dhe prindërit e tyre mbeten të dukshëm, gjithçka tjetër fshihet. Çdo rresht mund të tregojë distinktivë të vegjël: një për \"Është OEE\" dhe një për \"Është i planifikueshëm\". Rreshtat mund të ngjyrosen gjithashtu me ngjyrën që i caktoni çdo elementi pajisjeje."
+      },
+      {
+        "heading": "Zgjedhja e një elementi",
+        "body": "Klikoni emrin e një elementi pajisjeje në pemë për ta zgjedhur. Seksionet Koment, Skedarë, Lidhje dhe Regjistër tregojnë gjithmonë informacionin për elementin aktualisht të zgjedhur."
+      },
+      {
+        "heading": "Shtimi dhe redaktimi i pajisjeve",
+        "body": "Përdorni butonin Shto për të krijuar një element të ri pajisjeje, ose zgjidhni një element dhe përdorni Redakto për ta ndryshuar. Në formular: \"Nyja e nivelit të lartë\" tregon që një element nuk ka prind (një rrënjë e pemës) - nëse pema është aktualisht bosh, kjo opsion është e kyçur për elementin e parë që shtoni, pasi pema ka gjithmonë nevojë për të paktën një rrënjë. Plotësoni një emër, zgjidhni një kategori dhe, opsionalisht, një kod të jashtëm dhe një ngjyrë. Seksioni \"Përdor të dhëna ekonomike\" ju lejon të regjistroni datën e blerjes, çmimin dhe periudhën e amortizimit. Seksioni \"Përdor njoftimin\" ju lejon të vendosni një datë/orë dhe një mesazh që synon t'ju kujtojë këtë pajisje."
+      },
+      {
+        "heading": "Pajisje OEE dhe e planifikueshme",
+        "body": "Kur zgjidhni \"OEE\", krijohen kushtet për matjen e OEE (Overall Equipment Effectiveness). Nevojitet pajisje e jashtme për të regjistruar çdo cikël që kalon pajisja - vizitoni Prodhelper.com për të parë se si mund të bëhet regjistrimi i cikleve. Pasi të zgjidhet OEE, pajisja bëhet automatikisht edhe e planifikueshme. Kur zgjidhni \"E planifikueshme\", pajisja bëhet e dukshme si burim në pamjen e planifikimit, ku porositë e prodhimit mund të planifikohen në një diagram Gantt."
+      },
+      {
+        "heading": "Zhvendosja e pajisjes te një prind tjetër",
+        "body": "Zgjidhni një element dhe përdorni \"Zhvendos te...\" për t'i caktuar një prind tjetër. Zgjidhni një prind të ri nga lista, ose zgjidhni opsionin e nivelit të lartë për ta bërë element rrënjë, dhe më pas konfirmoni. Një element nuk mund të zhvendoset kurrë nën veten e tij ose nën ndonjë nga pasardhësit e tij, prandaj ata përjashtohen nga lista."
+      },
+      {
+        "heading": "Fshirja e pajisjeve",
+        "body": "Zgjidhni një element dhe përdorni Fshi. Do t'ju kërkohet konfirmim. Një element që ende ka elementë fëmijë në pemë nuk mund të fshihet - hiqni ose zhvendosni fëmijët e tij fillimisht."
+      },
+      {
+        "heading": "Menaxhimi i kategorive",
+        "body": "Çdo element pajisjeje i përket një kategorie. Përdorni \"Menaxho kategoritë\" në shiritin e mjeteve për të shtuar, riemërtuar ose hequr kategori. Duhet të ekzistojë të paktën një kategori para se të mund të shtoni pajisje."
+      },
+      {
+        "heading": "Komente",
+        "body": "Paneli Koment ju lejon të shkruani një koment me tekst të lirë për elementin e zgjedhur të pajisjes. Nëse komenti është shkruar fillimisht në një gjuhë tjetër nga ajo që po përdorni aktualisht, shfaqet një pamje paraprake e përkthyer së bashku me një shënim rreth gjuhës origjinale."
+      },
+      {
+        "heading": "Skedarë",
+        "body": "Paneli Skedarë ju lejon të ngarkoni skedarë tek elementi i zgjedhur i pajisjes, si dhe të shkarkoni ose fshini skedarë të ngarkuar tashmë. Jepini çdo skedari një përshkrim të shkurtër që të njihet lehtë më vonë."
+      },
+      {
+        "heading": "Lidhje",
+        "body": "Paneli Lidhje ju lejon të bashkëngjitni lidhje tek elementi i zgjedhur i pajisjes - ose një faqe interneti të zakonshme ose një dokument (për shembull një dokument SharePoint). Përdorni kutinë e kontrollit në dialogun Shto për ta shënuar një lidhje si dokument. Zgjidhni një lidhje në tabelë për ta Hapur ose Shkarkuar, ose për ta hequr."
+      },
+      {
+        "heading": "Regjistër",
+        "body": "Paneli Regjistër ju lejon të mbani një histori të datuar shënimesh me tekst të lirë për elementin e zgjedhur të pajisjes. Shtoni një hyrje të re me një përshkrim të shkurtër dhe tekstin e shënimit. Klikoni përshkrimin e një hyrjeje regjistri (ose zgjidheni dhe përdorni Shiko) për të lexuar të gjithë hyrjen. Redaktimi i një hyrjeje përditëson vulën e saj kohore, por ruan autorin origjinal. Përdorni kutinë e kërkimit për të filtruar hyrjet sipas përshkrimit ose tekstit."
+      },
+      {
+        "heading": "Shfaqja dhe fshehja e seksionit Lidhje & Regjistër",
+        "body": "Klikoni shiritin mbi panelet Lidhje dhe Regjistër për ta zgjeruar ose palosur atë seksion, në të njëjtën mënyrë siç seksionet mund të zgjerohen ose palosen në dokumentacionin API të Swagger."
+      }
+    ]
+  }
+}

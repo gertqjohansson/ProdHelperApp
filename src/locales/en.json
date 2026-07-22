@@ -36,7 +36,41 @@
   },
   "shiftsCalendar": {
     "pageTitle": "Shifts & Calendar",
-    "noSelection": "Select an equipment item to see its shifts and calendar."
+    "noSelection": "Select an equipment item to see its shifts and calendar.",
+    "createCalendarButton": "Create calendar",
+    "createCalendarModalTitle": "Create calendar for \"{{name}}\"",
+    "startDateLabel": "Start date",
+    "startDateMinHint": "Must be on or after {{date}}",
+    "numberOfDaysLabel": "Number of days",
+    "selectedEquipmentLabel": "Selected equipment",
+    "selectedDateLabel": "Selected date",
+    "noDateSelected": "Click a day to select it",
+    "selectionMarkedLabel": "Marked: {{title}}",
+    "selectionNoneLabel": "Click an event to mark it",
+    "editButton": "Edit",
+    "deleteButton": "Delete",
+    "deleteConfirmMessage": "Delete \"{{title}}\"?",
+    "timeFormatSwitchLabel": "Time format",
+    "calendar": {
+      "messages": {
+        "today": "Today",
+        "previous": "Back",
+        "next": "Next",
+        "month": "Month",
+        "week": "Week",
+        "work_week": "Work Week",
+        "day": "Day",
+        "agenda": "Agenda",
+        "date": "Date",
+        "time": "Time",
+        "event": "Event",
+        "allDay": "All Day",
+        "yesterday": "Yesterday",
+        "tomorrow": "Tomorrow",
+        "noEventsInRange": "There are no events in this range.",
+        "showMore": "+{{count}} more"
+      }
+    }
   },
   "equipment": {
     "pageTitle": "Equipment",
@@ -86,7 +120,14 @@
     "categoryNotFound": "The selected category does not exist.",
     "noCategoriesMessage": "Create an equipment category first.",
     "dateTimeRequired": "The date/time is required.",
-    "madeByUserRequired": "The user is required."
+    "madeByUserRequired": "The user is required.",
+    "linksLogSectionTitle": "Links & Log",
+    "expandSection": "Expand section",
+    "collapseSection": "Collapse section",
+    "helpButton": "Help",
+    "moveButton": "Move to...",
+    "moveTitle": "Move \"{{name}}\"",
+    "hasScheduleLabel": "Has a calendar"
   },
   "equipmentUpload": {
     "sectionTitle": "Files",

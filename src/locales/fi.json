@@ -36,7 +36,41 @@
   },
   "shiftsCalendar": {
     "pageTitle": "Vuorot ja kalenteri",
-    "noSelection": "Valitse laite nähdäksesi sen vuorot ja kalenterin."
+    "noSelection": "Valitse laite nähdäksesi sen vuorot ja kalenterin.",
+    "createCalendarButton": "Luo kalenteri",
+    "createCalendarModalTitle": "Luo kalenteri kohteelle \"{{name}}\"",
+    "startDateLabel": "Aloituspäivä",
+    "startDateMinHint": "Päivämäärän on oltava {{date}} tai myöhempi",
+    "numberOfDaysLabel": "Päivien määrä",
+    "selectedEquipmentLabel": "Valittu laite",
+    "selectedDateLabel": "Valittu päivä",
+    "noDateSelected": "Valitse päivä napsauttamalla sitä.",
+    "selectionMarkedLabel": "Merkitty: {{title}}",
+    "selectionNoneLabel": "Merkitse tapahtuma napsauttamalla sitä",
+    "editButton": "Muokkaa",
+    "deleteButton": "Poista",
+    "deleteConfirmMessage": "Poistetaanko \"{{title}}\"?",
+    "timeFormatSwitchLabel": "Ajan muoto",
+    "calendar": {
+      "messages": {
+        "today": "Tänään",
+        "previous": "Takaisin",
+        "next": "Seuraava",
+        "month": "Kuukausi",
+        "week": "Viikko",
+        "work_week": "Työviikko",
+        "day": "Päivä",
+        "agenda": "Ohjelma",
+        "date": "Päivämäärä",
+        "time": "Aika",
+        "event": "Tapahtuma",
+        "allDay": "Koko päivä",
+        "yesterday": "Eilen",
+        "tomorrow": "Huomenna",
+        "noEventsInRange": "Tällä aikavälillä ei ole tapahtumia.",
+        "showMore": "+{{count}} lisää"
+      }
+    }
   },
   "equipment": {
     "pageTitle": "Laitteet",
@@ -86,7 +120,14 @@
     "categoryNotFound": "Valittua kategoriaa ei ole olemassa.",
     "noCategoriesMessage": "Luo ensin laitekategoria.",
     "dateTimeRequired": "Päivämäärä ja kellonaika vaaditaan.",
-    "madeByUserRequired": "Käyttäjä vaaditaan."
+    "madeByUserRequired": "Käyttäjä vaaditaan.",
+    "linksLogSectionTitle": "Linkit ja loki",
+    "expandSection": "Laajenna osio",
+    "collapseSection": "Kutista osio",
+    "helpButton": "Ohje",
+    "moveButton": "Siirrä...",
+    "moveTitle": "Siirrä \"{{name}}\"",
+    "hasScheduleLabel": "Sisältää kalenterin"
   },
   "equipmentUpload": {
     "sectionTitle": "Tiedostot",

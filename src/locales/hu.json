@@ -36,7 +36,41 @@
   },
   "shiftsCalendar": {
     "pageTitle": "Műszakok és naptár",
-    "noSelection": "Válasszon egy eszközt a műszakjainak és naptárának megtekintéséhez."
+    "noSelection": "Válasszon egy eszközt a műszakjainak és naptárának megtekintéséhez.",
+    "createCalendarButton": "Naptár létrehozása",
+    "createCalendarModalTitle": "Naptár létrehozása ehhez: „{{name}}”",
+    "startDateLabel": "Kezdés dátuma",
+    "startDateMinHint": "A dátum nem lehet {{date}} előtti",
+    "numberOfDaysLabel": "Napok száma",
+    "selectedEquipmentLabel": "Kiválasztott eszköz",
+    "selectedDateLabel": "Kiválasztott dátum",
+    "noDateSelected": "Kattintson egy napra a kiválasztásához.",
+    "selectionMarkedLabel": "Megjelölve: {{title}}",
+    "selectionNoneLabel": "Kattintson egy eseményre a megjelöléséhez",
+    "editButton": "Szerkesztés",
+    "deleteButton": "Törlés",
+    "deleteConfirmMessage": "Törli ezt: „{{title}}”?",
+    "timeFormatSwitchLabel": "Időformátum",
+    "calendar": {
+      "messages": {
+        "today": "Ma",
+        "previous": "Vissza",
+        "next": "Következő",
+        "month": "Hónap",
+        "week": "Hét",
+        "work_week": "Munkahét",
+        "day": "Nap",
+        "agenda": "Napirend",
+        "date": "Dátum",
+        "time": "Idő",
+        "event": "Esemény",
+        "allDay": "Egész nap",
+        "yesterday": "Tegnap",
+        "tomorrow": "Holnap",
+        "noEventsInRange": "Ebben az időszakban nincsenek események.",
+        "showMore": "+{{count}} további"
+      }
+    }
   },
   "equipment": {
     "pageTitle": "Eszközök",
@@ -86,7 +120,14 @@
     "categoryNotFound": "A kiválasztott kategória nem létezik.",
     "noCategoriesMessage": "Először hozzon létre egy eszközkategóriát.",
     "dateTimeRequired": "A dátum és az idő megadása kötelező.",
-    "madeByUserRequired": "A felhasználó megadása kötelező."
+    "madeByUserRequired": "A felhasználó megadása kötelező.",
+    "linksLogSectionTitle": "Linkek és napló",
+    "expandSection": "Szakasz kibontása",
+    "collapseSection": "Szakasz összecsukása",
+    "helpButton": "Súgó",
+    "moveButton": "Áthelyezés ide...",
+    "moveTitle": "„{{name}}” áthelyezése",
+    "hasScheduleLabel": "Van naptára"
   },
   "equipmentUpload": {
     "sectionTitle": "Fájlok",

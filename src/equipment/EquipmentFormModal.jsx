@@ -25,10 +25,14 @@ function formatLocalizedDateTime(dateTimeLocalValue, language) {
 // useEconomy, dateOfPurchase, price, depreciationPeriod, useNotification, notificationDate, notification }.
 // Must resolve on success (the caller is responsible for closing this modal) or throw an Error
 // whose message is already a user-facing translated string.
-export default function EquipmentFormModal({ mode, categories, usedColors, initialValues, onSave, onCancel }) {
+// forceTopNode - true when the tree currently has no top-level item at all (e.g. the very first
+// equipment being added). In that case the top-node checkbox is locked checked so the tree can
+// never end up without a root.
+export default function EquipmentFormModal({ mode, categories, usedColors, initialValues, onSave, onCancel, forceTopNode }) {
   const { t, i18n } = useTranslation()
   const { authFetch } = useAuth()
   const [isTopNode, setIsTopNode] = useState(!!initialValues.isTopNode)
+  const effectiveIsTopNode = forceTopNode || isTopNode
   const [name, setName] = useState(initialValues.name)
   const [externalCode, setExternalCode] = useState(initialValues.externalCode)
   const [isOee, setIsOee] = useState(initialValues.isOee)
@@ -99,7 +103,7 @@ export default function EquipmentFormModal({ mode, categories, usedColors, initi
     setBusy(true)
     try {
       await onSave({
-        isTopNode,
+        isTopNode: effectiveIsTopNode,
         name,
         externalCode: externalCode || null,
         isOee,
@@ -126,7 +130,12 @@ export default function EquipmentFormModal({ mode, categories, usedColors, initi
         <form onSubmit={handleSubmit}>
           <h2>{mode === 'add' ? t('equipment.addTitle') : t('equipment.editTitle')}</h2>
           <label className="equipment-checkbox-field">
-            <input type="checkbox" checked={isTopNode} onChange={(e) => setIsTopNode(e.target.checked)} />
+            <input
+              type="checkbox"
+              checked={effectiveIsTopNode}
+              disabled={forceTopNode}
+              onChange={(e) => setIsTopNode(e.target.checked)}
+            />
             <span>{t('equipment.topNodeLabel')}</span>
           </label>
           <label className="login-field">

@@ -138,3 +138,7 @@ export function deleteEquipment(accessToken, { id, actionTimeUtc, madeByUser }) 
 export function saveEquipmentComment(accessToken, { id, comment, languageIsoCode }) {
   return request('Equipment/SaveComment', { body: { id, comment, languageIsoCode }, accessToken })
 }
+
+export function moveEquipmentSchiftParent(accessToken, { id, schiftParentId }) {
+  return request('Equipment/MoveSchiftParent', { body: { id, schiftParentId }, accessToken })
+}

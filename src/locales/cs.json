@@ -36,7 +36,41 @@
   },
   "shiftsCalendar": {
     "pageTitle": "Směny a kalendář",
-    "noSelection": "Vyberte zařízení, abyste zobrazili jeho směny a kalendář."
+    "noSelection": "Vyberte zařízení, abyste zobrazili jeho směny a kalendář.",
+    "createCalendarButton": "Vytvořit kalendář",
+    "createCalendarModalTitle": "Vytvořit kalendář pro „{{name}}“",
+    "startDateLabel": "Datum zahájení",
+    "startDateMinHint": "Musí být {{date}} nebo pozdější",
+    "numberOfDaysLabel": "Počet dní",
+    "selectedEquipmentLabel": "Vybrané zařízení",
+    "selectedDateLabel": "Vybrané datum",
+    "noDateSelected": "Kliknutím na den jej vyberete.",
+    "selectionMarkedLabel": "Označeno: {{title}}",
+    "selectionNoneLabel": "Kliknutím na událost ji označíte",
+    "editButton": "Upravit",
+    "deleteButton": "Smazat",
+    "deleteConfirmMessage": "Smazat „{{title}}“?",
+    "timeFormatSwitchLabel": "Formát času",
+    "calendar": {
+      "messages": {
+        "today": "Dnes",
+        "previous": "Zpět",
+        "next": "Další",
+        "month": "Měsíc",
+        "week": "Týden",
+        "work_week": "Pracovní týden",
+        "day": "Den",
+        "agenda": "Agenda",
+        "date": "Datum",
+        "time": "Čas",
+        "event": "Událost",
+        "allDay": "Celý den",
+        "yesterday": "Včera",
+        "tomorrow": "Zítra",
+        "noEventsInRange": "V tomto rozsahu nejsou žádné události.",
+        "showMore": "+{{count}} další"
+      }
+    }
   },
   "equipment": {
     "pageTitle": "Vybavení",
@@ -86,7 +120,14 @@
     "categoryNotFound": "Vybraná kategorie neexistuje.",
     "noCategoriesMessage": "Nejprve vytvořte kategorii vybavení.",
     "dateTimeRequired": "Datum a čas jsou povinné.",
-    "madeByUserRequired": "Uživatel je povinný."
+    "madeByUserRequired": "Uživatel je povinný.",
+    "linksLogSectionTitle": "Odkazy a deník",
+    "expandSection": "Rozbalit sekci",
+    "collapseSection": "Sbalit sekci",
+    "helpButton": "Nápověda",
+    "moveButton": "Přesunout do...",
+    "moveTitle": "Přesunout „{{name}}“",
+    "hasScheduleLabel": "Má kalendář"
   },
   "equipmentUpload": {
     "sectionTitle": "Soubory",

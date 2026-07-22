@@ -36,7 +36,41 @@
   },
   "shiftsCalendar": {
     "pageTitle": "Smjene i kalendar",
-    "noSelection": "Odaberite opremu za prikaz njezinih smjena i kalendara."
+    "noSelection": "Odaberite opremu za prikaz njezinih smjena i kalendara.",
+    "createCalendarButton": "Izradi kalendar",
+    "createCalendarModalTitle": "Izradi kalendar za „{{name}}”",
+    "startDateLabel": "Datum početka",
+    "startDateMinHint": "Mora biti {{date}} ili kasnije",
+    "numberOfDaysLabel": "Broj dana",
+    "selectedEquipmentLabel": "Odabrana oprema",
+    "selectedDateLabel": "Odabrani datum",
+    "noDateSelected": "Kliknite dan da biste ga odabrali.",
+    "selectionMarkedLabel": "Označeno: {{title}}",
+    "selectionNoneLabel": "Kliknite događaj da biste ga označili",
+    "editButton": "Uredi",
+    "deleteButton": "Izbriši",
+    "deleteConfirmMessage": "Izbrisati „{{title}}”?",
+    "timeFormatSwitchLabel": "Format vremena",
+    "calendar": {
+      "messages": {
+        "today": "Danas",
+        "previous": "Natrag",
+        "next": "Sljedeće",
+        "month": "Mjesec",
+        "week": "Tjedan",
+        "work_week": "Radni tjedan",
+        "day": "Dan",
+        "agenda": "Raspored",
+        "date": "Datum",
+        "time": "Vrijeme",
+        "event": "Događaj",
+        "allDay": "Cijeli dan",
+        "yesterday": "Jučer",
+        "tomorrow": "Sutra",
+        "noEventsInRange": "Nema događaja u ovom razdoblju.",
+        "showMore": "+{{count}} više"
+      }
+    }
   },
   "equipment": {
     "pageTitle": "Oprema",
@@ -86,7 +120,14 @@
     "categoryNotFound": "Odabrana kategorija ne postoji.",
     "noCategoriesMessage": "Prvo izradite kategoriju opreme.",
     "dateTimeRequired": "Datum i vrijeme su obavezni.",
-    "madeByUserRequired": "Korisnik je obavezan."
+    "madeByUserRequired": "Korisnik je obavezan.",
+    "linksLogSectionTitle": "Poveznice i dnevnik",
+    "expandSection": "Proširi odjeljak",
+    "collapseSection": "Sažmi odjeljak",
+    "helpButton": "Pomoć",
+    "moveButton": "Premjesti u...",
+    "moveTitle": "Premjesti „{{name}}”",
+    "hasScheduleLabel": "Ima kalendar"
   },
   "equipmentUpload": {
     "sectionTitle": "Datoteke",

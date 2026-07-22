@@ -36,7 +36,41 @@
   },
   "shiftsCalendar": {
     "pageTitle": "Schichten & Kalender",
-    "noSelection": "Wählen Sie eine Ausrüstung aus, um ihre Schichten und ihren Kalender zu sehen."
+    "noSelection": "Wählen Sie eine Ausrüstung aus, um ihre Schichten und ihren Kalender zu sehen.",
+    "createCalendarButton": "Kalender erstellen",
+    "createCalendarModalTitle": "Kalender für \"{{name}}\" erstellen",
+    "startDateLabel": "Startdatum",
+    "startDateMinHint": "Muss am oder nach dem {{date}} liegen",
+    "numberOfDaysLabel": "Anzahl der Tage",
+    "selectedEquipmentLabel": "Ausgewählte Ausrüstung",
+    "selectedDateLabel": "Ausgewähltes Datum",
+    "noDateSelected": "Klicken Sie auf einen Tag, um ihn auszuwählen.",
+    "selectionMarkedLabel": "Markiert: {{title}}",
+    "selectionNoneLabel": "Klicken Sie auf einen Termin, um ihn zu markieren",
+    "editButton": "Bearbeiten",
+    "deleteButton": "Löschen",
+    "deleteConfirmMessage": "\"{{title}}\" löschen?",
+    "timeFormatSwitchLabel": "Zeitformat",
+    "calendar": {
+      "messages": {
+        "today": "Heute",
+        "previous": "Zurück",
+        "next": "Weiter",
+        "month": "Monat",
+        "week": "Woche",
+        "work_week": "Arbeitswoche",
+        "day": "Tag",
+        "agenda": "Agenda",
+        "date": "Datum",
+        "time": "Zeit",
+        "event": "Termin",
+        "allDay": "Ganztägig",
+        "yesterday": "Gestern",
+        "tomorrow": "Morgen",
+        "noEventsInRange": "In diesem Zeitraum gibt es keine Termine.",
+        "showMore": "+{{count}} weitere"
+      }
+    }
   },
   "equipment": {
     "pageTitle": "Ausrüstung",
@@ -86,7 +120,14 @@
     "categoryNotFound": "Die ausgewählte Kategorie existiert nicht.",
     "noCategoriesMessage": "Erstellen Sie zuerst eine Ausrüstungskategorie.",
     "dateTimeRequired": "Datum und Uhrzeit sind erforderlich.",
-    "madeByUserRequired": "Der Benutzer ist erforderlich."
+    "madeByUserRequired": "Der Benutzer ist erforderlich.",
+    "linksLogSectionTitle": "Links & Protokoll",
+    "expandSection": "Abschnitt erweitern",
+    "collapseSection": "Abschnitt einklappen",
+    "helpButton": "Hilfe",
+    "moveButton": "Verschieben...",
+    "moveTitle": "\"{{name}}\" verschieben",
+    "hasScheduleLabel": "Hat einen Kalender"
   },
   "equipmentUpload": {
     "sectionTitle": "Dateien",

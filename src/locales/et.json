@@ -36,7 +36,41 @@
   },
   "shiftsCalendar": {
     "pageTitle": "Vahetused ja kalender",
-    "noSelection": "Valige seade, et näha selle vahetusi ja kalendrit."
+    "noSelection": "Valige seade, et näha selle vahetusi ja kalendrit.",
+    "createCalendarButton": "Loo kalender",
+    "createCalendarModalTitle": "Loo kalender „{{name}}” jaoks",
+    "startDateLabel": "Alguskuupäev",
+    "startDateMinHint": "Peab olema {{date}} või hilisem",
+    "numberOfDaysLabel": "Päevade arv",
+    "selectedEquipmentLabel": "Valitud seade",
+    "selectedDateLabel": "Valitud kuupäev",
+    "noDateSelected": "Klõpsake päeval, et see valida.",
+    "selectionMarkedLabel": "Märgitud: {{title}}",
+    "selectionNoneLabel": "Klõpsake sündmusel, et see märkida",
+    "editButton": "Muuda",
+    "deleteButton": "Kustuta",
+    "deleteConfirmMessage": "Kustutada „{{title}}”?",
+    "timeFormatSwitchLabel": "Ajavorming",
+    "calendar": {
+      "messages": {
+        "today": "Täna",
+        "previous": "Tagasi",
+        "next": "Järgmine",
+        "month": "Kuu",
+        "week": "Nädal",
+        "work_week": "Töönädal",
+        "day": "Päev",
+        "agenda": "Päevakord",
+        "date": "Kuupäev",
+        "time": "Aeg",
+        "event": "Sündmus",
+        "allDay": "Terve päev",
+        "yesterday": "Eile",
+        "tomorrow": "Homme",
+        "noEventsInRange": "Selles vahemikus sündmusi ei ole.",
+        "showMore": "+{{count}} veel"
+      }
+    }
   },
   "equipment": {
     "pageTitle": "Seadmed",
@@ -86,7 +120,14 @@
     "categoryNotFound": "Valitud kategooriat ei ole olemas.",
     "noCategoriesMessage": "Looge kõigepealt seadme kategooria.",
     "dateTimeRequired": "Kuupäev ja kellaaeg on kohustuslikud.",
-    "madeByUserRequired": "Kasutaja on kohustuslik."
+    "madeByUserRequired": "Kasutaja on kohustuslik.",
+    "linksLogSectionTitle": "Lingid ja logi",
+    "expandSection": "Laienda jaotist",
+    "collapseSection": "Ahenda jaotist",
+    "helpButton": "Abi",
+    "moveButton": "Teisalda...",
+    "moveTitle": "Teisalda „{{name}}”",
+    "hasScheduleLabel": "On kalender"
   },
   "equipmentUpload": {
     "sectionTitle": "Failid",

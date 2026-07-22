@@ -36,7 +36,41 @@
   },
   "shiftsCalendar": {
     "pageTitle": "Skift & kalendrar",
-    "noSelection": "Välj en utrustning för att se dess skift och kalender."
+    "noSelection": "Välj en utrustning för att se dess skift och kalender.",
+    "createCalendarButton": "Skapa kalender",
+    "createCalendarModalTitle": "Skapa kalender för \"{{name}}\"",
+    "startDateLabel": "Startdatum",
+    "startDateMinHint": "Måste vara {{date}} eller senare",
+    "numberOfDaysLabel": "Antal dagar",
+    "selectedEquipmentLabel": "Vald utrustning",
+    "selectedDateLabel": "Valt datum",
+    "noDateSelected": "Klicka på en dag för att välja den.",
+    "selectionMarkedLabel": "Markerad: {{title}}",
+    "selectionNoneLabel": "Klicka på en händelse för att markera den",
+    "editButton": "Redigera",
+    "deleteButton": "Ta bort",
+    "deleteConfirmMessage": "Ta bort \"{{title}}\"?",
+    "timeFormatSwitchLabel": "Tidsformat",
+    "calendar": {
+      "messages": {
+        "today": "Idag",
+        "previous": "Tillbaka",
+        "next": "Nästa",
+        "month": "Månad",
+        "week": "Vecka",
+        "work_week": "Arbetsvecka",
+        "day": "Dag",
+        "agenda": "Agenda",
+        "date": "Datum",
+        "time": "Tid",
+        "event": "Händelse",
+        "allDay": "Heldag",
+        "yesterday": "Igår",
+        "tomorrow": "Imorgon",
+        "noEventsInRange": "Det finns inga händelser inom detta intervall.",
+        "showMore": "+{{count}} till"
+      }
+    }
   },
   "equipment": {
     "pageTitle": "Utrustning",
@@ -86,7 +120,14 @@
     "categoryNotFound": "Den valda kategorin finns inte.",
     "noCategoriesMessage": "Skapa en utrustningskategori först.",
     "dateTimeRequired": "Datum och tid krävs.",
-    "madeByUserRequired": "Användaren krävs."
+    "madeByUserRequired": "Användaren krävs.",
+    "linksLogSectionTitle": "Länkar & logg",
+    "expandSection": "Expandera avsnitt",
+    "collapseSection": "Komprimera avsnitt",
+    "helpButton": "Hjälp",
+    "moveButton": "Flytta till...",
+    "moveTitle": "Flytta \"{{name}}\"",
+    "hasScheduleLabel": "Har en kalender"
   },
   "equipmentUpload": {
     "sectionTitle": "Filer",

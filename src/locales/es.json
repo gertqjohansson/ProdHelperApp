@@ -36,7 +36,41 @@
   },
   "shiftsCalendar": {
     "pageTitle": "Turnos y calendario",
-    "noSelection": "Seleccione un equipo para ver sus turnos y calendario."
+    "noSelection": "Seleccione un equipo para ver sus turnos y calendario.",
+    "createCalendarButton": "Crear calendario",
+    "createCalendarModalTitle": "Crear calendario para \"{{name}}\"",
+    "startDateLabel": "Fecha de inicio",
+    "startDateMinHint": "Debe ser el {{date}} o posterior",
+    "numberOfDaysLabel": "Número de días",
+    "selectedEquipmentLabel": "Equipo seleccionado",
+    "selectedDateLabel": "Fecha seleccionada",
+    "noDateSelected": "Haga clic en un día para seleccionarlo.",
+    "selectionMarkedLabel": "Marcado: {{title}}",
+    "selectionNoneLabel": "Haga clic en un evento para marcarlo",
+    "editButton": "Editar",
+    "deleteButton": "Eliminar",
+    "deleteConfirmMessage": "¿Eliminar \"{{title}}\"?",
+    "timeFormatSwitchLabel": "Formato de hora",
+    "calendar": {
+      "messages": {
+        "today": "Hoy",
+        "previous": "Atrás",
+        "next": "Siguiente",
+        "month": "Mes",
+        "week": "Semana",
+        "work_week": "Semana laboral",
+        "day": "Día",
+        "agenda": "Agenda",
+        "date": "Fecha",
+        "time": "Hora",
+        "event": "Evento",
+        "allDay": "Todo el día",
+        "yesterday": "Ayer",
+        "tomorrow": "Mañana",
+        "noEventsInRange": "No hay eventos en este rango.",
+        "showMore": "+{{count}} más"
+      }
+    }
   },
   "equipment": {
     "pageTitle": "Equipos",
@@ -86,7 +120,14 @@
     "categoryNotFound": "La categoría seleccionada no existe.",
     "noCategoriesMessage": "Cree primero una categoría de equipo.",
     "dateTimeRequired": "La fecha y hora son obligatorias.",
-    "madeByUserRequired": "El usuario es obligatorio."
+    "madeByUserRequired": "El usuario es obligatorio.",
+    "linksLogSectionTitle": "Enlaces y registro",
+    "expandSection": "Expandir sección",
+    "collapseSection": "Contraer sección",
+    "helpButton": "Ayuda",
+    "moveButton": "Mover a...",
+    "moveTitle": "Mover \"{{name}}\"",
+    "hasScheduleLabel": "Tiene un calendario"
   },
   "equipmentUpload": {
     "sectionTitle": "Archivos",
